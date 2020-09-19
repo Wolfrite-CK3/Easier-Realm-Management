@@ -1,0 +1,41 @@
+﻿automatic_county_religion_conversion_decision = {
+	
+	title = auto_county_religion_conversion_t
+	desc = auto_county_religion_conversion_desc	
+	picture = "gfx/interface/illustrations/decisions/decision_personal_religious.dds"
+	major = no
+
+	cooldown = { days = 60 }
+
+	confirm_text = auto_county_religion_conversion_confirm
+	selection_tooltip = auto_county_religion_conversion_tooltip
+	ai_check_interval = 0
+	
+	cost = {
+		piety = 50
+	}
+
+	is_shown = {
+		highest_held_title_tier >= tier_duchy
+	}
+
+	is_valid_showing_failures_only = {	
+
+	} 	
+
+	is_valid = {
+
+	}
+	
+	ai_potential = {
+		always = no
+	}
+
+	ai_will_do = {
+		base = 0
+	}
+
+	effect = {
+		trigger_event = auto_council.0001
+	}
+}
