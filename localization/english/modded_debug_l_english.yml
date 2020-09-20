@@ -1,0 +1,6 @@
+﻿l_english:
+auto_council_debug_0001:0 "In the Heathens list there are [ROOT.Var('heathens_count').GetValue] counties left]"
+auto_council_debug_0002:0 "The Scope selected_county contains: [selected_county.GetName]"
+auto_council_debug_0003:0 "Adding one to count of list."
+auto_council_debug_0004:0 "Either selected_county or councillor_court_chaplain is null."
+auto_council_debug_0005:0 "Neither selected_county or councillor_court_chaplain is null."

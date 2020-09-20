@@ -1,0 +1,10 @@
+﻿count_items_in_list_effect = {
+    set_variable = { name = $LCOUNT$ value = 0 }
+    every_in_list = {
+        list = $LVAR$
+        
+        debug_log = auto_council_debug_0003
+
+        ROOT = { change_variable = { name = $LCOUNT$ add = 1 } }
+    }
+}

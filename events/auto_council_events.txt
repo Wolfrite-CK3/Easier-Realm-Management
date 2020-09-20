@@ -1,5 +1,6 @@
 ﻿namespace = auto_council
 
+
 auto_council.0001 = {
 	type = character_event
 	title = auto_council_0001_t
@@ -23,9 +24,10 @@ auto_council.0001 = {
 					faith = root.faith
 				}
 			}
+			exist = cp:councillor_court_chaplain
 		}
 		
-		every_realm_county = {
+		every_sub_realm_county = {
 			if = {
 				limit = { NOT = { faith = root.faith }}
 				add_to_list = heathens
@@ -35,7 +37,7 @@ auto_council.0001 = {
 		send_interface_message = {
 			type = event_generic_good
 			right_icon = scope:court_chaplain
-			title = auto_council_0001_mes1
+			title = auto_council_0001_mes1_t
 		}
 
 		trigger_event = auto_council.0002
@@ -57,42 +59,54 @@ auto_council.0002 = {
 				any_in_list = {
 					list = heathens
 				}			
-			}
+			}							
+
+			count_items_in_list_effect = {
+				LCOUNT = heathens_count
+				LVAR = heathens
+			}			
+			
+			debug_log = auto_council_debug_0001
+				
 			random_in_list = {
 				list = heathens
 				save_scope_as = selected_county
 				remove_from_list = heathens
 			}
+			
+			debug_log = auto_council_debug_0002
+
+			send_interface_message = {
+				type = event_generic_good
+				right_icon = scope:court_chaplain
+				title = auto_council_0002_mes1_t
+				desc = auto_council_0002_mes1_desc
+			}
+
+			remove_variable = heathens_count
 
 			if = {
-				limit = { exist = selected_county }
+				limit = { 
+					exists = cp:councillor_court_chaplain 
+					exists = scope:selected_county
+				}
+				
+				debug_log = auto_council_debug_0005
+				# Check if liege of court_chaplain is root
 				cp:councillor_court_chaplain = {				
 					set_council_task = {
 						task_type = task_conversion
 						target = scope:selected_county
 					}				
-				}
-				set_variable = {
-					name = heathens_count
-					value = 0
-				}
-	
-				every_in_list = {
-					list = heathens
-					change_variable = {
-						name = heathens_count
-						add = 1
-					}
-				}
-				send_interface_message = {
-					type = event_generic_good
-					right_icon = scope:court_chaplain
-					title = auto_council_0002_mes1
-					desc = auto_council_0002_mes1_body
-				}
-				remove_variable = heathens_count
+				}				
 			}
-			else = { add_piety = 50}
-		}
+
+			# If there is no chaplain, then refund the piety. 
+ 			# The trigger check on option A of event auto_council.0001, should mean this is never the case, but just to be sure
+			else = { 
+				debug_log = auto_council_debug_0004
+				add_piety = 50
+			}		
+		}	
 	}
 }
