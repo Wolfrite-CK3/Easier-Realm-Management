@@ -80,7 +80,15 @@ auto_council.0002 = {
 				remove_from_list = heathens
 			}
 			
+			set_variable = {
+				name = saved_scope
+				value = scope:selected_county
+			}		
+			
+			scope:selected_county = { title = { save_scope_as = selected_title } }
+
 			debug_log = auto_council_debug_0002
+			debug_log = "Test - selected_county name: [selected_county.GetName]"
 
 			send_interface_message = {
 				type = event_generic_good
@@ -89,7 +97,8 @@ auto_council.0002 = {
 				desc = auto_council_0002_mes1_desc
 			}
 
-			remove_variable = heathens_count
+			#remove_variable = heathens_count
+			#remove_variable = saved_scope
 
 			if = {
 				limit = { 
@@ -103,13 +112,18 @@ auto_council.0002 = {
 				cp:councillor_court_chaplain = {				
 					set_council_task = {
 						task_type = task_conversion
-						target = scope:selected_county
+						target = scope:selected_county.title_province
 					}				
 				}
-				
-				root = {
-					remove_character_flag = only_refund_first_run_throught
+				if = {
+					limit = {
+						has_character_flag = only_refund_first_run_throught
+					}
+					root = {
+						#remove_character_flag = only_refund_first_run_throught
+					}
 				}
+				
 			}
 
 			# If the if fails then refund the piety. 
