@@ -24,7 +24,7 @@ auto_council.0001 = {
 					faith = root.faith
 				}
 			}
-			exist = cp:councillor_court_chaplain
+			exists = cp:councillor_court_chaplain
 		}
 		
 		every_sub_realm_county = {
@@ -38,6 +38,12 @@ auto_council.0001 = {
 			type = event_generic_good
 			right_icon = scope:court_chaplain
 			title = auto_council_0001_mes1_t
+		}
+		
+		root = {
+			add_character_flag = {
+				flag = only_refund_first_run_throught				
+			}
 		}
 
 		trigger_event = auto_council.0002
@@ -89,24 +95,38 @@ auto_council.0002 = {
 				limit = { 
 					exists = cp:councillor_court_chaplain 
 					exists = scope:selected_county
+					cp:councillor_court_chaplain.liege = root
 				}
 				
 				debug_log = auto_council_debug_0005
-				# Check if liege of court_chaplain is root
+
 				cp:councillor_court_chaplain = {				
 					set_council_task = {
 						task_type = task_conversion
 						target = scope:selected_county
 					}				
-				}				
+				}
+				
+				root = {
+					remove_character_flag = only_refund_first_run_throught
+				}
 			}
 
-			# If there is no chaplain, then refund the piety. 
+			# If the if fails then refund the piety. 
  			# The trigger check on option A of event auto_council.0001, should mean this is never the case, but just to be sure
-			else = { 
-				debug_log = auto_council_debug_0004
-				add_piety = 50
-			}		
+			else = {
+				if = {
+					limit = {
+						has_character_flag = only_refund_first_run_throught
+					} 
+					debug_log = auto_council_debug_0004
+					add_piety = 50
+
+					root = {
+						remove_character_flag = only_refund_first_run_throught
+					}
+				}		
+			} 
 		}	
 	}
 }
