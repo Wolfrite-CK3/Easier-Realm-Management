@@ -1,8 +1,7 @@
 ﻿l_english:
-auto_council_0001_t:1 "To Convert the Heathens or not"
+auto_council_0001_t:1 "To Convert the Heathens or Not"
 auto_council_0001_desc:1 "Should we start converting any Heathens to the religion of the mighty leader of this realm, or perhaps wait a little longer?"
 auto_council_0001_a:0 "Travel far and vide and preach of our god(s)!"
 auto_council_0001_b:0 "I need you at the council right now."
-auto_council_0001_mes1_t:0 "Starting Religion Conversion Automation..."
-auto_council_0002_mes1_t:0 "Converting []."
-auto_council_0002_mes1_desc:0 "[ROOT.Var('heathens_count').GetValue] counties remain to be converted."
+auto_council_0002_mes1_t:0 "Converting [GetPlayer.MakeScope.Var('saved_scope').Title.GetNameNoTooltip]."
+auto_council_0002_mes1_description:0 "[GetPlayer.MakeScope.Var('heathens_count').GetValue] counties remain to be converted."

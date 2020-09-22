@@ -589,9 +589,8 @@
 
 	on_finish_task_county = {
 		scope:councillor_liege = {
-			trigger_event = court_chaplain_task.0201
+			trigger_event = auto_council_overwrite.0001
 		}
-		trigger_event = auto_council.0002
 	}
 
 	on_start_task = {

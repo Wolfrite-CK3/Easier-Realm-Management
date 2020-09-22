@@ -1,0 +1,54 @@
+﻿auto_council_overwrite.0001 = {
+	type = letter_event
+	opening = {
+		desc = court_chaplain_task.0201.opening
+	}
+	desc = court_chaplain_task.0201.county_complete
+	sender = scope:councillor
+
+	option = {
+		name = court_chaplain_task.0201.a
+		trigger = {
+			scope:councillor.faith = root.faith
+		}
+	}
+
+	option = {
+		name = court_chaplain_task.0201.b
+		trigger = {
+			NOT = { scope:councillor.faith = root.faith }
+		}		
+	}
+
+	immediate = {
+		scope:county = {
+			set_county_faith = scope:councillor.faith
+		}
+
+		if = {
+			limit = {
+				scope:councillor = {
+					has_council_position = councillor_court_chaplain
+				}
+			}
+
+			if = {
+				limit = {
+					scope:councillor.liege = {
+						any_sub_realm_county = {
+							NOT = { faith.religion = PREV.faith.religion }
+						}
+					}
+				}
+				scope:councillor.liege = {
+					trigger_event = { id = auto_council.0002 }
+				}
+			}
+			else = {
+				scope:councillor = {
+					start_default_task = yes
+				}
+			}
+		}
+	}	
+}

@@ -1,6 +1,7 @@
 ﻿l_english:
 auto_council_debug_0001:0 "In the Heathens list there are [GetPlayer.MakeScope.Var('heathens_count').GetValue] counties left"
-auto_council_debug_0002:0 "The Selected county is named: [selected_county.GetName]"
-auto_council_debug_0003:0 "Adding one to count of list."
+auto_council_debug_0002:0 "Starting automatic conversion of [GetPlayer.MakeScope.Var('saved_scope').Title.GetNameNoTooltip]"
+auto_council_debug_0003:0 "Firing event: auto_council.0002"
 auto_council_debug_0004:0 "At least one of the following evaluated to false: \n - selected_county == null \n - councillor_court_chaplain == null \n councillor_court_chaplain.liege == root"
 auto_council_debug_0005:0 "All of the following evaluated to true: \n - selected_county == null \n - councillor_court_chaplain == null \n - councillor_court_chaplain.liege == root"
+auto_council_debug_0007:0 "Firing event: auto_council.0001"
