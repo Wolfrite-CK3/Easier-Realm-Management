@@ -1,0 +1,161 @@
+﻿namespace = auto_council
+
+#
+# Hidden Events for decisions
+# Range - 0000-0299
+#
+
+auto_council.0000 = {
+	hidden = yes
+	type = character_event
+
+	immediate = {
+		debug_log = auto_council_debug_0002 #Firing event...
+		
+		every_sub_realm_county = {
+			if = {
+				limit = { NOT = { faith = root.faith }}
+				add_to_list = heathens
+			}
+		}		
+
+		if = {
+			limit = {
+				list_size = {
+					name = heathens
+					value > 0
+				}
+				exists = cp:councillor_court_chaplain			
+			}			
+
+			count_items_in_list_effect = {
+				LCOUNT = heathens_count
+				LVAR = heathens
+			}	
+						
+			debug_log = auto_council_debug_0003 #there is X counties in list...
+				
+			random_in_list = {
+				list = heathens
+				save_scope_as = selected_county
+				remove_from_list = heathens
+			}
+			
+			set_variable = {
+				name = saved_scope
+				value = scope:selected_county
+			}				
+
+			if = {
+				limit = { 
+					exists = scope:selected_county
+					cp:councillor_court_chaplain.liege = root
+				}
+
+				send_interface_message = {
+					type = event_chancellor_task_good
+					right_icon = cp:councillor_court_chaplain
+					title = auto_council_0002_mes1_t
+					desc = auto_council_0002_mes1_description
+					tooltip = auto_council_0002_mes1_description					
+				}
+
+				debug_log = auto_council_debug_0004 # all evaluated to true...
+			
+				debug_log = auto_council_debug_0005 #starting conversion of...
+
+				cp:councillor_court_chaplain = {				
+					set_council_task = {
+						task_type = task_conversion
+						target = scope:selected_county.title_province
+					}				
+				}							
+			}			
+
+			else = {				
+				debug_log = auto_council_debug_0006 # at least one evaluated to false															
+			}
+
+			remove_variable = heathens_count
+			remove_variable = saved_scope
+		}	
+	}
+}
+
+auto_council.0001 = {
+	hidden = yes
+	type = character_event
+
+	immediate = {
+		debug_log = auto_council_debug_0008 #Firing event...
+		
+		every_sub_realm_county = {
+			if = {
+				limit = { NOT = { culture = root.culture }}
+				add_to_list = foreigners
+			}
+		}		
+
+		if = {
+			limit = {
+				list_size = {
+					name = foreigners
+					value > 0
+				}
+				exists = cp:councillor_steward			
+			}			
+
+			count_items_in_list_effect = {
+				LCOUNT = foreigners_count
+				LVAR = foreigners
+			}	
+						
+			debug_log = auto_council_debug_0009 #there is X counties in list...
+				
+			
+
+			random_in_list = {
+				list = foreigners
+				save_scope_as = selected_county
+				remove_from_list = foreigners
+			}
+			
+			set_variable = {
+				name = saved_scope
+				value = scope:selected_county
+			}				
+
+			if = {
+				limit = { 
+					exists = scope:selected_county
+					cp:councillor_steward.liege = root
+				}
+
+				send_interface_message = {
+					type = event_steward_task_good
+					right_icon = cp:councillor_steward
+					title = auto_council_0004_mes1_t
+					desc = auto_council_0004_mes1_description
+					tooltip = auto_council_0004_mes1_description					
+				}
+
+				debug_log = auto_council_debug_0010 # all evaluated to true...
+			
+				debug_log = auto_council_debug_0011 #starting conversion of...
+
+				cp:councillor_steward = {				
+					set_council_task = {
+						task_type = task_promote_culture
+						target = scope:selected_county.title_province
+					}				
+				}							
+			}			
+			else = {				
+				debug_log = auto_council_debug_0012 # at least one evaluated to false															
+			}
+
+			remove_variable = foreigners_count
+			remove_variable = saved_scope
+		}	
+	}
+}

@@ -1,15 +1,15 @@
 ﻿auto_council_county_religion_conversion_decision = {
 	
-	title = auto_county_religion_conversion_t
-	desc = auto_county_religion_conversion_desc	
+	title = auto_council_county_religion_conversion_t
+	desc = auto_council_county_religion_conversion_desc	
 	picture = "gfx/interface/illustrations/decisions/decision_personal_religious.dds"
 	major = no
 
 	# uncomment cooldown, when mod is done
 	#cooldown = { days = 60 }
 
-	confirm_text = auto_county_religion_conversion_confirm
-	selection_tooltip = auto_county_religion_conversion_tooltip
+	confirm_text = auto_council_county_religion_conversion_confirm
+	selection_tooltip = auto_council_county_religion_conversion_tooltip
 	ai_check_interval = 0
 	
 	is_shown = {
@@ -33,6 +33,45 @@
 	}
 
 	effect = {
-		trigger_event = auto_council.0001
+		trigger_event = auto_council.0900
+	}
+}
+
+auto_council_county_cultuer_promotion_decision = {
+	
+	title = auto_council_county_cultuer_promotion_t
+	desc = auto_council_county_cultuer_promotion_desc	
+	picture = "gfx/interface/illustrations/decisions/decision_realm.dds"
+	major = no
+
+	# uncomment cooldown, when mod is done
+	#cooldown = { days = 60 }
+
+	confirm_text = auto_council_county_cultuer_promotion_confirm
+	selection_tooltip = auto_council_county_cultuer_promotion_tooltip
+	ai_check_interval = 0
+	
+	is_shown = {
+		highest_held_title_tier >= tier_duchy
+	}
+
+	is_valid_showing_failures_only = {	
+
+	} 	
+
+	is_valid = {
+
+	}
+	
+	ai_potential = {
+		always = no
+	}
+
+	ai_will_do = {
+		base = 0
+	}
+
+	effect = {
+		trigger_event = auto_council.0901
 	}
 }

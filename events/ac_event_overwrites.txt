@@ -1,4 +1,6 @@
-﻿auto_council_overwrite.0001 = {
+﻿namespace = auto_council_overwrite
+
+auto_council_overwrite.0001 = { # councillor_court_chaplain task_conversion on_finish_task_county letter
 	type = letter_event
 	opening = {
 		desc = court_chaplain_task.0201.opening
@@ -36,19 +38,78 @@
 				limit = {
 					scope:councillor.liege = {
 						any_sub_realm_county = {
-							NOT = { faith.religion = PREV.faith.religion }
+							NOT = { title.religion = PREV.faith.religion }
 						}
 					}
+					has_character_flag = allow_automatic_convert_religion
 				}
 				scope:councillor.liege = {
-					trigger_event = { id = auto_council.0002 }
+					trigger_event = { id = auto_council.0000 }
 				}
 			}
 			else = {
 				scope:councillor = {
 					start_default_task = yes
 				}
+				scope:councillor.liege = {
+					if = {
+						limit = { has_character_flag = allow_automatic_convert_religion	}
+						remove_character_flag = allow_automatic_convert_religion
+					}
+				}
 			}
 		}
 	}	
+}
+
+auto_council_overwrite.0002 = { # councillor_steward task_promote_culture on_finish_task_county letter
+	type = letter_event
+	opening = {
+		desc = steward_task.0301.opening
+	}
+	desc = steward_task.0301.county_complete
+	sender = scope:councillor
+
+	option = {
+		name = steward_task.0301.a
+		
+	}
+
+	immediate = {
+		scope:county = {
+			set_county_culture = scope:councillor_liege.culture
+		}
+
+		if = {
+			limit = {
+				scope:councillor = {
+					has_council_position = councillor_steward
+				}
+			}
+			if = {
+				limit = {
+					scope:councillor.liege = {
+						any_sub_realm_county = {
+							NOT = { culture  = PREV.culture }
+						}
+					}
+					has_character_flag = allow_automatic_promote_culture
+				}
+				scope:councillor.liege = {
+					trigger_event = { id = auto_council.0001 }
+				}
+			}
+			else = {
+				scope:councillor = {
+					start_default_task = yes
+				}
+				scope:councillor.liege = {
+					if = {
+						limit = { has_character_flag = allow_automatic_promote_culture	}
+						remove_character_flag = allow_automatic_promote_culture
+					}
+				}
+			}
+		}
+	}
 }
