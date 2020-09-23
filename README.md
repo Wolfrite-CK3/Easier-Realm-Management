@@ -5,7 +5,7 @@
 - Adds decision to start conversion, so you don't have to find a valid target.
 
 ## Planned Features
-See the GitHub Issues, for issues marked with "Planned Feature" label.
+See the GitHub Issues, for issues marked with "Enhancement" label.
 
 # Incompatibility
 - Due to how it is coded, any mod that changes the Conversion Task, will be incompatibility, without a patch.
