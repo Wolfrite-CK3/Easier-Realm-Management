@@ -7,6 +7,15 @@
 ## Planned Features
 See the GitHub Issues, for issues marked with "Enhancement" label.
 
+## Want my mod to support your languages?
+If that is the case, then follow this short list, and add the missing translations.
+
+1. Fork This Repository.
+2. Make the nececarry localization files and translations.
+3. Create a Pull Request, wherein you explain the changes you have made i.e which language you have made support for.
+
+For this to work, CK3 has to support the language, so do keep that in mind.
+
 # Incompatibility
 - Due to how it is coded, any mod that changes the Conversion Task, will be incompatibility, without a patch.
 
