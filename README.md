@@ -7,7 +7,7 @@
 ## Planned Features
 See the GitHub Issues, for issues marked with "Enhancement" label.
 
-## Want my mod to support your languages?
+## Want my mod to support your language?
 If that is the case, then follow this short list, and add the missing translations.
 
 1. Fork This Repository.
