@@ -4,8 +4,21 @@
 - Makes Convert County automatically move on to other counties that need conversion
 - Adds decision to start conversion, so you don't have to find a valid target.
 
+## Planned Features
+See the GitHub Issues, for issues marked with "Enhancement" label.
+
+## Want my mod to support your language?
+If that is the case, then follow this short list, and add the missing translations.
+
+1. Fork This Repository.
+2. Make the nececarry localization files and translations.
+3. Create a Pull Request, wherein you explain the changes you have made i.e which language you have made support for.
+
+For this to work, CK3 has to support the language, so do keep that in mind.
+
 # Incompatibility
 - Due to how it is coded, any mod that changes the Conversion Task, will be incompatibility, without a patch.
+- Due to how it is coded, any mod that changes the Promote Culture Task, will be incompatibility, without a patch.
 
 # Issues/Bug
 If you encounter a bug/issue with my mod, check that you do not have something else installed, that the mod is incompatible with.
