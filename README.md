@@ -1,8 +1,10 @@
 # Easier Realm Management
 
 # Features
-- Makes Convert County automatically move on to other counties that need conversion
-- Adds decision to start conversion, so you don't have to find a valid target.
+- Allows Convert County to automatically move on to other counties that need their faith changed
+- Adds decision to start conversion of faith, so you don't have to find a valid target.
+- Allows Promote Culture to automatically move on to other counties that need their culture changed
+- Adds decision to start promotion of culture, so you don't have to find a valid target.
 
 ## Planned Features
 See the GitHub Issues, for issues marked with "Enhancement" label.
@@ -22,7 +24,7 @@ For this to work, CK3 has to support the language, so do keep that in mind.
 
 # Issues/Bug
 If you encounter a bug/issue with my mod, check that you do not have something else installed, that the mod is incompatible with.
-If you still have problems after this, then create an issue on the GitHub related to this mod. (https://github.com/WolfDKs-CK3-Modding/Easier-Culture-Religion-Spread)
+If you still have problems after this, then create an issue on the GitHub related to this mod. (https://github.com/WolfDKs-CK3-Modding/Easier-Realm-Management/issues)
 You can also write a comment on the steam workshop page, but it is more likely I will respond, if it is on a GitHub issue.
 
 # Credits
