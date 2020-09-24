@@ -1,0 +1,11 @@
+﻿l_english:
+erm_county_religion_conversion_t:0 "Convert the Heathens"
+erm_county_religion_conversion_desc:0 "Order your Chaplain to travels the realm and convert all holdings to your religion. In the name of your god(s)!"
+erm_county_religion_conversion_tooltip:0 "Start Conversion of your religion in your realm"
+erm_county_religion_conversion_confirm:0 "Start Conversion"
+
+erm_county_cultuer_promotion_t:0 "Convert the Foreigners"
+erm_county_cultuer_promotion_desc:0 "Order your Steward to travels the realm and convert all holdings to your culture."
+erm_county_cultuer_promotion_tooltip:0 "Start Promotion of your culture in your realm"
+erm_county_cultuer_promotion_confirm:0 "Start Promotion"
+

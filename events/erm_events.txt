@@ -1,14 +1,14 @@
-﻿namespace = auto_council
+﻿namespace = erm
 
 #
 # Events for decisions
 # Range - 0900-0999
 #
 
-auto_council.0900 = {
+erm.0900 = {
 	type = character_event
-	title = auto_council_0001_t
-	desc = auto_council_0001_desc
+	title = erm_0900_t
+	desc = erm_0900_desc
 	theme = faith
 
 	left_portrait = {
@@ -21,11 +21,11 @@ auto_council.0900 = {
 	}
 
 	immediate = {
-		debug_log = auto_council_debug_0001	#Firing event...
+		debug_log = erm_debug_0001	#Firing event...
 	}
 		
 	option = { # Start the Conversion
-		name = auto_council_0001_a
+		name = erm_0900_a
 		trigger = {
 			any_sub_realm_county = {
 				NOT = {
@@ -39,18 +39,18 @@ auto_council.0900 = {
 		}			
 		
 
-		trigger_event = auto_council.0002
+		trigger_event = erm.0001
 	}
 	
 	option = { # Cancel
-		name = auto_council_0001_b			
+		name = erm_0900_b			
 	}
 }
 
-auto_council.0901 = {
+erm.0901 = {
 	type = character_event
-	title = auto_council_0003_t
-	desc = auto_council_0003_desc
+	title = erm_0901_t
+	desc = erm_0901_desc
 	theme = culture_change
 
 	left_portrait = {
@@ -63,11 +63,11 @@ auto_council.0901 = {
 	}
 
 	immediate = {
-		debug_log = auto_council_debug_0007	#Firing event...
+		debug_log = erm_debug_0007	#Firing event...
 	}
 
 	option = { # Start the Conversion
-		name = auto_council_0003_a
+		name = erm_0901_a
 		trigger = {
 			any_sub_realm_county = {
 				NOT = {
@@ -80,10 +80,10 @@ auto_council.0901 = {
 			add_character_flag = { flag = allow_automatic_promote_culture }
 		}
 
-		trigger_event = auto_council.0004
+		trigger_event = erm.0002
 	}	
 
 	option = { # Cancel
-		name = auto_council_0003_b			
+		name = erm_0901_b			
 	}
 }

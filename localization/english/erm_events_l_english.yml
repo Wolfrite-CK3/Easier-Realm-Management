@@ -1,0 +1,17 @@
+﻿l_english:
+erm_0900_t:1 "To Convert the Heathens or Not"
+erm_0900_desc:1 "Should we start converting any Heathens to the religion of the mighty leader of this realm, or perhaps wait a little longer?"
+erm_0900_a:0 "Travel far and vide and preach of our god(s)!"
+erm_0900_b:0 "I need you at the council right now."
+
+erm_0001_mes1_t:0 "Converting Religion in [GetPlayer.MakeScope.Var('saved_scope').Title.GetNameNoTooltip]."
+erm_0001_mes1_description:0 "[GetPlayer.MakeScope.Var('heathens_count').GetValue] counties remain to be converted."
+
+erm_0901_t:0 "To Promote the Culture or Not"
+erm_0901_desc:0 "Should we start proming our culture amount the foreigners, or perhaps wait a little longer?"
+erm_0901_a:0 "Travel far and vide and teach them of our ways!"
+erm_0901_b:0 "I need you at the council right now."
+
+erm_0002_mes1_t:0 "Promoting Culture in [GetPlayer.MakeScope.Var('saved_scope').Title.GetNameNoTooltip]."
+erm_0002_mes1_description:0 "[GetPlayer.MakeScope.Var('foreigners_count').GetValue] counties remain to be converted."
+

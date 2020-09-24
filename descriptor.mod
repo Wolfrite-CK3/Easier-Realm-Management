@@ -1,8 +1,11 @@
 version="1.0"
 tags={
 	"Gameplay"
-	"Religion"
+	"Events"
+	"Decisions"
 	"Culture"
+	"Religion"
+	"Utilities"
 }
-name="Easier Culture-Religion Spread"
+name="Easier Realm Management"
 supported_version="1.0.3"

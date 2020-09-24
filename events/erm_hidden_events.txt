@@ -1,16 +1,16 @@
-﻿namespace = auto_council
+﻿namespace = erm
 
 #
 # Hidden Events for decisions
-# Range - 0000-0299
+# Range - 0001-0299
 #
 
-auto_council.0000 = {
+erm.0001 = {
 	hidden = yes
 	type = character_event
 
 	immediate = {
-		debug_log = auto_council_debug_0002 #Firing event...
+		debug_log = erm_debug_0002 #Firing event...
 		
 		every_sub_realm_county = {
 			if = {
@@ -33,7 +33,7 @@ auto_council.0000 = {
 				LVAR = heathens
 			}	
 						
-			debug_log = auto_council_debug_0003 #there is X counties in list...
+			debug_log = erm_debug_0003 #there is X counties in list...
 				
 			random_in_list = {
 				list = heathens
@@ -55,14 +55,14 @@ auto_council.0000 = {
 				send_interface_message = {
 					type = event_chancellor_task_good
 					right_icon = cp:councillor_court_chaplain
-					title = auto_council_0002_mes1_t
-					desc = auto_council_0002_mes1_description
-					tooltip = auto_council_0002_mes1_description					
+					title = erm_0001_mes1_t
+					desc = erm_0001_mes1_description
+					tooltip = erm_0001_mes1_description					
 				}
 
-				debug_log = auto_council_debug_0004 # all evaluated to true...
+				debug_log = erm_debug_0004 # all evaluated to true...
 			
-				debug_log = auto_council_debug_0005 #starting conversion of...
+				debug_log = erm_debug_0005 #starting conversion of...
 
 				cp:councillor_court_chaplain = {				
 					set_council_task = {
@@ -73,7 +73,7 @@ auto_council.0000 = {
 			}			
 
 			else = {				
-				debug_log = auto_council_debug_0006 # at least one evaluated to false															
+				debug_log = erm_debug_0006 # at least one evaluated to false															
 			}
 
 			remove_variable = heathens_count
@@ -82,12 +82,12 @@ auto_council.0000 = {
 	}
 }
 
-auto_council.0001 = {
+erm.0002 = {
 	hidden = yes
 	type = character_event
 
 	immediate = {
-		debug_log = auto_council_debug_0008 #Firing event...
+		debug_log = erm_debug_0008 #Firing event...
 		
 		every_sub_realm_county = {
 			if = {
@@ -110,7 +110,7 @@ auto_council.0001 = {
 				LVAR = foreigners
 			}	
 						
-			debug_log = auto_council_debug_0009 #there is X counties in list...
+			debug_log = erm_debug_0009 #there is X counties in list...
 				
 			
 
@@ -134,14 +134,14 @@ auto_council.0001 = {
 				send_interface_message = {
 					type = event_steward_task_good
 					right_icon = cp:councillor_steward
-					title = auto_council_0004_mes1_t
-					desc = auto_council_0004_mes1_description
-					tooltip = auto_council_0004_mes1_description					
+					title = erm_0002_mes1_t
+					desc = erm_0002_mes1_description
+					tooltip = erm_0002_mes1_description					
 				}
 
-				debug_log = auto_council_debug_0010 # all evaluated to true...
+				debug_log = erm_debug_0010 # all evaluated to true...
 			
-				debug_log = auto_council_debug_0011 #starting conversion of...
+				debug_log = erm_debug_0011 #starting conversion of...
 
 				cp:councillor_steward = {				
 					set_council_task = {
@@ -151,7 +151,7 @@ auto_council.0001 = {
 				}							
 			}			
 			else = {				
-				debug_log = auto_council_debug_0012 # at least one evaluated to false															
+				debug_log = erm_debug_0012 # at least one evaluated to false															
 			}
 
 			remove_variable = foreigners_count

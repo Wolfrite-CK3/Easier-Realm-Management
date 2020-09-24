@@ -1,6 +1,6 @@
-﻿namespace = auto_council_overwrite
+﻿namespace = erm_dublicates
 
-auto_council_overwrite.0001 = { # councillor_court_chaplain task_conversion on_finish_task_county letter
+erm_dublicates.0001 = { # councillor_court_chaplain task_conversion on_finish_task_county letter
 	type = letter_event
 	opening = {
 		desc = court_chaplain_task.0201.opening
@@ -44,7 +44,7 @@ auto_council_overwrite.0001 = { # councillor_court_chaplain task_conversion on_f
 					has_character_flag = allow_automatic_convert_religion
 				}
 				scope:councillor.liege = {
-					trigger_event = { id = auto_council.0000 }
+					trigger_event = { id = erm.0000 }
 				}
 			}
 			else = {
@@ -62,7 +62,7 @@ auto_council_overwrite.0001 = { # councillor_court_chaplain task_conversion on_f
 	}	
 }
 
-auto_council_overwrite.0002 = { # councillor_steward task_promote_culture on_finish_task_county letter
+erm_dublicates.0002 = { # councillor_steward task_promote_culture on_finish_task_county letter
 	type = letter_event
 	opening = {
 		desc = steward_task.0301.opening
@@ -96,7 +96,7 @@ auto_council_overwrite.0002 = { # councillor_steward task_promote_culture on_fin
 					has_character_flag = allow_automatic_promote_culture
 				}
 				scope:councillor.liege = {
-					trigger_event = { id = auto_council.0001 }
+					trigger_event = { id = erm.0001 }
 				}
 			}
 			else = {

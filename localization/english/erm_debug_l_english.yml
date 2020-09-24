@@ -1,0 +1,16 @@
+﻿l_english:
+erm_debug_0001:0 "Firing event: erm.0001"
+
+erm_debug_0002:0 "Firing event: erm.0002"
+erm_debug_0003:0 "In the Heathens list there are [GetPlayer.MakeScope.Var('heathens_count').GetValue] counties left"
+erm_debug_0004:0 "All of the following evaluated to true: \n - selected_county != null \n - councillor_court_chaplain.liege == root"
+erm_debug_0005:0 "Starting automatic conversion of religion in [GetPlayer.MakeScope.Var('saved_scope').Title.GetNameNoTooltip]"
+erm_debug_0006:0 "At least one of the following evaluated to false: \n - selected_county != null \n - councillor_court_chaplain.liege == root"
+
+erm_debug_0007:0 "Firing event: erm.0003"
+
+erm_debug_0008:0 "Firing event: erm.0004"
+erm_debug_0009:0 "In the Foreigners list there are [GetPlayer.MakeScope.Var('foreigners_count').GetValue] counties left"
+erm_debug_0010:0 "All of the following evaluated to true: \n - selected_county != null \n - councillor_steward.liege == root"
+erm_debug_0011:0 "Starting automatic promotion of culture in [GetPlayer.MakeScope.Var('saved_scope').Title.GetNameNoTooltip]"
+erm_debug_0012:0 "At least one of the following evaluated to false: \n - selected_county != null \n - councillor_steward.liege == root"
