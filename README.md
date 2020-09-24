@@ -1,4 +1,4 @@
-# Easier-Culture-Religion-Spread
+# Easier Realm Management
 
 # Features
 - Makes Convert County automatically move on to other counties that need conversion
