@@ -34,8 +34,8 @@ erm.0900 = {
 			}
 			exists = cp:councillor_court_chaplain
 		}
-		if = { limit = { NOT = { has_character_flag = allow_automatic_convert_religion} }
-			add_character_flag = { flag = allow_automatic_convert_religion}
+		if = { limit = { NOT = { has_character_flag = erm_allow_automatic_convert_religion } }
+			add_character_flag = { flag = erm_allow_automatic_convert_religion}
 		}			
 		
 
@@ -76,8 +76,8 @@ erm.0901 = {
 			}
 			exists = cp:councillor_steward
 		}	
-		if = { limit = { NOT = { has_character_flag = allow_automatic_promote_culture} }		
-			add_character_flag = { flag = allow_automatic_promote_culture }
+		if = { limit = { NOT = { has_character_flag = erm_allow_automatic_promote_culture} }		
+			add_character_flag = { flag = erm_allow_automatic_promote_culture }
 		}
 
 		trigger_event = erm.0002
@@ -85,5 +85,44 @@ erm.0901 = {
 
 	option = { # Cancel
 		name = erm_0901_b			
+	}
+}
+
+erm.0902 = {
+	type = character_event
+	title = erm_0902_t
+	desc = erm_0902_desc
+	theme = culture_change
+
+	left_portrait = {
+		character = root
+		animation = personality_rational
+	} 
+	right_portrait = {
+		character = cp:councillor_marshal
+		animation = personality_bold
+	}
+
+	immediate = {
+		debug_log = erm_debug_0013	#Firing event...
+	}
+
+	option = { # Start the Control
+		name = erm_0902_a
+		trigger = {
+			any_sub_realm_county = {
+				county_control < full_county_control 
+			}
+			exists = cp:councillor_marshal
+		}	
+		if = { limit = { NOT = { has_character_flag = erm_allow_automatic_increase_control } }		
+			add_character_flag = { flag = erm_allow_automatic_increase_control }
+		}
+
+		trigger_event = erm.0003
+	}	
+
+	option = { # Cancel
+		name = erm_0902_b			
 	}
 }

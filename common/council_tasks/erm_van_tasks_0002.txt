@@ -14,7 +14,7 @@
 			triggered_desc = {
 				trigger = {
 					scope:councillor_liege = {
-						has_character_flag = allow_automatic_promote_culture
+						has_character_flag = erm_allow_automatic_promote_culture
 					}
 				}
 				desc = erm_overwrite_0002_auto
@@ -22,7 +22,7 @@
 			triggered_desc = {
 				trigger = {
 					scope:councillor_liege = {
-						NOT = { has_character_flag = allow_automatic_promote_culture }
+						NOT = { has_character_flag = erm_allow_automatic_promote_culture }
 					}
 				}
 				desc = erm_overwrite_0002_van
@@ -421,7 +421,7 @@
 	on_finish_task_county = {
 		scope:councillor_liege = {
 			# Modfied by Easier-Culture-Religion-Spread
-			trigger_event = erm_dublicates.0002
+			trigger_event = erm_letters.0002
 			if = {
 				limit = {
 					is_independent_ruler = no

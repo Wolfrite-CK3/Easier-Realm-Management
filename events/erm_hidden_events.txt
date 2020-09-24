@@ -110,9 +110,7 @@ erm.0002 = {
 				LVAR = foreigners
 			}	
 						
-			debug_log = erm_debug_0009 #there is X counties in list...
-				
-			
+			debug_log = erm_debug_0009 #there is X counties in list...						
 
 			random_in_list = {
 				list = foreigners
@@ -157,5 +155,214 @@ erm.0002 = {
 			remove_variable = foreigners_count
 			remove_variable = saved_scope
 		}	
+	}
+}
+
+erm.0003 = {
+	hidden = yes
+	type = character_event
+
+	immediate = {
+		debug_log = erm_debug_00014 #Firing event...
+		
+		every_sub_realm_county = {
+			if = {
+				limit = { county_control < full_county_control }
+				add_to_list = rebels
+			}
+		}		
+
+		if = {
+			limit = {
+				list_size = {
+					name = rebels
+					value > 0
+				}
+				exists = cp:councillor_marshal			
+			}			
+
+			count_items_in_list_effect = {
+				LCOUNT = rebels_count
+				LVAR = rebels
+			}	
+						
+			debug_log = erm_debug_0015 #there is X counties in list...						
+
+			random_in_list = {
+				list = rebels
+				save_scope_as = selected_county
+				remove_from_list = rebels
+			}
+			
+			set_variable = {
+				name = saved_scope
+				value = scope:selected_county
+			}				
+
+			if = {
+				limit = { 
+					exists = scope:selected_county
+					cp:councillor_marshal.liege = root
+				}
+
+				send_interface_message = {
+					type = event_marshal_task_good
+					right_icon = cp:councillor_marshal
+					title = erm_0003_mes1_t
+					desc = erm_0003_mes1_description
+					tooltip = erm_0003_mes1_description					
+				}
+
+				debug_log = erm_debug_0016 # all evaluated to true...
+			
+				debug_log = erm_debug_0017 #starting control in...
+
+				cp:councillor_marshal = {				
+					set_council_task = {
+						task_type = task_increase_control
+						target = scope:selected_county.title_province
+					}				
+				}							
+			}			
+			else = {				
+				debug_log = erm_debug_0018 # at least one evaluated to false															
+			}
+
+			remove_variable = rebels_count
+			remove_variable = saved_scope
+		}	
+}
+
+#
+# Hidden Events for Letters
+# Range: 0400-0599
+#
+
+erm.0400 = {
+	hidden = yes
+	type = letter_event
+	sender = scope:councillor
+
+	immediate = {
+		scope:county = {
+			set_county_faith = scope:councillor.faith
+		}
+
+		if = {
+			limit = {
+				scope:councillor = {
+					has_council_position = councillor_court_chaplain
+				}
+			}
+
+			if = {
+				limit = {
+					scope:councillor.liege = {
+						any_sub_realm_county = {
+							NOT = { title.religion = PREV.faith.religion }
+						}
+					}
+					has_character_flag = erm_allow_automatic_convert_religion
+				}
+				scope:councillor.liege = {
+					trigger_event = { id = erm.0000 }
+				}
+			}
+			else = {
+				scope:councillor = {
+					start_default_task = yes
+				}
+				scope:councillor.liege = {
+					if = {
+						limit = { has_character_flag = erm_allow_automatic_convert_religion	}
+						remove_character_flag = erm_allow_automatic_convert_religion
+					}
+				}
+			}
+		}
+	}
+}
+
+erm.0401 = {
+	hidden = yes
+	type = letter_event
+	sender = scope:councillor
+
+	immediate = {
+		scope:county = {
+			set_county_culture = scope:councillor_liege.culture
+		}
+
+		if = {
+			limit = {
+				scope:councillor = {
+					has_council_position = councillor_steward
+				}
+			}
+			if = {
+				limit = {
+					scope:councillor.liege = {
+						any_sub_realm_county = {
+							NOT = { culture  = PREV.culture }
+						}
+					}
+					has_character_flag = erm_allow_automatic_promote_culture
+				}
+				scope:councillor.liege = {
+					trigger_event = { id = erm.0001 }
+				}
+			}
+			else = {
+				scope:councillor = {
+					start_default_task = yes
+				}
+				scope:councillor.liege = {
+					if = {
+						limit = { has_character_flag = erm_allow_automatic_promote_culture	}
+						remove_character_flag = erm_allow_automatic_promote_culture
+					}
+				}
+			}
+		}
+	}
+}
+
+erm.0402 = {
+	hidden = yes
+	type = letter_event
+	sender = scope:councillor
+
+	immediate = {
+		if = {
+			limit = {
+				scope:councillor = {
+					has_council_position = councillor_marshal
+				}
+			}
+			if = {
+				limit = {
+					scope:councillor.liege = {
+						any_sub_realm_county = {
+							county_control < full_county_control 
+						}
+					}
+					has_character_flag = allow_automatic_increase_control
+				}
+				scope:councillor.liege = {
+					trigger_event = { id = erm.0003 }
+				}
+			}
+			else = {
+				scope:councillor = {
+					start_default_task = yes
+				}
+				scope:councillor.liege = {
+					if = {
+						limit = { has_character_flag = allow_automatic_increase_control	}
+						remove_character_flag = allow_automatic_increase_control
+					}
+				}
+			}
+		}
 	}
 }

@@ -6,7 +6,7 @@
 	major = no
 
 	# uncomment cooldown, when mod is done
-	#cooldown = { days = 60 }
+	#cooldown = { days = 30 }
 
 	confirm_text = erm_county_religion_conversion_confirm
 	selection_tooltip = erm_county_religion_conversion_tooltip
@@ -37,18 +37,18 @@
 	}
 }
 
-erm_county_cultuer_promotion_decision = {
+erm_county_culture_promotion_decision = {
 	
-	title = erm_county_cultuer_promotion_t
-	desc = erm_county_cultuer_promotion_desc	
+	title = erm_county_culture_promotion_t
+	desc = erm_county_culture_promotion_desc	
 	picture = "gfx/interface/illustrations/decisions/decision_realm.dds"
 	major = no
 
 	# uncomment cooldown, when mod is done
-	#cooldown = { days = 60 }
+	#cooldown = { days = 30 }
 
-	confirm_text = erm_county_cultuer_promotion_confirm
-	selection_tooltip = erm_county_cultuer_promotion_tooltip
+	confirm_text = erm_county_culture_promotion_confirm
+	selection_tooltip = erm_county_culture_promotion_tooltip
 	ai_check_interval = 0
 	
 	is_shown = {
@@ -73,5 +73,44 @@ erm_county_cultuer_promotion_decision = {
 
 	effect = {
 		trigger_event = erm.0901
+	}
+}
+
+erm_county_increase_control_decision = {
+	
+	title = erm_county_increase_control_t
+	desc = erm_county_increase_control_desc	
+	picture = "gfx/interface/illustrations/decisions/decision_realm.dds"
+	major = no
+
+	# uncomment cooldown, when mod is done
+	#cooldown = { days = 30 }
+
+	confirm_text = erm_county_increase_control_confirm
+	selection_tooltip = erm_county_increase_control_tooltip
+	ai_check_interval = 0
+	
+	is_shown = {
+		highest_held_title_tier >= tier_duchy
+	}
+
+	is_valid_showing_failures_only = {	
+
+	} 	
+
+	is_valid = {
+
+	}
+	
+	ai_potential = {
+		always = no
+	}
+
+	ai_will_do = {
+		base = 0
+	}
+
+	effect = {
+		trigger_event = erm.0902
 	}
 }

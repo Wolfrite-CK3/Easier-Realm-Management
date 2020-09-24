@@ -8,10 +8,21 @@ erm_0001_mes1_t:0 "Converting Religion in [GetPlayer.MakeScope.Var('saved_scope'
 erm_0001_mes1_description:0 "[GetPlayer.MakeScope.Var('heathens_count').GetValue] counties remain to be converted."
 
 erm_0901_t:0 "To Promote the Culture or Not"
-erm_0901_desc:0 "Should we start proming our culture amount the foreigners, or perhaps wait a little longer?"
+erm_0901_desc:0 "Should we start promoting our culture amoung the foreigners, or perhaps wait a little longer?"
 erm_0901_a:0 "Travel far and vide and teach them of our ways!"
 erm_0901_b:0 "I need you at the council right now."
 
 erm_0002_mes1_t:0 "Promoting Culture in [GetPlayer.MakeScope.Var('saved_scope').Title.GetNameNoTooltip]."
 erm_0002_mes1_description:0 "[GetPlayer.MakeScope.Var('foreigners_count').GetValue] counties remain to be converted."
 
+erm_letters_0003_opening:0 "[councillor.Custom2('AppropriateGreeting', ROOT.Char)]"
+erm_letters_0003_county_complete:0 "With the help of [councillor.GetFirstNameNoTooltip], we have seized full control of [county.GetNameNoTier]."
+erm_letters_0003_a:0 "Great work, [councillor.GetFirstNameNoTooltip]!"
+
+erm_0902_t:0 "To Seize Control or Not"
+erm_0902_desc:0 "Should we start to increase control in our realm, or perhaps wait a little longer?"
+erm_0902_a:0 "Travel far and vide and enfore my rule!"
+erm_0902_b:0 "I need you at the council right now."
+
+erm_0003_mes1_t:0 "Increasing control in [GetPlayer.MakeScope.Var('saved_scope').Title.GetNameNoTooltip]."
+erm_0003_mes1_description:0 "[GetPlayer.MakeScope.Var('rebels_count').GetValue] counties remain to be put under control."

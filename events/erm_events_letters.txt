@@ -1,0 +1,62 @@
+﻿namespace = erm_letters
+
+erm_letters.0001 = { # councillor_court_chaplain task_conversion on_finish_task_county letter
+	type = letter_event
+	opening = {
+		desc = court_chaplain_task.0201.opening
+	}
+	desc = court_chaplain_task.0201.county_complete
+	sender = scope:councillor
+
+	option = {
+		name = court_chaplain_task.0201.a
+		trigger = {
+			scope:councillor.faith = root.faith
+		}
+	}
+
+	option = {
+		name = court_chaplain_task.0201.b
+		trigger = {
+			NOT = { scope:councillor.faith = root.faith }
+		}		
+	}
+
+	immediate = {
+		trigger_event = erm.0400
+	}	
+}
+
+erm_letters.0002 = { # councillor_steward task_promote_culture on_finish_task_county letter
+	type = letter_event
+	opening = {
+		desc = steward_task.0301.opening
+	}
+	desc = steward_task.0301.county_complete
+	sender = scope:councillor
+
+	option = {
+		name = steward_task.0301.a		
+	}
+
+	immediate = {
+		trigger_event = erm.0401
+	}
+}
+
+erm_letters.0003 = {
+	type = letter_event
+	opening = {
+		desc = erm_letters_0003_opening
+	}
+	desc = erm_letters_0003_county_complete
+	sender = scope:councillor
+
+	option = {
+		name = erm_letters_0003_a		
+	}
+
+	immediate = {
+		trigger_event = erm.0402		
+	}	
+}
