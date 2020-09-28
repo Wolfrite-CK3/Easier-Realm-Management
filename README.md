@@ -9,6 +9,9 @@
 ## Planned Features
 See the GitHub Issues, for issues marked with "Enhancement" label.
 
+## Supported languages
+ - English
+
 ## Want my mod to support your language?
 If that is the case, then follow this short list, and add the missing translations.
 
@@ -21,8 +24,9 @@ For this to work, CK3 has to support the language, so do keep that in mind.
 # Incompatibility
 - Due to how it is coded, any mod that changes the Conversion Task, will be incompatibility, without a patch.
 - Due to how it is coded, any mod that changes the Promote Culture Task, will be incompatibility, without a patch.
+- Due to how it is coded, any mod that changes the Increase Control Task, will be incompatibility, without a patch.
 
-# Issues/Bug
+# Issues/Bugs
 If you encounter a bug/issue with my mod, check that you do not have something else installed, that the mod is incompatible with.
 If you still have problems after this, then create an issue on the GitHub related to this mod. (https://github.com/WolfDKs-CK3-Modding/Easier-Realm-Management/issues)
 You can also write a comment on the steam workshop page, but it is more likely I will respond, if it is on a GitHub issue.
