@@ -9,7 +9,7 @@
 - Adds decision to start increase control, so you don't have to find a valid target.
 
 ## Planned Features
-See the GitHub Issues, for issues marked with "Enhancement" label.
+See the GitHub Issues, for issues marked with "Enhancement" label. Issues marked with "Enhancement" also tend to have another label, indicateing for which version of the mod, i am planning to have that feature implemented in. At the moment i am working toward any marked with "V1.0.0"
 
 ## Supported languages
  - English
