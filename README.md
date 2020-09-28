@@ -5,6 +5,8 @@
 - Adds decision to start conversion of faith, so you don't have to find a valid target.
 - Allows Promote Culture to automatically move on to other counties that need their culture changed
 - Adds decision to start promotion of culture, so you don't have to find a valid target.
+- Allows Increase Control to automatically move on to other counties that need their control increased
+- Adds decision to start increase control, so you don't have to find a valid target.
 
 ## Planned Features
 See the GitHub Issues, for issues marked with "Enhancement" label.
