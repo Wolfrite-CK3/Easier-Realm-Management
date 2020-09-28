@@ -22,3 +22,5 @@ erm_debug_0015:0 "In the Foreigners list there are [GetPlayer.MakeScope.Var('reb
 erm_debug_0016:0 "All of the following evaluated to true: \n - selected_county != null \n - councillor_marshal.liege == root"
 erm_debug_0017:0 "Starting automatic increase of control in [GetPlayer.MakeScope.Var('saved_scope').Title.GetNameNoTooltip]"
 erm_debug_0018:0 "At least one of the following evaluated to false: \n - selected_county != null \n - councillor_marshal.liege == root"
+
+erm_debug_0014:0 "Firing event: erm.0950"

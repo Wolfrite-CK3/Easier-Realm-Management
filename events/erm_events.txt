@@ -126,3 +126,217 @@ erm.0902 = {
 		name = erm_0902_b			
 	}
 }
+
+erm.0950 = { # Mute Start
+	type = character_event
+	title = erm_0950_t
+	desc = erm_0950_desc
+
+	left_portrait = {
+		character = root
+		animation = personality_rational
+	} 
+
+	immediate = {
+		debug_log = erm_debug_0014
+
+		if = {
+			limit = {
+				exists = cp:councillor_court_chaplain
+			}
+			cp:councillor_court_chaplain = {
+				save_scope_as = court_chaplain
+			}
+			set_variable = {
+				name = saved_court_chaplain
+				value = scope:court_chaplain
+			}
+		}
+		
+		if = {
+			limit = {
+				exists = cp:councillor_steward
+			}
+			cp:councillor_steward = {
+				save_scope_as = steward				
+			}
+			set_variable = {
+				name = saved_steward
+				value = scope:steward
+			}
+		}
+		
+		if = {
+			limit = {
+				exists = cp:councillor_marshal
+			}
+			cp:councillor_marshal = {
+				save_scope_as = marshal				
+			}
+			set_variable = {
+				name = saved_marshal
+				value = scope:marshal
+			}
+		}
+	}
+
+	option = {
+		name = erm_0950_a
+		trigger = {
+			exists = cp:councillor_court_chaplain
+		}
+
+		remove_variable = saved_steward
+		remove_variable = saved_marshal
+
+		trigger_event = erm.0951
+	}
+
+	option = {
+		name = erm_0950_c
+		trigger = {
+			exists = cp:councillor_steward
+		}
+
+		remove_variable = saved_court_chaplain		
+		remove_variable = saved_marshal
+		
+		trigger_event = erm.0953
+	}
+
+	option = {
+		name = erm_0950_d
+		trigger = {
+			exists = cp:councillor_marshal
+		}
+
+		remove_variable = saved_court_chaplain
+		remove_variable = saved_steward
+
+		trigger_event = erm.0954
+	}
+
+	option = { # Cancel
+		name = erm_0950_f			
+	}
+}
+
+erm.0951 = { # Mute Court Chaplain
+	type = character_event
+	title = erm_0951_t
+	desc = erm_mute_desc
+
+	left_portrait = {
+		character = root
+		animation = personality_rational
+	} 
+
+	right_portrait = {
+		character = cp:councillor_court_chaplain
+		animation = personality_rational
+	}
+
+	option = {
+		name = erm_0951_a_off
+		trigger = {
+			NOT = { has_character_flag = erm_mute_task_conversion } 
+		}
+		add_character_flag = { flag = erm_mute_task_conversion }
+		trigger_event = erm.0951
+	}
+
+	option = {
+		name = erm_0951_a_on
+		trigger = {
+			has_character_flag = erm_mute_task_conversion
+		}
+		remove_character_flag = erm_mute_task_conversion 
+		trigger_event = erm.0951
+	}
+
+	option = {
+		name = erm_mute_complete
+
+		remove_variable = saved_court_chaplain
+	}
+}
+
+erm.0953 = { # Mute Steward
+	type = character_event
+	title = erm_0953_t
+	desc = erm_mute_desc
+
+	left_portrait = {
+		character = root
+		animation = personality_rational
+	} 
+
+	right_portrait = {
+		character = cp:councillor_steward
+		animation = personality_rational
+	}
+
+	option = {
+		name = erm_0953_a_off
+		trigger = {
+			NOT = { has_character_flag = erm_mute_task_promote_culture } 
+		}
+		add_character_flag = { flag = erm_mute_task_promote_culture }
+		trigger_event = erm.0953
+	}
+
+	option = {
+		name = erm_0953_a_on
+		trigger = {
+			has_character_flag = erm_mute_task_promote_culture
+		}
+		remove_character_flag = erm_mute_task_promote_culture 
+		trigger_event = erm.0953
+	}
+
+	option = {
+		name = erm_mute_complete
+
+		remove_variable = saved_steward
+	}
+}
+
+erm.0954 = { # Mute Marshal
+	type = character_event
+	title = erm_0954_t
+	desc = erm_mute_desc
+
+	left_portrait = {
+		character = root
+		animation = personality_rational
+	} 
+
+	right_portrait = {
+		character = cp:councillor_marshal
+		animation = personality_rational
+	}
+
+	option = {
+		name = erm_0954_a_off
+		trigger = {
+			NOT = { has_character_flag = erm_mute_task_increase_control } 
+		}
+		add_character_flag = { flag = erm_mute_task_increase_control }
+		trigger_event = erm.0954
+	}
+
+	option = {
+		name = erm_0954_a_on
+		trigger = {
+			has_character_flag = erm_mute_task_increase_control
+		}
+		remove_character_flag = erm_mute_task_increase_control 
+		trigger_event = erm.0954
+	}
+
+	option = {
+		name = erm_mute_complete
+
+		remove_variable = saved_marshal
+	}
+}
