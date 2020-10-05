@@ -15,6 +15,6 @@ erm_county_increase_control_tooltip:0 "Seize control in your realm"
 erm_county_increase_control_confirm:0 "Seize control"
 
 erm_mute_councillor_t:0 "Silence Councillor Letters"
-erm_mute_councillor_desc:0 "Stop the chosen councillor type's chosen task from sending letters. The task will still be performed as normal. To silence a task, you do need to have at least on councillor of that type. \n If any task, who normaly require a simple yes/no decision, is silenced, the most kind response is chosen automaticly. \n \n The silencing ONLY effect letters!"
+erm_mute_councillor_desc:0 "Stop the chosen councillor type's chosen task from sending letters. The task will still be performed as normal. To silence a task, you do need to have a councillor of that type. \nIf any task, who normaly require a simple yes/no decision, is silenced, the most kind response is chosen automaticly. \n \n The silencing ONLY effect letters!"
 erm_mute_councillor_tooltip:0 "Silence Letters from a chosen Task"
 erm_mute_councillor_confirm:0 "Silence Letters"

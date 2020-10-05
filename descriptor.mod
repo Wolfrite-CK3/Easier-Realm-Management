@@ -8,4 +8,4 @@ tags={
 	"Utilities"
 }
 name="Easier Realm Management"
-supported_version="1.0.3"
+supported_version="1.1.2"

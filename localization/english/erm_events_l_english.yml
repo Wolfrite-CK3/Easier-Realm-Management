@@ -45,6 +45,6 @@ erm_0953_t:0 "Silencing Letters from [GetPlayer.MakeScope.Var('saved_steward').M
 erm_0953_a_on:0 "I do want letters, when you are done with a Promotion of culture"
 erm_0953_a_off:0 "I do NOT want letters, when you are done with a Conversion of culture"
 
-erm_0953_t:0 "Silencing Letters from [GetPlayer.MakeScope.Var('saved_marshal').MyCouncillorsTitle]"
-erm_0953_a_on:0 "I do want letters, when you are done with a Promotion of culture"
-erm_0953_a_off:0 "I do NOT want letters, when you are done with a Conversion of culture"
+erm_0954_t:0 "Silencing Letters from [GetPlayer.MakeScope.Var('saved_marshal').MyCouncillorsTitle]"
+erm_0954_a_on:0 "I do want letters, when you are done with a Promotion of culture"
+erm_0954_a_off:0 "I do NOT want letters, when you are done with a Conversion of culture"

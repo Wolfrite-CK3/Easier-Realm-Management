@@ -163,7 +163,7 @@ erm.0003 = {
 	type = character_event
 
 	immediate = {
-		debug_log = erm_debug_00014 #Firing event...
+		debug_log = erm_debug_0014 #Firing event...
 		
 		every_sub_realm_county = {
 			if = {
@@ -231,6 +231,7 @@ erm.0003 = {
 			remove_variable = rebels_count
 			remove_variable = saved_scope
 		}	
+	}
 }
 
 #
@@ -240,10 +241,9 @@ erm.0003 = {
 
 erm.0400 = {
 	hidden = yes
-	type = letter_event
-	sender = scope:councillor
+	type = character_event
 
-	immediate = {
+	immediate = {		
 		scope:county = {
 			set_county_faith = scope:councillor.faith
 		}
@@ -259,13 +259,13 @@ erm.0400 = {
 				limit = {
 					scope:councillor.liege = {
 						any_sub_realm_county = {
-							NOT = { title.religion = PREV.faith.religion }
+							NOT = { faith = PREV.faith }
 						}
 					}
 					has_character_flag = erm_allow_automatic_convert_religion
 				}
 				scope:councillor.liege = {
-					trigger_event = { id = erm.0000 }
+					trigger_event = { id = erm.0001 }
 				}
 			}
 			else = {
@@ -285,10 +285,9 @@ erm.0400 = {
 
 erm.0401 = {
 	hidden = yes
-	type = letter_event
-	sender = scope:councillor
+	type = character_event
 
-	immediate = {
+	immediate = {		
 		scope:county = {
 			set_county_culture = scope:councillor_liege.culture
 		}
@@ -309,7 +308,7 @@ erm.0401 = {
 					has_character_flag = erm_allow_automatic_promote_culture
 				}
 				scope:councillor.liege = {
-					trigger_event = { id = erm.0001 }
+					trigger_event = { id = erm.0002 }
 				}
 			}
 			else = {
@@ -329,8 +328,7 @@ erm.0401 = {
 
 erm.0402 = {
 	hidden = yes
-	type = letter_event
-	sender = scope:councillor
+	type = character_event
 
 	immediate = {
 		if = {
@@ -346,7 +344,7 @@ erm.0402 = {
 							county_control < full_county_control 
 						}
 					}
-					has_character_flag = allow_automatic_increase_control
+					has_character_flag = erm_allow_automatic_increase_control
 				}
 				scope:councillor.liege = {
 					trigger_event = { id = erm.0003 }
@@ -358,8 +356,8 @@ erm.0402 = {
 				}
 				scope:councillor.liege = {
 					if = {
-						limit = { has_character_flag = allow_automatic_increase_control	}
-						remove_character_flag = allow_automatic_increase_control
+						limit = { has_character_flag = erm_allow_automatic_increase_control	}
+						remove_character_flag = erm_allow_automatic_increase_control
 					}
 				}
 			}

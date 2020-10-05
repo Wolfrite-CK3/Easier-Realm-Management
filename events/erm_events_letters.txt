@@ -44,7 +44,7 @@ erm_letters.0002 = { # councillor_steward task_promote_culture on_finish_task_co
 	}
 }
 
-erm_letters.0003 = {
+erm_letters.0003 = { # councillor_marshal task_increase_control on_finish_task_county letter
 	type = letter_event
 	opening = {
 		desc = erm_letters_0003_opening
@@ -57,6 +57,8 @@ erm_letters.0003 = {
 	}
 
 	immediate = {
+		debug_log = erm_debug_0020
+
 		trigger_event = erm.0402		
 	}	
 }

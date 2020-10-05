@@ -1,4 +1,4 @@
-task_increase_control = {
+﻿task_increase_control = {
 	position = councillor_marshal
 
 	task_type = task_type_county
@@ -11,7 +11,28 @@ task_increase_control = {
 	restart_on_finish = yes # If it "finishes" by removing a corruption modifier, there'll still be control to regain
 
 	effect_desc = {
+		# Modfied by Easier-Culture-Religion-Spread
+		desc = {
+			triggered_desc = {
+				trigger = {
+					scope:councillor_liege = {
+						has_character_flag = erm_allow_automatic_increase_control
+					}
+				}
+				desc = erm_overwrite_0003_auto
+			}
+			triggered_desc = {
+				trigger = {
+					scope:councillor_liege = {
+						NOT = { has_character_flag = erm_allow_automatic_increase_control }
+					}
+				}
+				desc = erm_overwrite_0003_van
+			}			
+		}
+		
 		desc = task_increase_control_effect_desc
+
 		desc = {
 			desc = council_task_possible_side_effects
 			triggered_desc = {

@@ -131,6 +131,7 @@ erm.0950 = { # Mute Start
 	type = character_event
 	title = erm_0950_t
 	desc = erm_0950_desc
+	theme = friendly
 
 	left_portrait = {
 		character = root
@@ -138,7 +139,7 @@ erm.0950 = { # Mute Start
 	} 
 
 	immediate = {
-		debug_log = erm_debug_0014
+		debug_log = erm_debug_0019
 
 		if = {
 			limit = {
@@ -225,6 +226,7 @@ erm.0951 = { # Mute Court Chaplain
 	type = character_event
 	title = erm_0951_t
 	desc = erm_mute_desc
+	theme = friendly
 
 	left_portrait = {
 		character = root
@@ -265,6 +267,7 @@ erm.0953 = { # Mute Steward
 	type = character_event
 	title = erm_0953_t
 	desc = erm_mute_desc
+	theme = friendly
 
 	left_portrait = {
 		character = root
@@ -305,6 +308,7 @@ erm.0954 = { # Mute Marshal
 	type = character_event
 	title = erm_0954_t
 	desc = erm_mute_desc
+	theme = friendly
 
 	left_portrait = {
 		character = root
