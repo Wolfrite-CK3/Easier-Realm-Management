@@ -193,9 +193,12 @@
 		if = {
 			limit = {
 				scope:county = {
-					county_control = full_county_control
+					county_control >= full_county_control
+					has_county_corruption_trigger = no					
 				}
+				NOT = { has_character_flag = erm_stop_multiple_letters}
 			}
+			add_character_flag = { flag = erm_stop_multiple_letters days = 7 }
 			trigger_event = erm_letters.0003
 		}
 	}

@@ -244,6 +244,8 @@ erm.0400 = {
 	type = character_event
 
 	immediate = {		
+		#debug_log = erm_debug_0023
+
 		scope:county = {
 			set_county_faith = scope:councillor.faith
 		}
@@ -261,8 +263,10 @@ erm.0400 = {
 						any_sub_realm_county = {
 							NOT = { faith = PREV.faith }
 						}
+						has_character_flag = erm_allow_automatic_convert_religion
+						is_ai = no
 					}
-					has_character_flag = erm_allow_automatic_convert_religion
+					
 				}
 				scope:councillor.liege = {
 					trigger_event = { id = erm.0001 }
@@ -274,7 +278,10 @@ erm.0400 = {
 				}
 				scope:councillor.liege = {
 					if = {
-						limit = { has_character_flag = erm_allow_automatic_convert_religion	}
+						limit = { 
+							is_ai = no
+							has_character_flag = erm_allow_automatic_convert_religion
+						}
 						remove_character_flag = erm_allow_automatic_convert_religion
 					}
 				}
@@ -288,6 +295,8 @@ erm.0401 = {
 	type = character_event
 
 	immediate = {		
+		#debug_log = erm_debug_0024
+
 		scope:county = {
 			set_county_culture = scope:councillor_liege.culture
 		}
@@ -304,8 +313,10 @@ erm.0401 = {
 						any_sub_realm_county = {
 							NOT = { culture  = PREV.culture }
 						}
+						has_character_flag = erm_allow_automatic_promote_culture
+						is_ai = no
 					}
-					has_character_flag = erm_allow_automatic_promote_culture
+					
 				}
 				scope:councillor.liege = {
 					trigger_event = { id = erm.0002 }
@@ -317,7 +328,10 @@ erm.0401 = {
 				}
 				scope:councillor.liege = {
 					if = {
-						limit = { has_character_flag = erm_allow_automatic_promote_culture	}
+						limit = {
+							is_ai = no
+							has_character_flag = erm_allow_automatic_promote_culture
+						}
 						remove_character_flag = erm_allow_automatic_promote_culture
 					}
 				}
@@ -330,7 +344,9 @@ erm.0402 = {
 	hidden = yes
 	type = character_event
 
-	immediate = {
+	immediate = {	
+		#debug_log = erm_debug_0025
+
 		if = {
 			limit = {
 				scope:councillor = {
@@ -343,8 +359,10 @@ erm.0402 = {
 						any_sub_realm_county = {
 							county_control < full_county_control 
 						}
+						has_character_flag = erm_allow_automatic_increase_control
+						is_ai = no
 					}
-					has_character_flag = erm_allow_automatic_increase_control
+					
 				}
 				scope:councillor.liege = {
 					trigger_event = { id = erm.0003 }
@@ -356,7 +374,10 @@ erm.0402 = {
 				}
 				scope:councillor.liege = {
 					if = {
-						limit = { has_character_flag = erm_allow_automatic_increase_control	}
+						limit = {
+							is_ai = no
+							has_character_flag = erm_allow_automatic_increase_control	
+						}
 						remove_character_flag = erm_allow_automatic_increase_control
 					}
 				}

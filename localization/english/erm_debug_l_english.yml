@@ -25,4 +25,10 @@ erm_debug_0018:0 "At least one of the following evaluated to false: \n - selecte
 
 erm_debug_0019:0 "Firing event: erm.0950"
 
-erm_debug_0020:0 "Firing event: erm_letters.0003"
+erm_debug_0020:0 "Firing event: erm_letters.0001"
+erm_debug_0021:0 "Firing event: erm_letters.0002"
+erm_debug_0022:0 "Firing event: erm_letters.0003"
+
+erm_debug_0023:0 "Firing event: erm.0400"
+erm_debug_0024:0 "Firing event: erm.0401"
+erm_debug_0025:0 "Firing event: erm.0402"

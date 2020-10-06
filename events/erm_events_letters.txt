@@ -23,6 +23,8 @@ erm_letters.0001 = { # councillor_court_chaplain task_conversion on_finish_task_
 	}
 
 	immediate = {
+		#debug_log = erm_debug_0020
+
 		trigger_event = erm.0400
 	}	
 }
@@ -40,6 +42,8 @@ erm_letters.0002 = { # councillor_steward task_promote_culture on_finish_task_co
 	}
 
 	immediate = {
+		#debug_log = erm_debug_0021
+
 		trigger_event = erm.0401
 	}
 }
@@ -49,7 +53,7 @@ erm_letters.0003 = { # councillor_marshal task_increase_control on_finish_task_c
 	opening = {
 		desc = erm_letters_0003_opening
 	}
-	desc = erm_letters_0003_county_complete
+	desc = erm_letters_0003_county_complete	
 	sender = scope:councillor
 
 	option = {
@@ -57,7 +61,7 @@ erm_letters.0003 = { # councillor_marshal task_increase_control on_finish_task_c
 	}
 
 	immediate = {
-		debug_log = erm_debug_0020
+		#debug_log = erm_debug_0022
 
 		trigger_event = erm.0402		
 	}	
