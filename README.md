@@ -2,24 +2,24 @@
 
 # Features
 - The ability for councillors to automaticly move on to other counties that need their...
- - Religion Changed
- - Culture Changed
- - Control Increased
+  - Religion Changed
+  - Culture Changed
+  - Control Increased
  
 - Adds decisions to assign councillors to perform vertain task withut having to find valid targets...
- - Convert Religion
- - Promote Culture
- - Increase Control
+  - Convert Religion
+  - Promote Culture
+  - Increase Control
  
 - The ability to toggle on or off, moving on to other counties that need their...
- - Religion Changed
- - Culture Changed
- - Control Increased
+  - Religion Changed
+  - Culture Changed
+  - Control Increased
  
 - The ability to toggle on or off, letters sent by the councillors when they complete...
- - Convert Religion
- - Promote Culture
- - Increase Control
+  - Convert Religion
+  - Promote Culture
+  - Increase Control
  
 ## Planned Features
 See the GitHub Issues, for issues marked with "Enhancement" label. Issues marked with "Enhancement" also tend to have another label, indicating for which version of the mod, I am planning to have that feature implemented in. At the moment I am working toward any marked with "V1.0.0"
