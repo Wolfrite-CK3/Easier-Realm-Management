@@ -6,7 +6,7 @@
   - Culture Changed
   - Control Increased
  
-- Adds decisions to assign councillors to perform vertain task withut having to find valid targets...
+- Adds decisions to assign councillors to perform certain task withut having to find valid targets...
   - Convert Religion
   - Promote Culture
   - Increase Control
