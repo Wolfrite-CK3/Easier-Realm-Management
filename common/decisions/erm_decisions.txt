@@ -146,3 +146,35 @@ erm_mute_councillor_decision = {
 		trigger_event = erm.0950
 	}
 }
+
+erm_alter_tasks_decision = {
+	title = erm_alter_tasks_t
+	desc = erm_alter_tasks_desc
+
+	picture = "gfx/interface/illustrations/decisions/decision_realm.dds"
+	major = no
+
+	confirm_text = erm_alter_tasks_confirm
+	selection_tooltip = erm_alter_tasks_tooltip
+	ai_check_interval = 0
+
+	is_valid_showing_failures_only = {	
+
+	} 	
+
+	is_valid = {
+
+	}
+	
+	ai_potential = {
+		always = no
+	}
+
+	ai_will_do = {
+		base = 0
+	}
+
+	effect = {
+		trigger_event = erm.1000
+	}
+}

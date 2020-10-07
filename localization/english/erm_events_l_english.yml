@@ -48,3 +48,32 @@ erm_0953_a_off:0 "I do NOT want letters, when you are done with a Conversion of 
 erm_0954_t:0 "Silencing Letters from [GetPlayer.MakeScope.Var('saved_marshal').GetCharacter.GetCouncilTitle]"
 erm_0954_a_on:0 "I do want letters, when you are done with Increasing control"
 erm_0954_a_off:0 "I do NOT want letters, when you are done with Increasing control"
+
+erm_1000_t:0 "Alter Tasks Functionality"
+erm_1000_desc:0 "Perhaps i could ask my councillors to perform some of their tasks differently. \n \nBut whos tasks should be performed differently?"
+erm_1000_a:0 "My [GetPlayer.MakeScope.Var('saved_court_chaplain').GetCharacter.GetCouncilTitle ]"
+erm_1000_c:0 "My [GetPlayer.MakeScope.Var('saved_steward').GetCharacter.GetCouncilTitle ]"
+erm_1000_d:0 "My [GetPlayer.MakeScope.Var('saved_marshal').GetCharacter.GetCouncilTitle ]"
+erm_1000_f:0 "Nevermind"
+
+erm_mode_desc:0 "I would like to have a chat about how you perform your task..."
+erm_mode_complete:0 "Everything is as it should be, for now..."
+
+erm_1001_t:0 "Alter Task Functionality"
+erm_1001_desc:0 "Now which task should be performed differently?"
+erm_1001_cancel:0 "Nevermind"
+erm_1001_convert_religion:0 "Convert Religion"
+erm_1001_promote_culture:0 "Promote Culture"
+erm_1001_increase_control:0 "Increase Control"
+
+erm_1011_t:0 "Altering Convert Religion Task"
+erm_1011_a_on:0 "I want you to return to the court, when you are done."
+erm_1011_a_off:0 "I want you to continue in other counties, when you are done."
+
+erm_1013_t:0 "Altering Promote Culture Task"
+erm_1013_a_on:0 "I want you to return to the court, when you are done."
+erm_1013_a_off:0 "I want you to continue in other counties, when you are done."
+
+erm_1014_t:0 "Altering Increase Control Task"
+erm_1013_a_on:0 "I want you to return to the court, when you are done."
+erm_1013_a_off:0 "I want you to continue in other counties, when you are done."

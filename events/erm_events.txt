@@ -2,7 +2,7 @@
 
 #
 # Events for decisions
-# Range - 0900-0999
+# Range - 0900-1299
 #
 
 erm.0900 = {
@@ -35,7 +35,7 @@ erm.0900 = {
 			exists = cp:councillor_court_chaplain
 		}
 		if = { limit = { NOT = { has_character_flag = erm_allow_automatic_convert_religion } }
-			add_character_flag = { flag = erm_allow_automatic_convert_religion}
+			add_character_flag = { flag = erm_allow_automatic_convert_religion }
 		}			
 		
 
@@ -344,6 +344,315 @@ erm.0954 = { # Mute Marshal
 
 	option = {
 		name = erm_mute_complete
+
+		remove_variable = saved_marshal
+	}
+}
+
+erm.1000 = { # Modes Start
+	type = character_event
+	title = erm_1000_t
+	desc = erm_1000_desc
+	theme = friendly
+
+	left_portrait = {
+		character = root
+		animation = personality_rational
+	}
+
+	immediate = {
+		debug_log = erm_debug_0026
+
+		if = {
+			limit = {
+				exists = cp:councillor_court_chaplain
+			}
+			cp:councillor_court_chaplain = {
+				save_scope_as = court_chaplain
+			}
+			set_variable = {
+				name = saved_court_chaplain
+				value = scope:court_chaplain
+			}
+		}
+		
+		if = {
+			limit = {
+				exists = cp:councillor_steward
+			}
+			cp:councillor_steward = {
+				save_scope_as = steward				
+			}
+			set_variable = {
+				name = saved_steward
+				value = scope:steward
+			}
+		}
+		
+		if = {
+			limit = {
+				exists = cp:councillor_marshal
+			}
+			cp:councillor_marshal = {
+				save_scope_as = marshal				
+			}
+			set_variable = {
+				name = saved_marshal
+				value = scope:marshal
+			}
+		}
+	}
+
+	option = {
+		name = erm_1000_a
+		trigger = {
+			exists = scope:court_chaplain
+		}
+
+		remove_variable = saved_steward
+		remove_variable = saved_marshal
+
+		trigger_event = erm.1001
+	}
+
+	option = {
+		name = erm_1000_c
+		trigger = {
+			exists = scope:steward
+		}
+
+		remove_variable = saved_court_chaplain		
+		remove_variable = saved_marshal
+		
+		trigger_event = erm.1001
+	}
+
+	option = {
+		name = erm_1000_d
+		trigger = {
+			exists = scope:marshal
+		}
+
+		remove_variable = saved_court_chaplain
+		remove_variable = saved_steward
+
+		trigger_event = erm.1001
+	}
+
+	option = { # Cancel
+		name = erm_1000_f	
+		
+		remove_variable = saved_court_chaplain
+		remove_variable = saved_steward
+		remove_variable = saved_marshal
+	}
+}
+
+erm.1001 = { # Modes Chose Task
+	type = character_event
+	title = erm_1001_t
+	desc = erm_1001_desc
+	theme = friendly
+
+	left_portrait = {
+		character = root
+		animation = personality_rational
+	}
+
+	right_portrait = {
+		character = scope:correct_char
+		animation = personality_rational
+	}
+
+	immediate = {
+		if = {
+			limit = {
+				has_variable = saved_court_chaplain
+			}
+			scope:court_chaplain = {
+				save_scope_as = correct_char
+			}
+		}
+
+		if = {
+			limit = {
+				has_variable = saved_steward
+			}
+			scope:steward = {
+				save_scope_as = correct_char
+			}
+		}
+
+		if = {
+			limit = {
+				has_variable = saved_marshal
+			}
+			scope:marshal = {
+				save_scope_as = correct_char
+			}
+		}
+	}
+
+	option = {
+		name = erm_1001_convert_religion
+		trigger = {
+			has_variable = saved_court_chaplain
+		}
+
+		trigger_event = erm.1011
+	}
+
+	option = {
+		name = erm_1001_convert_religion
+		trigger = {
+			has_variable = saved_steward
+		}
+
+		trigger_event = erm.1013
+	}
+
+	option = {
+		name = erm_1001_convert_religion
+		trigger = {
+			has_variable = saved_marshal
+		}
+
+		trigger_event = erm.1014
+	}
+
+	option = { # Cancel
+		name = erm_1001_cancel	
+		
+		remove_variable = saved_court_chaplain
+		remove_variable = saved_steward
+		remove_variable = saved_marshal
+	}
+}
+
+erm.1011 = { # Configure Convert Religion
+	type = character_event
+	title = erm_1011_t
+	desc = erm_mode_desc
+	theme = friendly
+
+	left_portrait = {
+		character = root
+		animation = personality_rational
+	}
+
+	right_portrait = {
+		character = scope:correct_char
+		animation = personality_rational
+	}
+
+	option = {
+		name = erm_1011_a_off
+		trigger = {
+			NOT = {
+				has_character_flag = erm_allow_automatic_convert_religion				
+			}
+		}
+		add_character_flag = { flag = erm_allow_automatic_convert_religion }
+		trigger_event = erm.1011
+	}
+
+	option = {
+		name = erm_1011_a_on
+		trigger = {
+			has_character_flag = erm_allow_automatic_convert_religion
+		}
+		remove_character_flag = erm_allow_automatic_convert_religion
+		trigger_event = erm.1011
+	}
+
+	option = {
+		name = erm_mode_complete
+
+		remove_variable = saved_court_chaplain
+	}
+}
+
+erm.1013 = { # Configure Promote Culture
+	type = character_event
+	title = erm_1013_t
+	desc = erm_mode_desc
+	theme = friendly
+
+	left_portrait = {
+		character = root
+		animation = personality_rational
+	}
+
+	right_portrait = {
+		character = scope:correct_char
+		animation = personality_rational
+	}
+
+	option = {
+		name = erm_1013_a_off
+		trigger = {
+			NOT = {
+				has_character_flag = erm_allow_automatic_promote_culture				
+			}
+		}
+		add_character_flag = { flag = erm_allow_automatic_promote_culture }
+		trigger_event = erm.1013
+	}
+
+	option = {
+		name = erm_1013_a_on
+		trigger = {
+			has_character_flag = erm_allow_automatic_promote_culture
+		}
+		remove_character_flag = erm_allow_automatic_promote_culture
+		trigger_event = erm.1013
+	}
+
+	option = {
+		name = erm_mode_complete
+
+		remove_variable = saved_steward
+	}
+}
+
+erm.1014 = { # Configure Increase Control
+	type = character_event
+	title = erm_1014_t
+	desc = erm_mode_desc
+	theme = friendly
+
+	left_portrait = {
+		character = root
+		animation = personality_rational
+	}
+
+	right_portrait = {
+		character = scope:correct_char
+		animation = personality_rational
+	}
+
+	option = {
+		name = erm_1014_a_off
+		trigger = {
+			NOT = {
+				has_character_flag = erm_allow_automatic_increase_control				
+			}
+		}
+		add_character_flag = { flag = erm_allow_automatic_increase_control }
+		trigger_event = erm.1014
+	}
+
+	option = {
+		name = erm_1014_a_on
+		trigger = {
+			has_character_flag = erm_allow_automatic_increase_control
+		}
+		remove_character_flag = erm_allow_automatic_increase_control
+		trigger_event = erm.1014
+	}
+
+	option = {
+		name = erm_mode_complete
 
 		remove_variable = saved_marshal
 	}

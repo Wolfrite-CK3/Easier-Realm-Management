@@ -18,3 +18,8 @@ erm_mute_councillor_t:0 "Silence Councillor Letters"
 erm_mute_councillor_desc:0 "Stop the chosen councillor type's chosen task from sending letters. The task will still be performed as normal. To silence a task, you do need to have a councillor of that type. \nIf any task, who normaly require a simple yes/no decision, is silenced, the most kind response is chosen automaticly. \n \n The silencing ONLY effect letters!"
 erm_mute_councillor_tooltip:0 "Silence Letters from a chosen Task"
 erm_mute_councillor_confirm:0 "Silence Letters"
+
+erm_alter_tasks_t:0 "Alter Tasks Functionality"
+erm_alter_tasks_desc:0 "Alter how the the chosen councillor's task is performed. \n \nThe description of the tasks will update to indicate how the task functions, with the chosen alterations."
+erm_alter_tasks_tooltip:0 "Alter a chosen Task"
+erm_alter_tasks_confirm:0 "Alter Tasks"

@@ -32,3 +32,6 @@ erm_debug_0022:0 "Firing event: erm_letters.0003"
 erm_debug_0023:0 "Firing event: erm.0400"
 erm_debug_0024:0 "Firing event: erm.0401"
 erm_debug_0025:0 "Firing event: erm.0402"
+
+erm_debug_0026:0 "Firing event: erm.1000"
+
