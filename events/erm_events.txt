@@ -184,7 +184,7 @@ erm.0950 = { # Mute Start
 	option = {
 		name = erm_0950_a
 		trigger = {
-			exists = cp:councillor_court_chaplain
+			exists = scope:court_chaplain
 		}
 
 		remove_variable = saved_steward
@@ -196,7 +196,7 @@ erm.0950 = { # Mute Start
 	option = {
 		name = erm_0950_c
 		trigger = {
-			exists = cp:councillor_steward
+			exists = scope:steward
 		}
 
 		remove_variable = saved_court_chaplain		
@@ -208,7 +208,7 @@ erm.0950 = { # Mute Start
 	option = {
 		name = erm_0950_d
 		trigger = {
-			exists = cp:councillor_marshal
+			exists = scope:marshal
 		}
 
 		remove_variable = saved_court_chaplain
@@ -218,7 +218,11 @@ erm.0950 = { # Mute Start
 	}
 
 	option = { # Cancel
-		name = erm_0950_f			
+		name = erm_0950_f	
+		
+		remove_variable = saved_court_chaplain
+		remove_variable = saved_steward
+		remove_variable = saved_marshal
 	}
 }
 

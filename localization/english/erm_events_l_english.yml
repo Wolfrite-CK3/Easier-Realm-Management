@@ -28,23 +28,23 @@ erm_0003_mes1_t:0 "Increasing control in [GetPlayer.MakeScope.Var('saved_scope')
 erm_0003_mes1_description:0 "[GetPlayer.MakeScope.Var('rebels_count').GetValue] counties remain to be put under control."
 
 erm_0950_t:0 "Silencing the Letters"
-erm_0950_desc:0 "I'm getting to many letters from my councilors, who i know is doing a good job, even without them telling me every single time. \n \n But whos letters do i wish to silence?"
-erm_0950_a:0 "My [GetPlayer.MakeScope.Var('saved_court_chaplain').MyCouncillorsTitle]"
-erm_0950_c:0 "My [GetPlayer.MakeScope.Var('saved_steward').MyCouncillorsTitle]"
-erm_0950_d:0 "My [GetPlayer.MakeScope.Var('saved_marshal').MyCouncillorsTitle]"
+erm_0950_desc:0 "I'm getting to many letters from my councilors, who i know is doing a good job, even without them telling me every single time. \n \nBut whos letters do i wish to silence?"
+erm_0950_a:0 "My [GetPlayer.MakeScope.Var('saved_court_chaplain').GetCharacter.GetCouncilTitle ]"
+erm_0950_c:0 "My [GetPlayer.MakeScope.Var('saved_steward').GetCharacter.GetCouncilTitle ]"
+erm_0950_d:0 "My [GetPlayer.MakeScope.Var('saved_marshal').GetCharacter.GetCouncilTitle ]"
 erm_0950_f:0 "Nevermind"
 
 erm_mute_desc:0 "I would like to have a chat about obiligations regarding letters..."
 erm_mute_complete:0 "Everything is as it should be, for now..."
 
-erm_0951_t:0 "Silencing Letters from [GetPlayer.MakeScope.Var('saved_court_chaplain').MyCouncillorsTitle]"
+erm_0951_t:0 "Silencing Letters from [GetPlayer.MakeScope.Var('saved_court_chaplain').GetCharacter.GetCouncilTitle]"
 erm_0951_a_on:0 "I do want letters, when you are done with a Conversion of faith"
 erm_0951_a_off:0 "I do NOT want letters, when you are done with a Conversion  of faith"
 
-erm_0953_t:0 "Silencing Letters from [GetPlayer.MakeScope.Var('saved_steward').MyCouncillorsTitle]"
+erm_0953_t:0 "Silencing Letters from [GetPlayer.MakeScope.Var('saved_steward').GetCharacter.GetCouncilTitle]"
 erm_0953_a_on:0 "I do want letters, when you are done with a Promotion of culture"
 erm_0953_a_off:0 "I do NOT want letters, when you are done with a Conversion of culture"
 
-erm_0954_t:0 "Silencing Letters from [GetPlayer.MakeScope.Var('saved_marshal').MyCouncillorsTitle]"
-erm_0954_a_on:0 "I do want letters, when you are done with a Promotion of culture"
-erm_0954_a_off:0 "I do NOT want letters, when you are done with a Conversion of culture"
+erm_0954_t:0 "Silencing Letters from [GetPlayer.MakeScope.Var('saved_marshal').GetCharacter.GetCouncilTitle]"
+erm_0954_a_on:0 "I do want letters, when you are done with Increasing control"
+erm_0954_a_off:0 "I do NOT want letters, when you are done with Increasing control"

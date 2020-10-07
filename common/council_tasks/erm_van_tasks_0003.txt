@@ -11,7 +11,7 @@
 	restart_on_finish = yes # If it "finishes" by removing a corruption modifier, there'll still be control to regain
 
 	effect_desc = {
-		# Modfied by Easier-Culture-Religion-Spread
+		# Modfied by Easier-Realm-Management
 		desc = {
 			triggered_desc = {
 				trigger = {
@@ -30,6 +30,17 @@
 				desc = erm_overwrite_0003_van
 			}			
 		}
+		desc = {
+			triggered_desc = {
+				trigger = {
+					scope:councillor_liege = { 
+						has_character_flag = erm_mute_task_increase_control
+					}
+				}
+				desc = erm_overwrite_0003_mute
+			}
+		}
+		#
 		
 		desc = task_increase_control_effect_desc
 
@@ -190,6 +201,8 @@
 				change_county_control = -25
 			}			
 		}
+		
+		# Modfied by Easier-Realm-Management
 		if = {
 			limit = {
 				scope:county = {
@@ -199,8 +212,21 @@
 				NOT = { has_character_flag = erm_stop_multiple_letters}
 			}
 			add_character_flag = { flag = erm_stop_multiple_letters days = 7 }
-			trigger_event = erm_letters.0003
+
+			scope:councillor_liege = {
+				if = {
+					limit = {					
+						has_character_flag = erm_mute_task_increase_control
+						is_ai = no
+					}
+					trigger_event = erm.0402
+				}
+				else = {
+					trigger_event = erm_letters.0003
+				}			
+			}
 		}
+		#
 	}
 
 	on_start_task = {

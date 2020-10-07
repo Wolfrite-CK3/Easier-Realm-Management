@@ -8,7 +8,7 @@
 	highlight_own_realm = yes
 
 	effect_desc = {		
-		# Modfied by Easier-Culture-Religion-Spread
+		# Modfied by Easier-Realm-Management
 		desc = {
 			triggered_desc = {
 				trigger = {
@@ -27,6 +27,17 @@
 				desc = erm_overwrite_0001_van
 			}			
 		}
+		desc = {
+			triggered_desc = {
+				trigger = {
+					scope:councillor_liege = { 
+						has_character_flag = erm_mute_task_conversion
+					}
+				}
+				desc = erm_overwrite_0003_mute
+			}
+		}
+		#
 				
 		desc = task_conversion_effect_desc
 				
@@ -610,8 +621,18 @@
 
 	on_finish_task_county = {
 		scope:councillor_liege = {
-			# Modfied by Easier-Culture-Religion-Spread
-			trigger_event = erm_letters.0001
+			# Modfied by Easier-Realm-Management
+			if = {
+				limit = {					
+					has_character_flag = erm_mute_task_conversion
+					is_ai = no					
+				}
+				trigger_event = erm.0400
+			}
+			else = {
+				trigger_event = erm_letters.0001
+			}			
+			#
 		}
 	}
 
