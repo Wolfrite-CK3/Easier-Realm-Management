@@ -1,13 +1,26 @@
 # Easier Realm Management
 
 # Features
-- Allows Convert County to automatically move on to other counties that need their faith changed
-- Adds decision to start conversion of faith, so you don't have to find a valid target.
-- Allows Promote Culture to automatically move on to other counties that need their culture changed
-- Adds decision to start promotion of culture, so you don't have to find a valid target.
-- Allows Increase Control to automatically move on to other counties that need their control increased
-- Adds decision to start increase control, so you don't have to find a valid target.
-
+- The ability for councillors to automaticly move on to other counties that need their...
+ - Religion Changed
+ - Culture Changed
+ - Control Increased
+ 
+- Adds decisions to assign councillors to perform vertain task withut having to find valid targets...
+ - Convert Religion
+ - Promote Culture
+ - Increase Control
+ 
+- The ability to toggle on or off, moving on to other counties that need their...
+ - Religion Changed
+ - Culture Changed
+ - Control Increased
+ 
+- The ability to toggle on or off, letters sent by the councillors when they complete...
+ - Convert Religion
+ - Promote Culture
+ - Increase Control
+ 
 ## Planned Features
 See the GitHub Issues, for issues marked with "Enhancement" label. Issues marked with "Enhancement" also tend to have another label, indicating for which version of the mod, I am planning to have that feature implemented in. At the moment I am working toward any marked with "V1.0.0"
 
@@ -32,6 +45,9 @@ For this to work, CK3 has to support the language, so do keep that in mind.
 - Due to how it is coded, any mod that changes the Conversion Task, will be incompatibility, without a patch.
 - Due to how it is coded, any mod that changes the Promote Culture Task, will be incompatibility, without a patch.
 - Due to how it is coded, any mod that changes the Increase Control Task, will be incompatibility, without a patch.
+
+In general look for section marked with "# Modfied by Easier-Realm-Management". I place this comment above code i have added to vanilla overwriten files.
+This comment should help anybody who wish to make a patch between my mod and any other.
 
 ## Ironman
 Due to the changes mentioned above, it is likely that the mod does not support Ironman mode. The changes are small, in comparison to other mods, and doesn't alter the final result of the tasks, so in theory Ironman mode should work, but I am not 100% sure.
