@@ -22,7 +22,7 @@
   - Increase Control
  
 ## Planned Features
-See the GitHub Issues, for issues marked with "Enhancement" label. Issues marked with "Enhancement" also tend to have another label, indicating for which version of the mod, I am planning to have that feature implemented in. At the moment I am working toward any marked with "V1.0.0"
+See the GitHub Issues, for issues marked with "Enhancement" label. Issues marked with "Enhancement" also tend to have another label, indicating for which version of the mod, I am planning to have that feature implemented in. At the moment I am working toward any marked with "V1.1.0"
 
 ### Other Noticeable Labels
 Some issues might be marked with a "Suggestion" label, in which case I would love to get input on, if others would like that change. The "Suggestion" label, is both for feature suggestions, that I haven't accepted yet, and for Suggested code changes, to improve the mod in general.
