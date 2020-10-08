@@ -42,7 +42,7 @@ If that is the case, then follow this short list, and add the missing translatio
 For this to work, CK3 has to support the language, so do keep that in mind.
 
 # Incompatibility
-- Due to how it is coded, any mod that changes the Conversion Task, will be incompatibility, without a patch.
+- Due to how it is coded, any mod that changes the Convert Religion Task, will be incompatibility, without a patch.
 - Due to how it is coded, any mod that changes the Promote Culture Task, will be incompatibility, without a patch.
 - Due to how it is coded, any mod that changes the Increase Control Task, will be incompatibility, without a patch.
 
