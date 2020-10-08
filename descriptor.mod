@@ -8,4 +8,5 @@ tags={
 	"Utilities"
 }
 name="Easier Realm Management"
-supported_version="1.1.2"
+supported_version="1.1.*"
+remote_file_id="2251620116"
