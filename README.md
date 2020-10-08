@@ -7,9 +7,9 @@
 - The ability to toggle on or off, letters sent by the councillors when they complete certain tasks.
 
 Current Effected Tasks include:
-- Convert Religion
+- Convert Faith in County
 - Promote Culture
-- Increase Control
+- Increase Control in County
 
 ## Planned Features
 See the GitHub Issues, for issues marked with "Enhancement" label. Issues marked with "Enhancement" also tend to have another label, indicating for which version of the mod, I am planning to have that feature implemented in. 
