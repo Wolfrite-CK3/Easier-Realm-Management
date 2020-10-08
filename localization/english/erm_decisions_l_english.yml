@@ -4,7 +4,7 @@ erm_county_religion_conversion_desc:0 "Order your Chaplain to travels the realm 
 erm_county_religion_conversion_tooltip:0 "Start Conversion of your religion in your realm"
 erm_county_religion_conversion_confirm:0 "Start Conversion"
 
-erm_county_culture_promotion_t:0 "Convert the Foreigners"
+erm_county_culture_promotion_t:0 "Promote Culture Among Foreigners"
 erm_county_culture_promotion_desc:0 "Order your Steward to travels the realm and convert all holdings to your culture."
 erm_county_culture_promotion_tooltip:0 "Start Promotion of your culture in your realm"
 erm_county_culture_promotion_confirm:0 "Start Promotion"
