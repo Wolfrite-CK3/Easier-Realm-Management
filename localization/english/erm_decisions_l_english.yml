@@ -9,6 +9,11 @@ erm_county_culture_promotion_desc:0 "Order your Steward to travels the realm and
 erm_county_culture_promotion_tooltip:0 "Start Promotion of your culture in your realm"
 erm_county_culture_promotion_confirm:0 "Start Promotion"
 
+erm_county_development_t:0 "Develop Rural Lands"
+erm_county_development_desc:0 "Order your Steward to travels the realm and develop all holdings."
+erm_county_development_tooltip:0 "Start Development in your realm"
+erm_county_development_confirm:0 "Start Development"
+
 erm_county_increase_control_t:0 "Seize Control"
 erm_county_increase_control_desc:0 "Order your Marshal to travels the realm and increase control in all your holdings."
 erm_county_increase_control_tooltip:0 "Seize control in your realm"

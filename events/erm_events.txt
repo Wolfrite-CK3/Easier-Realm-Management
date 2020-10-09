@@ -5,7 +5,7 @@
 # Range - 0900-1299
 #
 
-erm.0900 = {
+erm.0900 = { # Convert Religion
 	type = character_event
 	title = erm_0900_t
 	desc = erm_0900_desc
@@ -47,7 +47,7 @@ erm.0900 = {
 	}
 }
 
-erm.0901 = {
+erm.0901 = { # Promote Culture
 	type = character_event
 	title = erm_0901_t
 	desc = erm_0901_desc
@@ -76,7 +76,7 @@ erm.0901 = {
 			}
 			exists = cp:councillor_steward
 		}	
-		if = { limit = { NOT = { has_character_flag = erm_allow_automatic_promote_culture} }		
+		if = { limit = { NOT = { has_character_flag = erm_allow_automatic_promote_culture } }		
 			add_character_flag = { flag = erm_allow_automatic_promote_culture }
 		}
 
@@ -88,7 +88,7 @@ erm.0901 = {
 	}
 }
 
-erm.0902 = {
+erm.0902 = { # Increase Control
 	type = character_event
 	title = erm_0902_t
 	desc = erm_0902_desc
@@ -124,6 +124,47 @@ erm.0902 = {
 
 	option = { # Cancel
 		name = erm_0902_b			
+	}
+}
+
+erm.0903 = { # Develop County
+type = character_event
+	title = erm_0903_t
+	desc = erm_0903_desc
+	theme = culture_change
+
+	left_portrait = {
+		character = root
+		animation = personality_rational
+	} 
+	right_portrait = {
+		character = cp:councillor_steward
+		animation = personality_honorable
+	}
+
+	immediate = {
+		debug_log = erm_debug_0027	#Firing event...
+	}
+
+	option = { # Start the Development
+		name = erm_0903_a
+		trigger = {
+			any_sub_realm_county = {
+				NOT = {
+					development_level = max_development_level
+				}
+			}
+			exists = cp:councillor_steward
+		}	
+		if = { limit = { NOT = { has_character_flag = erm_allow_automatic_develop_county } }		
+			add_character_flag = { flag = erm_allow_automatic_develop_county }
+		}
+
+		trigger_event = erm.0004
+	}	
+
+	option = { # Cancel
+		name = erm_0903_b			
 	}
 }
 
@@ -300,6 +341,25 @@ erm.0953 = { # Mute Steward
 		remove_character_flag = erm_mute_task_promote_culture 
 		trigger_event = erm.0953
 	}
+
+	option = {
+		name = erm_0953_b_off
+		trigger = {
+			NOT = { has_character_flag = erm_mute_task_develop_county } 
+		}
+		add_character_flag = { flag = erm_mute_task_develop_county }
+		trigger_event = erm.0953
+	}
+
+	option = {
+		name = erm_0953_b_on
+		trigger = {
+			has_character_flag = erm_mute_task_develop_county
+		}
+		remove_character_flag = erm_mute_task_develop_county 
+		trigger_event = erm.0953
+	}
+
 
 	option = {
 		name = erm_mute_complete
@@ -503,7 +563,7 @@ erm.1001 = { # Modes Chose Task
 	}
 
 	option = {
-		name = erm_1001_convert_religion
+		name = erm_1001_promote_culture
 		trigger = {
 			has_variable = saved_steward
 		}
@@ -512,7 +572,16 @@ erm.1001 = { # Modes Chose Task
 	}
 
 	option = {
-		name = erm_1001_convert_religion
+		name = erm_1001_develop_county
+		trigger = {
+			has_variable = saved_steward
+		}
+
+		trigger_event = erm.1012
+	}
+
+	option = {
+		name = erm_1001_increase_control
 		trigger = {
 			has_variable = saved_marshal
 		}
@@ -569,6 +638,69 @@ erm.1011 = { # Configure Convert Religion
 		name = erm_mode_complete
 
 		remove_variable = saved_court_chaplain
+	}
+}
+
+erm.1012 = { # Configure Develop County
+	type = character_event
+	title = erm_1012_t
+	desc = erm_mode_desc
+	theme = friendly
+
+	left_portrait = {
+		character = root
+		animation = personality_rational
+	}
+
+	right_portrait = {
+		character = scope:correct_char
+		animation = personality_rational
+	}
+
+	option = {
+		name = erm_1012_a_off
+		trigger = {
+			NOT = {
+				has_character_flag = erm_allow_automatic_develop_county				
+			}
+		}
+		add_character_flag = { flag = erm_allow_automatic_develop_county }
+		trigger_event = erm.1012
+	}
+
+	option = {
+		name = erm_1012_a_on
+		trigger = {
+			has_character_flag = erm_allow_automatic_develop_county
+		}
+		remove_character_flag = erm_allow_automatic_develop_county
+		trigger_event = erm.1012
+	}
+
+	option = {
+		name = erm_1012_b_off
+		trigger = {
+			NOT = {
+				has_character_flag = erm_allow_automatic_scatter_develop_county				
+			}
+		}
+		add_character_flag = { flag = erm_allow_automatic_scatter_develop_county }
+		trigger_event = erm.1012
+	}
+
+	option = {
+		name = erm_1012_b_on
+		trigger = {
+			has_character_flag = erm_allow_automatic_scatter_develop_county
+		}
+		remove_character_flag = erm_allow_automatic_scatter_develop_county
+		trigger_event = erm.1012
+	}
+
+	option = {
+		name = erm_mode_complete
+
+		remove_variable = saved_steward
 	}
 }
 

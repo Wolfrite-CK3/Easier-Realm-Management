@@ -234,6 +234,82 @@ erm.0003 = {
 	}
 }
 
+erm.0004 = {
+	hidden = yes
+	type = character_event
+
+	immediate = {
+		debug_log = erm_debug_0028 #Firing event...
+		
+		every_sub_realm_county = {
+			if = {
+				limit = { NOT = { development_level = max_development_level }}
+				add_to_list = rural
+			}
+		}		
+
+		if = {
+			limit = {
+				list_size = {
+					name = rural
+					value > 0
+				}
+				exists = cp:councillor_steward			
+			}			
+
+			count_items_in_list_effect = {
+				LCOUNT = rural_count
+				LVAR = rural
+			}	
+						
+			debug_log = erm_debug_0029 #there is X counties in list...						
+
+			random_in_list = {
+				list = rural
+				save_scope_as = selected_county
+				remove_from_list = rural
+			}
+			
+			set_variable = {
+				name = saved_scope
+				value = scope:selected_county
+			}				
+
+			if = {
+				limit = { 
+					exists = scope:selected_county
+					cp:councillor_steward.liege = root
+				}
+
+				send_interface_message = {
+					type = event_steward_task_good
+					right_icon = cp:councillor_steward
+					title = erm_0004_mes1_t
+					desc = erm_0004_mes1_description
+					tooltip = erm_0004_mes1_description					
+				}
+
+				debug_log = erm_debug_0030 # all evaluated to true...
+			
+				debug_log = erm_debug_0031 #starting development of...
+
+				cp:councillor_steward = {				
+					set_council_task = {
+						task_type = task_develop_county
+						target = scope:selected_county.title_province
+					}				
+				}							
+			}			
+			else = {				
+				debug_log = erm_debug_0032 # at least one evaluated to false															
+			}
+
+			remove_variable = rural_count
+			remove_variable = saved_scope
+		}	
+	}
+}
+
 #
 # Hidden Events for Letters
 # Range: 0400-0599
@@ -379,6 +455,69 @@ erm.0402 = {
 							has_character_flag = erm_allow_automatic_increase_control	
 						}
 						remove_character_flag = erm_allow_automatic_increase_control
+					}
+				}
+			}
+		}
+	}
+}
+
+erm.0403 = {
+	hidden = yes
+	type = character_event
+
+	immediate = { 
+		#debug_log = erm_debug_0034
+
+		if = {
+			limit = {
+				scope:councillor = {
+					has_council_position = councillor_steward
+				}
+			}
+			if = {
+				limit = {
+					has_character_flag = erm_allow_automatic_develop_county
+					has_character_flag = erm_allow_automatic_scatter_develop_county
+					is_ai = no
+				}
+				scope:councillor.liege = {
+					trigger_event = { id = erm.0003 }
+				}
+			}
+			else_if = {
+				limit = {
+					exists = scope:county
+					scope:county = {
+						development_level = max_development_level
+					}
+					has_character_flag = erm_allow_automatic_develop_county
+					is_ai = no
+				}
+				scope:councillor.liege = {
+					trigger_event = { id = erm.0003 }
+				}
+			}
+			else = {
+				scope:councillor = {
+					start_default_task = yes
+				}
+				if = {
+					limit = {
+						is_ai = no
+						has_character_flag = erm_allow_automatic_develop_county
+					}
+					remove_character_flag = erm_allow_automatic_develop_county
+				}
+				if = {
+					limit = {						
+						is_ai = yes						
+					}
+					scope:councillor.liege = {
+						add_character_flag = {
+							flag = no_ai_increase_development
+							years = 5
+						}
 					}
 				}
 			}

@@ -66,3 +66,22 @@ erm_letters.0003 = { # councillor_marshal task_increase_control on_finish_task_c
 		trigger_event = erm.0402		
 	}	
 }
+
+erm_letters.0004 = { # councillor_steward task_develop_county on_finish_task_county letter
+	type = letter_event
+	opening = {
+		desc = erm_letters_0004_opening
+	}
+	desc = erm_letters_0004_county_complete	
+	sender = scope:councillor
+
+	option = {
+		name = erm_letters_0004_a		
+	}
+
+	immediate = {
+		debug_log = erm_debug_0033
+
+		trigger_event = erm.0403		
+	}
+}

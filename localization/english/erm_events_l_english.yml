@@ -1,31 +1,43 @@
 ﻿l_english:
+erm_letters_0003_opening:0 "[councillor.Custom2('AppropriateGreeting', ROOT.Char)]"
+erm_letters_0003_county_complete:0 "With the help of [councillor.GetFirstNameNoTooltip], we have seized full control of [county.GetNameNoTier]."
+erm_letters_0003_a:0 "Great work, [councillor.GetFirstNameNoTooltip]!"
+
+erm_letters_0004_opening:0 "[councillor.Custom2('AppropriateGreeting', ROOT.Char)]"
+erm_letters_0004_county_complete:0 "With the help of [councillor.GetFirstNameNoTooltip], we have increased the development in [county.GetNameNoTier]."
+erm_letters_0004_a:0 "Great work, [councillor.GetFirstNameNoTooltip]!"
+
+erm_0001_mes1_t:0 "Converting Religion in [GetPlayer.MakeScope.Var('saved_scope').Title.GetNameNoTooltip]."
+erm_0001_mes1_description:0 "[GetPlayer.MakeScope.Var('heathens_count').GetValue] counties remain to be converted."
+
+erm_0002_mes1_t:0 "Promoting Culture in [GetPlayer.MakeScope.Var('saved_scope').Title.GetNameNoTooltip]."
+erm_0002_mes1_description:0 "[GetPlayer.MakeScope.Var('foreigners_count').GetValue] counties remain to be converted."
+
+erm_0003_mes1_t:0 "Increasing control in [GetPlayer.MakeScope.Var('saved_scope').Title.GetNameNoTooltip]."
+erm_0003_mes1_description:0 "[GetPlayer.MakeScope.Var('rebels_count').GetValue] counties remain to be put under control."
+
+erm_0004_mes1_t:0 "Developing County in [GetPlayer.MakeScope.Var('saved_scope').Title.GetNameNoTooltip]."
+erm_0004_mes1_description:0 "[GetPlayer.MakeScope.Var('rural_count').GetValue] counties remain to be developed."
+
 erm_0900_t:1 "To Convert the Heathens or Not"
 erm_0900_desc:1 "Should we start converting any Heathens to the religion of the mighty leader of this realm, or perhaps wait a little longer?"
 erm_0900_a:0 "Travel far and vide and preach of our god(s)!"
 erm_0900_b:0 "I need you at the council right now."
-
-erm_0001_mes1_t:0 "Converting Religion in [GetPlayer.MakeScope.Var('saved_scope').Title.GetNameNoTooltip]."
-erm_0001_mes1_description:0 "[GetPlayer.MakeScope.Var('heathens_count').GetValue] counties remain to be converted."
 
 erm_0901_t:0 "To Promote the Culture or Not"
 erm_0901_desc:0 "Should we start promoting our culture amoung the foreigners, or perhaps wait a little longer?"
 erm_0901_a:0 "Travel far and vide and teach them of our ways!"
 erm_0901_b:0 "I need you at the council right now."
 
-erm_0002_mes1_t:0 "Promoting Culture in [GetPlayer.MakeScope.Var('saved_scope').Title.GetNameNoTooltip]."
-erm_0002_mes1_description:0 "[GetPlayer.MakeScope.Var('foreigners_count').GetValue] counties remain to be converted."
-
-erm_letters_0003_opening:0 "[councillor.Custom2('AppropriateGreeting', ROOT.Char)]"
-erm_letters_0003_county_complete:0 "With the help of [councillor.GetFirstNameNoTooltip], we have seized full control of [county.GetNameNoTier]."
-erm_letters_0003_a:0 "Great work, [councillor.GetFirstNameNoTooltip]!"
-
 erm_0902_t:0 "To Seize Control or Not"
 erm_0902_desc:0 "Should we start to increase control in our realm, or perhaps wait a little longer?"
 erm_0902_a:0 "Travel far and vide and enfore my rule!"
 erm_0902_b:0 "I need you at the council right now."
 
-erm_0003_mes1_t:0 "Increasing control in [GetPlayer.MakeScope.Var('saved_scope').Title.GetNameNoTooltip]."
-erm_0003_mes1_description:0 "[GetPlayer.MakeScope.Var('rebels_count').GetValue] counties remain to be put under control."
+erm_0903_t:0 "To Develop the counties or Not"
+erm_0903_desc:0 "Should we start developing the counties in the realm, or perhaps wait a little longer?"
+erm_0903_a:0 "Travel far and vide and improve our lands!"
+erm_0903_b:0 "I need you at the council right now."
 
 erm_0950_t:0 "Silencing the Letters"
 erm_0950_desc:0 "I'm getting to many letters from my councilors, who i know is doing a good job, even without them telling me every single time. \n \nBut whos letters do i wish to silence?"
@@ -44,6 +56,8 @@ erm_0951_a_off:0 "I do NOT want letters, when you are done with a Conversion  of
 erm_0953_t:0 "Silencing Letters from [GetPlayer.MakeScope.Var('saved_steward').GetCharacter.GetCouncilTitle]"
 erm_0953_a_on:0 "I do want letters, when you are done with a Promotion of culture"
 erm_0953_a_off:0 "I do NOT want letters, when you are done with a Conversion of culture"
+erm_0953_b_on:0 "I do want letters, when you are done with developing a county"
+erm_0953_b_off:0 "I do NOT want letters, when you are done developing a county"
 
 erm_0954_t:0 "Silencing Letters from [GetPlayer.MakeScope.Var('saved_marshal').GetCharacter.GetCouncilTitle]"
 erm_0954_a_on:0 "I do want letters, when you are done with Increasing control"
@@ -64,16 +78,23 @@ erm_1001_desc:0 "Now which task should be performed differently?"
 erm_1001_cancel:0 "Nevermind"
 erm_1001_convert_religion:0 "Convert Faith in County"
 erm_1001_promote_culture:0 "Promote Culture"
+erm_1001_develop_county:0 "Develop County"
 erm_1001_increase_control:0 "Increase Control in County"
 
 erm_1011_t:0 "Altering Convert Religion Task"
 erm_1011_a_on:0 "I want you to return to the court, when you are done."
 erm_1011_a_off:0 "I want you to continue in other counties, when you are done."
 
+erm_1012_t:0 "Altering Develop County Task"
+erm_1012_a_on:0 "I want you to return to the court, when you are done."
+erm_1012_a_off:0 "I want you to continue in other counties, when you are done."
+erm_1012_b_on:0 "I want you to focus the development."
+erm_1012_b_off:0 "I want you to spread out the development."
+
 erm_1013_t:0 "Altering Promote Culture Task"
 erm_1013_a_on:0 "I want you to return to the court, when you are done."
 erm_1013_a_off:0 "I want you to continue in other counties, when you are done."
 
 erm_1014_t:0 "Altering Increase Control Task"
-erm_1013_a_on:0 "I want you to return to the court, when you are done."
-erm_1013_a_off:0 "I want you to continue in other counties, when you are done."
+erm_1014_a_on:0 "I want you to return to the court, when you are done."
+erm_1014_a_off:0 "I want you to continue in other counties, when you are done."

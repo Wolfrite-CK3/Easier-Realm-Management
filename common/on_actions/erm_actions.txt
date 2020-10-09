@@ -1,4 +1,10 @@
-﻿erm_inherit_settings_on_action = { 
+﻿on_death = {	
+	on_actions = {
+		erm_inherit_settings_on_action
+	}			
+}
+
+erm_inherit_settings_on_action = { 
 	trigger = { 
 		is_ai = no 
 	} 
@@ -7,6 +13,8 @@
 			limit = { 
 				exists = player_heir 
 			}
+			debug_log = erm_debug_0035
+
 			# Automation Flags
 			if = {
 				limit = {
@@ -32,6 +40,23 @@
 					add_character_flag = { flag = erm_allow_automatic_increase_control }
 				}
 			}
+			if = {
+				limit = {
+					has_character_flag = erm_allow_automatic_develop_county
+				}
+				player_heir = {
+					add_character_flag = { flag = erm_allow_automatic_develop_county }
+				}
+			}
+			if = {
+				limit = {
+					has_character_flag = erm_allow_automatic_scatter_develop_county
+				}
+				player_heir = {
+					add_character_flag = { flag = erm_allow_automatic_scatter_develop_county }
+				}
+			}
+
 
 			# Mute Flags
 			if = {
@@ -56,6 +81,14 @@
 				}
 				player_heir = {
 					add_character_flag = { flag = erm_mute_task_increase_control }
+				}
+			}
+			if = {
+				limit = {
+					has_character_flag = erm_mute_task_develop_county
+				}
+				player_heir = {
+					add_character_flag = { flag = erm_mute_task_develop_county }
 				}
 			}
 		} 
