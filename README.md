@@ -37,8 +37,9 @@ For this to work, CK3 has to support the language, so do keep that in mind.
 - Due to how it is coded, any mod that changes the Convert Religion Task, will be incompatibility, without a patch.
 - Due to how it is coded, any mod that changes the Promote Culture Task, will be incompatibility, without a patch.
 - Due to how it is coded, any mod that changes the Increase Control Task, will be incompatibility, without a patch.
+- Due to how it is coded, any mod that changes the on death on action, will be incompatible, without a patch.
 
-In general look for section marked with "# Modfied by Easier-Realm-Management". I place this comment above code i have added to vanilla overwriten files.
+In general look for section marked with "# Modified by Easier-Realm-Management". I place this comment, above code I have added to vanilla overwritten files.
 This comment should help anybody who wish to make a patch between my mod and any other.
 
 ## Ironman
