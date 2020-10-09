@@ -261,19 +261,28 @@
 	}
 
 	on_finish_task_county = {
-		scope:councillor_liege = {
-			if = {
-				limit = {
-					has_character_flag = erm_mute_task_develop_county
-					is_ai = no
+		if = {
+			limit = {
+				OR = {
+					AND = {
+						exists = scope:county
+						scope:county = {
+							development_level = max_development_level
+						}
+					}
+					scope:councillor_liege = {
+						is_ai = yes
+					}
 				}
-				trigger_event = erm.0403
 			}
-			else = {				
-				trigger_event = erm_letters.0004
-			}
+			start_default_task = yes
 		}
-		
+		scope:councillor_liege = {
+			add_character_flag = {
+				flag = no_ai_increase_development
+				years = 10
+			}
+		}		
 	}
 
 	on_start_task = {
@@ -282,6 +291,11 @@
 				flag = no_steward_side_effects_first_month
 				days = 30
 			}
+		}
+
+		set_variable = { 
+			name = stored_development 
+			value = scope:selected_county.development_level 
 		}
 	}
 
@@ -312,7 +326,29 @@
 				}
 				add_character_flag = {
 					flag = no_ai_increase_development
-					years = 10
+					years = 1
+				}
+			}			
+		}	
+
+		if = {
+			limit = {
+				development_level >= stored_development_plus_one 
+			}
+			set_variable = { 
+				name = stored_development 
+				value = scope:county.development_level
+			}
+			scope:councillor_liege = {
+				if = {
+					limit = {
+						has_character_flag = erm_mute_task_develop_county
+						is_ai = no
+					}
+					trigger_event = erm.0403
+				}
+				else = {				
+					trigger_event = erm_letters.0004
 				}
 			}
 		}

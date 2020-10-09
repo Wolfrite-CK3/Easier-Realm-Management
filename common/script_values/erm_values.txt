@@ -1,0 +1,31 @@
+﻿development_hard_cap = {
+    value = 10
+    if = {
+        limit = { culture = { has_innovation = innovation_development_04 } }
+        add = 80
+    }
+    else_if = {
+        limit = { culture = { has_innovation = innovation_development_03 } }
+        add = 45
+    }
+    else_if = {
+        limit = { culture = { has_innovation = innovation_development_02 } }
+        add = 25
+    }
+    else_if = {
+        limit = { culture = { has_innovation = innovation_development_01 } }
+        add = 10
+    }  
+    
+}
+
+development_percentage = {
+    value = scope:county.development_level
+    divide = development_hard_cap
+    multiply = 100
+}
+
+stored_development_plus_one = {
+  value = var:stored_development
+  add = 1
+}

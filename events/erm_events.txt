@@ -223,6 +223,23 @@ erm.0950 = { # Mute Start
 	}
 
 	option = {
+		name = erm_0950_g
+		trigger = {
+			OR = {
+				exists = scope:court_chaplain
+				exists = scope:steward
+				exists = scope:marshal 
+			}
+		}
+
+		remove_variable = saved_court_chaplain		
+		remove_variable = saved_steward
+		remove_variable = saved_marshal
+
+		trigger_event = erm.0601
+	}
+
+	option = {
 		name = erm_0950_a
 		trigger = {
 			exists = scope:court_chaplain

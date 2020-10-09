@@ -243,7 +243,11 @@ erm.0004 = {
 		
 		every_sub_realm_county = {
 			if = {
-				limit = { NOT = { development_level = max_development_level }}
+				limit = { 
+					NOT = { 
+						development_level >= root.development_hard_cap
+					}	
+				} 
 				add_to_list = rural
 			}
 		}		
@@ -481,25 +485,32 @@ erm.0403 = {
 					has_character_flag = erm_allow_automatic_scatter_develop_county
 					is_ai = no
 				}
+				scope:councillor = {
+					remove_variable = stored_development
+				}
 				scope:councillor.liege = {
-					trigger_event = { id = erm.0003 }
+					trigger_event = { id = erm.0004 }
 				}
 			}
 			else_if = {
 				limit = {
 					exists = scope:county
 					scope:county = {
-						development_level = max_development_level
+						development_level >= root.development_hard_cap
 					}
 					has_character_flag = erm_allow_automatic_develop_county
 					is_ai = no
 				}
+				scope:councillor = {
+					remove_variable = stored_development
+				}
 				scope:councillor.liege = {
-					trigger_event = { id = erm.0003 }
+					trigger_event = { id = erm.0004 }
 				}
 			}
 			else = {
 				scope:councillor = {
+					remove_variable = stored_development
 					start_default_task = yes
 				}
 				if = {
@@ -516,7 +527,7 @@ erm.0403 = {
 					scope:councillor.liege = {
 						add_character_flag = {
 							flag = no_ai_increase_development
-							years = 5
+							years = 1
 						}
 					}
 				}
@@ -618,5 +629,38 @@ erm.0600 = { # Inherit Settings
 					add_character_flag = { flag = erm_mute_task_develop_county }
 				}
 			}
+		}
+	}
+}
+
+erm.0601 = { # Silence all Letters
+	hidden = yes
+	type = character_event
+
+	immediate = {
+		if = {
+			limit = {
+				NOT = {	has_character_flag = erm_mute_task_conversion }
+			}
+			add_character_flag = { flag = erm_mute_task_conversion }
+		}
+		if = {
+			limit = {
+				NOT = {	has_character_flag = erm_mute_task_develop_county }
+			}
+			add_character_flag = { flag = erm_mute_task_develop_county }
+		}
+		if = {
+			limit = {
+				NOT = {	has_character_flag = erm_mute_task_increase_control }
+			}
+			add_character_flag = { flag = erm_mute_task_increase_control }
+		}
+		if = {
+			limit = {
+				NOT = {	has_character_flag = erm_mute_task_promote_culture }
+			}
+			add_character_flag = { flag = erm_mute_task_promote_culture }
+		}
 	}
 }
