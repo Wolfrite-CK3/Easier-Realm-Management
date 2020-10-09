@@ -44,7 +44,7 @@ For this to work, CK3 has to support the language, so do keep that in mind.
 [*] Due to how it is coded, any mod that changes the Increase Control Task, will be incompatibility, without a patch.
 [/list]
 
-In general look for section marked with "# Modfied by Easier-Realm-Management". I place this comment above code i have added to vanilla overwriten files. This comment should help anybody who wish to make a patch between my mod and any other.
+In general look for section marked with "# Modified by Easier-Realm-Management". I place this comment above code i have added to vanilla overwriten files. This comment should help anybody who wish to make a patch between my mod and any other.
 
 [h2] Ironman [/h2]
 

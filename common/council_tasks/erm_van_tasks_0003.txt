@@ -11,7 +11,7 @@
 	restart_on_finish = yes # If it "finishes" by removing a corruption modifier, there'll still be control to regain
 
 	effect_desc = {
-		# Modfied by Easier-Realm-Management
+		# Modified by Easier-Realm-Management
 		desc = {
 			triggered_desc = {
 				trigger = {
@@ -202,7 +202,7 @@
 			}			
 		}
 		
-		# Modfied by Easier-Realm-Management
+		# Modified by Easier-Realm-Management
 		if = {
 			limit = {
 				scope:county = {
