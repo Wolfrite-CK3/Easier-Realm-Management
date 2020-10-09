@@ -47,6 +47,6 @@ erm_debug_0033:0 "Firing event: erm_letters.0004"
 
 erm_debug_0034:0 "Firing event: erm.0403"
 
-erm_debug_0035:0 "Firing on_action: erm_inherit_settings_on_action"
+erm_debug_0035:0 "Firing event: erm.0600"
 
 

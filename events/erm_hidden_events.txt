@@ -524,3 +524,99 @@ erm.0403 = {
 		}
 	}
 }
+
+#
+# Hidden Event for Miscellaneous Things
+# Range 0600-0699
+#
+
+erm.0600 = { # Inherit Settings
+	hidden = yes
+	type = character_event
+	
+	immediate = {
+		if = { 
+			limit = { 
+				exists = player_heir
+				is_ai = no
+			}
+			debug_log = erm_debug_0035
+
+			# Automation Flags
+			if = {
+				limit = {
+					has_character_flag = erm_allow_automatic_convert_religion
+				}
+				player_heir = {
+					add_character_flag = { flag = erm_allow_automatic_convert_religion }
+				}
+			}
+			if = {
+				limit = {
+					has_character_flag = erm_allow_automatic_promote_culture
+				}
+				player_heir = {
+					add_character_flag = { flag = erm_allow_automatic_promote_culture }
+				}
+			}
+			if = {
+				limit = {
+					has_character_flag = erm_allow_automatic_increase_control
+				}
+				player_heir = {
+					add_character_flag = { flag = erm_allow_automatic_increase_control }
+				}
+			}
+			if = {
+				limit = {
+					has_character_flag = erm_allow_automatic_develop_county
+				}
+				player_heir = {
+					add_character_flag = { flag = erm_allow_automatic_develop_county }
+				}
+			}
+			if = {
+				limit = {
+					has_character_flag = erm_allow_automatic_scatter_develop_county
+				}
+				player_heir = {
+					add_character_flag = { flag = erm_allow_automatic_scatter_develop_county }
+				}
+			}
+
+
+			# Mute Flags
+			if = {
+				limit = {
+					has_character_flag = erm_mute_task_conversion
+				}
+				player_heir = {
+					add_character_flag = { flag = erm_mute_task_conversion }
+				}
+			}
+			if = {
+				limit = {
+					has_character_flag = erm_mute_task_promote_culture
+				}
+				player_heir = {
+					add_character_flag = { flag = erm_mute_task_promote_culture }
+				}
+			}
+			if = {
+				limit = {
+					has_character_flag = erm_mute_task_increase_control
+				}
+				player_heir = {
+					add_character_flag = { flag = erm_mute_task_increase_control }
+				}
+			}
+			if = {
+				limit = {
+					has_character_flag = erm_mute_task_develop_county
+				}
+				player_heir = {
+					add_character_flag = { flag = erm_mute_task_develop_county }
+				}
+			}
+	}
+}

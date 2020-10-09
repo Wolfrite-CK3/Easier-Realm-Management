@@ -1,0 +1,11 @@
+﻿on_death = {	
+	on_actions = {
+		erm_inherit_settings_on_action
+	}
+}
+
+erm_inherit_settings_on_action = { 
+	events = {
+		erm.0600 # Inherit Settings
+	}  
+}
