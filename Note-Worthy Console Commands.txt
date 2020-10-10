@@ -1,0 +1,1 @@
+# effect every_realm_county = { change_development_progress_with_overflow = 500 }

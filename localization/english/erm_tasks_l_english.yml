@@ -10,3 +10,9 @@ erm_overwrite_0002_mute:0 "When i'm done with a county, i will not send a letter
 erm_overwrite_0003_auto:0 "When i'm done with a county, i will move on to another, if there is more counties with control lower than 100. Otherwise i will return to the court. \n \n"
 erm_overwrite_0003_van:0 "When i'm done with a county, i will return to the court. \n \n"
 erm_overwrite_0003_mute:0 "When i'm done with a county, i will not send a letter to you. \n \n"
+
+erm_overwrite_0004_auto:0 "When i'm done increasing development by one, i will either stay and increase it further or move on to other counties, if there are more counties with development lower than the soft limit. Otherwise i will return to the court. \n \n"
+erm_overwrite_0004_van:0 "When i'm done increasing development to the soft limit, i will return to the court. \n \n"
+erm_overwrite_0004_focused:0 "When i'm done increasing development by one, i will continue until it reaches the soft limit. \n \n"
+erm_overwrite_0004_scatter:0 "When i'm done increasing development by one, i will either move to another county or return to the court. \n \n"
+erm_overwrite_0004_mute:0 "When i'm done increasing development by one, i will not send a letter to you. \n \n"

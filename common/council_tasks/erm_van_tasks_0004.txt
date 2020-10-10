@@ -10,6 +10,55 @@
 	highlight_own_realm = yes
 
 	effect_desc = {
+		# Modified by Easier-Realm-Management
+		desc = {
+			triggered_desc = {
+				trigger = {
+					scope:councillor_liege = {
+						has_character_flag = erm_allow_automatic_develop_county
+					}
+				}
+				desc = erm_overwrite_0004_auto
+			}
+			triggered_desc = {
+				trigger = {
+					scope:councillor_liege = {
+						NOT = { has_character_flag = erm_allow_automatic_develop_county }
+					}
+				}
+				desc = erm_overwrite_0004_van
+			}			
+		}
+		desc = {
+			triggered_desc = {
+				trigger = {
+					scope:councillor_liege = {
+						has_character_flag = erm_allow_automatic_scatter_develop_county
+					}
+				}
+				desc = erm_overwrite_0004_scatter
+			}
+			triggered_desc = {
+				trigger = {
+					scope:councillor_liege = {
+						NOT = { has_character_flag = erm_allow_automatic_scatter_develop_county }
+					}
+				}
+				desc = erm_overwrite_0004_focused
+			}			
+		}
+		desc = {
+			triggered_desc = {
+				trigger = {
+					scope:councillor_liege = { 
+						has_character_flag = erm_mute_task_develop_county
+					}
+				}
+				desc = erm_overwrite_0004_mute
+			}
+		}
+
+		
 		desc = task_develop_county_complete_effect_desc
 		desc = task_develop_county_effect_desc
 		desc = {
@@ -291,13 +340,17 @@
 				flag = no_steward_side_effects_first_month
 				days = 30
 			}
-		}
+		}			
+	}
 
+	# Modified by Easier-Realm-Management
+	on_start_task_county = {
 		set_variable = { 
 			name = stored_development 
-			value = scope:selected_county.development_level 
+			value = scope:county.development_level 
 		}
-	}
+	}	
+	#
 
 	on_monthly_county = {
 		scope:councillor_liege = {
@@ -331,9 +384,11 @@
 			}			
 		}	
 
+		# Modified by Easier-Realm-Management
 		if = {
-			limit = {
-				development_level >= stored_development_plus_one 
+			limit = {	
+				has_variable = stored_development	
+				scope:county.development_level >= stored_development_plus_one 
 			}
 			set_variable = { 
 				name = stored_development 
@@ -352,7 +407,37 @@
 				}
 			}
 		}
+		else_if = {
+			limit = {
+				NOT = { has_variable = stored_development }
+			}
+			set_variable = { 
+				name = stored_development 
+				value = scope:county.development_level
+			}
+		}
+		#
 	}
+
+	# Modified by Easier-Realm-Management
+	on_cancel_task = {
+		if = {
+			limit = {
+				has_variable = stored_development
+			}
+			remove_variable = stored_development
+		}
+	}
+
+	on_finish_task = {
+		if = {
+			limit = {
+				has_variable = stored_development
+			}
+			remove_variable = stored_development
+		}
+	}
+	#
 
 	ai_will_do = {
 		value = 0

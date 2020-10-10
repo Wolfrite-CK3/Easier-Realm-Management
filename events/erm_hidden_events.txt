@@ -479,7 +479,7 @@ erm.0403 = {
 					has_council_position = councillor_steward
 				}
 			}
-			if = {
+			if = { # Scatter Mode
 				limit = {
 					has_character_flag = erm_allow_automatic_develop_county
 					has_character_flag = erm_allow_automatic_scatter_develop_county
@@ -492,7 +492,7 @@ erm.0403 = {
 					trigger_event = { id = erm.0004 }
 				}
 			}
-			else_if = {
+			else_if = { # Focused Mode
 				limit = {
 					exists = scope:county
 					scope:county = {
@@ -508,9 +508,14 @@ erm.0403 = {
 					trigger_event = { id = erm.0004 }
 				}
 			}
-			else = {
+			else_if = { # Vanilla Mode
+				limit = {
+					exists = scope:county
+					scope:county = {
+						development_level >= root.development_hard_cap
+					}
+				}
 				scope:councillor = {
-					remove_variable = stored_development
 					start_default_task = yes
 				}
 				if = {
@@ -519,19 +524,14 @@ erm.0403 = {
 						has_character_flag = erm_allow_automatic_develop_county
 					}
 					remove_character_flag = erm_allow_automatic_develop_county
-				}
-				if = {
-					limit = {						
-						is_ai = yes						
+				}				
+				scope:councillor.liege = {
+					add_character_flag = {
+						flag = no_ai_increase_development
+						years = 10
 					}
-					scope:councillor.liege = {
-						add_character_flag = {
-							flag = no_ai_increase_development
-							years = 1
-						}
-					}
-				}
-			}
+				}			
+			}			
 		}
 	}
 }
