@@ -1,0 +1,30 @@
+﻿l_korean:
+erm_county_religion_conversion_t:0 "자동 신앙 개종"
+erm_county_religion_conversion_desc:0 "당신의 궁정 사제에게 모든 영지의 개종을 명령합니다. 신을 위하여!"
+erm_county_religion_conversion_tooltip:0 "자동 신앙 개종을 시작합니다"
+erm_county_religion_conversion_confirm:0 "임무 시작"
+
+erm_county_culture_promotion_t:0 "자동 문화 촉진"
+erm_county_culture_promotion_desc:0 "당신의 집사장에게 모든 영지의 문화를 변경시킬 것을 명령합니다."
+erm_county_culture_promotion_tooltip:0 "자동 문화 촉진을 시작합니다"
+erm_county_culture_promotion_confirm:0 "임무 시작"
+
+erm_county_development_t:0 "자동 영지 개발"
+erm_county_development_desc:0 "당신의 집사장에게 모든 영지의 개발을 시작하도록 명령합니다."
+erm_county_development_tooltip:0 "자동 영지 개발을 시작합니다"
+erm_county_development_confirm:0 "임무 시작"
+
+erm_county_increase_control_t:0 "자동 영지 장악"
+erm_county_increase_control_desc:0 "당신의 무관장에게 모든 영지의 장악을 명령합니다."
+erm_county_increase_control_tooltip:0 "자동 영지 장악을 시작합니다"
+erm_county_increase_control_confirm:0 "임무 시작"
+
+erm_mute_councillor_t:0 "자문회 알림 차단"
+erm_mute_councillor_desc:0 "선택된 자문 위원이 보내는 특정한 서신을 차단합니다. 임무은 정상적으로 진행됩니다. 알림 차단은 해당 자문 위원이 존재할 때만 작동합니다.\n 단순한 이지선다 선택지의 경우, 무난한 선택지가 자동으로 선택됩니다.\n\n 차단은 오직 서신 알림에만 적용됩니다!"
+erm_mute_councillor_tooltip:0 "선택된 임무의 알림 차단"
+erm_mute_councillor_confirm:0 "알림 차단"
+
+erm_alter_tasks_t:0 "임무 방식 변경"
+erm_alter_tasks_desc:0 "선택한 위원의 임무가 수행되는 방식을 변경합니다.\n\n 임무 효과 창에 현재 적용된 수행 방식이 표시됩니다."
+erm_alter_tasks_tooltip:0 "자문회 임무 방식을 변경합니다"
+erm_alter_tasks_confirm:0 "임무 변경"

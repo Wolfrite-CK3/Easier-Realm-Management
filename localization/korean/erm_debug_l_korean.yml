@@ -1,0 +1,52 @@
+﻿l_korean:
+erm_debug_0001:0 "Firing event: erm.0900"
+
+erm_debug_0002:0 "Firing event: erm.0001"
+erm_debug_0003:0 "[GetPlayer.MakeScope.Var('heathens_count').GetValue]개의 이교도 백작령이 남았음"
+erm_debug_0004:0 "다음 항목이 모두 참임: \n - selected_county != null \n - councillor_court_chaplain.liege == root"
+erm_debug_0005:0 "[GetPlayer.MakeScope.Var('saved_scope').Title.GetNameNoTooltip]에서 종교 자동 변환 시작"
+erm_debug_0006:0 "다음 중 하나 이상이 거짓임: \n - selected_county != null \n - councillor_court_chaplain.liege == root"
+
+erm_debug_0007:0 "Firing event: erm.0901"
+
+erm_debug_0008:0 "Firing event: erm.0002"
+erm_debug_0009:0 "[GetPlayer.MakeScope.Var('foreigners_count').GetValue]개의 외국 문화 백작령이 남았음"
+erm_debug_0010:0 "다음 항목이 모두 참임: \n - selected_county != null \n - councillor_steward.liege == root"
+erm_debug_0011:0 "[GetPlayer.MakeScope.Var('saved_scope').Title.GetNameNoTooltip]에서 자동 문화 촉진 시작"
+erm_debug_0012:0 "다음 중 하나 이상이 거짓임: \n - selected_county != null \n - councillor_steward.liege == root"
+
+erm_debug_0013:0 "Firing event: erm.0902"
+
+erm_debug_0014:0 "Firing event: erm.0003"
+erm_debug_0015:0 "[GetPlayer.MakeScope.Var('rebels_count').GetValue]개의 비장악 백작령이 남았음"
+erm_debug_0016:0 "다음 항목이 모두 참임: \n - selected_county != null \n - councillor_marshal.liege == root"
+erm_debug_0017:0 "[GetPlayer.MakeScope.Var('saved_scope').Title.GetNameNoTooltip]에서 자동 영지 장악 시작"
+erm_debug_0018:0 "다음 중 하나 이상이 거짓임: \n - selected_county != null \n - councillor_marshal.liege == root"
+
+erm_debug_0019:0 "Firing event: erm.0950"
+
+erm_debug_0020:0 "Firing event: erm_letters.0001"
+erm_debug_0021:0 "Firing event: erm_letters.0002"
+erm_debug_0022:0 "Firing event: erm_letters.0003"
+
+erm_debug_0023:0 "Firing event: erm.0400"
+erm_debug_0024:0 "Firing event: erm.0401"
+erm_debug_0025:0 "Firing event: erm.0402"
+
+erm_debug_0026:0 "Firing event: erm.1000"
+
+erm_debug_0027:0 "Firing event: erm.0903"
+
+erm_debug_0028:0 "Firing event: erm.0004"
+erm_debug_0029:0 "[GetPlayer.MakeScope.Var('rural_count').GetValue]개의 미개발 백작령이 남았음"
+erm_debug_0030:0 "다음 항목이 모두 참임: \n - selected_county != null \n - councillor_steward.liege == root"
+erm_debug_0031:0 "[GetPlayer.MakeScope.Var('saved_scope').Title.GetNameNoTooltip]에서 자동 영지 개발 시작"
+erm_debug_0032:0 "다음 중 하나 이상이 거짓임: \n - selected_county != null \n - councillor_steward.liege == root"
+
+erm_debug_0033:0 "Firing event: erm_letters.0004"
+
+erm_debug_0034:0 "Firing event: erm.0403"
+
+erm_debug_0035:0 "Firing event: erm.0600"
+
+

@@ -1,0 +1,102 @@
+﻿l_korean:
+erm_letters_0003_opening:0 "[councillor.Custom2('AppropriateGreeting', ROOT.Char)]"
+erm_letters_0003_county_complete:0 "[councillor.GetFirstNameNoTooltip]의 도움으로, [county.GetNameNoTier]의 장악을 완료했습니다."
+erm_letters_0003_a:0 "잘했네, [councillor.GetFirstNameNoTooltip]!"
+
+erm_letters_0004_opening:0 "[councillor.Custom2('AppropriateGreeting', ROOT.Char)]"
+erm_letters_0004_county_complete:0 "[councillor.GetFirstNameNoTooltip]의 도움으로, [county.GetNameNoTier]의 개발을 완료했습니다."
+erm_letters_0004_a:0 "잘했네, [councillor.GetFirstNameNoTooltip]!"
+
+erm_0001_mes1_t:0 "[GetPlayer.MakeScope.Var('saved_scope').Title.GetNameNoTooltip]의 신앙을 개종합니다."
+erm_0001_mes1_description:0 "[GetPlayer.MakeScope.Var('heathens_count').GetValue]개의 백작령이 개종될 것입니다."
+
+erm_0002_mes1_t:0 "[GetPlayer.MakeScope.Var('saved_scope').Title.GetNameNoTooltip]의 문화를 변경합니다."
+erm_0002_mes1_description:0 "[GetPlayer.MakeScope.Var('foreigners_count').GetValue]개의 백작령의 문화가 변경될 것입니다."
+
+erm_0003_mes1_t:0 "[GetPlayer.MakeScope.Var('saved_scope').Title.GetNameNoTooltip]의 장악을 시작합니다."
+erm_0003_mes1_description:0 "[GetPlayer.MakeScope.Var('rebels_count').GetValue]개의 백작령이 장악될 것입니다."
+
+erm_0004_mes1_t:0 "[GetPlayer.MakeScope.Var('saved_scope').Title.GetNameNoTooltip]의 개발을 시작합니다."
+erm_0004_mes1_description:0 "[GetPlayer.MakeScope.Var('rural_count').GetValue]개의 백작령이 개발될 것입니다."
+
+erm_0900_t:1 "자동 신앙 개종"
+erm_0900_desc:1 "영역의 신앙 개종을 시작할 것인가? 아니면 좀 더 기다릴까?"
+erm_0900_a:0 "가서 우리 신을 알려라!"
+erm_0900_b:0 "지금은 궁정에 남아주게."
+
+erm_0901_t:0 "자동 문화 촉진"
+erm_0901_desc:0 "영역의 문화 촉진을 시작할 것인가? 아니면 좀 더 기다릴까?"
+erm_0901_a:0 "가서 우리의 문화를 퍼트려라!"
+erm_0901_b:0 "지금은 궁정에 남아주게."
+
+erm_0902_t:0 "자동 영지 장악"
+erm_0902_desc:0 "영지 장악을 시작할 것인가? 아니면 좀 더 기다릴까?"
+erm_0902_a:0 "가서 나의 통치를 강고히 하라!"
+erm_0902_b:0 "지금은 궁정에 남아주게."
+
+erm_0903_t:0 "자동 영지 개발"
+erm_0903_desc:0 "영지 개발을 시작할 것인가? 아니면 좀 더 기다릴까?"
+erm_0903_a:0 "가서 나의 땅을 개발하라!"
+erm_0903_b:0 "지금은 궁정에 남아주게."
+
+erm_0950_t:0 "자문회 알림 차단"
+erm_0950_desc:0 "내가 굳이 시키지 않아도 알아서 일 잘하는 위원들에게 많은 편지를 받고 있습니다.\n\n 누구의 알림을 차단할까요?"
+erm_0950_a:0 "나의 [GetPlayer.MakeScope.Var('saved_court_chaplain').GetCharacter.GetCouncilTitle ]"
+erm_0950_c:0 "나의 [GetPlayer.MakeScope.Var('saved_steward').GetCharacter.GetCouncilTitle ]"
+erm_0950_d:0 "나의 [GetPlayer.MakeScope.Var('saved_marshal').GetCharacter.GetCouncilTitle ]"
+erm_0950_f:0 "취소"
+erm_0950_g:0 "전부 다"
+
+
+erm_mute_desc:0 "편지에 관해 이야기하고 싶은데..."
+erm_mute_complete:0 "지금은 아직 괜찮다네..."
+
+erm_0951_t:0 "[GetPlayer.MakeScope.Var('saved_court_chaplain').GetCharacter.GetCouncilTitle]의 알림"
+erm_0951_a_on:0 "개종을 끝내면 알려주길 바라네"
+erm_0951_a_off:0 "개종을 끝내도 알리지 않길 바라네"
+
+erm_0953_t:0 "[GetPlayer.MakeScope.Var('saved_steward').GetCharacter.GetCouncilTitle]의 알림"
+erm_0953_a_on:0 "문화 촉진을 끝내면 알려주길 바라네"
+erm_0953_a_off:0 "문화 촉진을 끝내도 알리지 않길 바라네"
+erm_0953_b_on:0 "영지 개발을 끝내면 알려주길 바라네"
+erm_0953_b_off:0 "영지 개발을 끝내도 알리지 않길 바라네"
+
+erm_0954_t:0 "[GetPlayer.MakeScope.Var('saved_marshal').GetCharacter.GetCouncilTitle]의 알림"
+erm_0954_a_on:0 "영지 장악을 끝내면 알려주길 바라네"
+erm_0954_a_off:0 "영지 장악을 끝내도 알리지 않길 바라네"
+
+erm_1000_t:0 "임무 방식 변경"
+erm_1000_desc:0 "내 자문 위원들에게 임무를 다르게 수행하도록 명령하자. \n\n 누구에게 명령할까?"
+erm_1000_a:0 "나의 [GetPlayer.MakeScope.Var('saved_court_chaplain').GetCharacter.GetCouncilTitle ]"
+erm_1000_c:0 "나의 [GetPlayer.MakeScope.Var('saved_steward').GetCharacter.GetCouncilTitle ]"
+erm_1000_d:0 "나의 [GetPlayer.MakeScope.Var('saved_marshal').GetCharacter.GetCouncilTitle ]"
+erm_1000_f:0 "취소"
+
+erm_mode_desc:0 "자네의 임무에 대해 이야기하고 싶은데..."
+erm_mode_complete:0 "지금은 아직 괜찮다네..."
+
+erm_1001_t:0 "임무 방식 변경"
+erm_1001_desc:0 "무슨 임무를 변경할까?"
+erm_1001_cancel:0 "취소"
+erm_1001_convert_religion:0 "영지 신앙 개종"
+erm_1001_promote_culture:0 "문화 촉진"
+erm_1001_develop_county:0 "영지 개발도 증가"
+erm_1001_increase_control:0 "영지 장악력 증가"
+
+erm_1011_t:0 "개종 방식 변경"
+erm_1011_a_on:0 "임무가 끝나면 궁정으로 돌아오길 바라네."
+erm_1011_a_off:0 "임무가 끝나면 다른 백작령을 진행해주게."
+
+erm_1012_t:0 "문화 촉진 방식 변경"
+erm_1012_a_on:0 "임무가 끝나면 궁정으로 돌아오길 바라네."
+erm_1012_a_off:0 "임무가 끝나면 다른 백작령을 진행해주게."
+erm_1012_b_on:0 "임무가 끝나도 그 지역의 개발을 계속해주게."
+erm_1012_b_off:0 "최대한 개발을 퍼트려서 진행해주게."
+
+erm_1013_t:0 "영지 개발 방식 변경"
+erm_1013_a_on:0 "임무가 끝나면 궁정으로 돌아오길 바라네."
+erm_1013_a_off:0 "임무가 끝나면 다른 백작령을 진행해주게."
+
+erm_1014_t:0 "영지 장악 방식 변경"
+erm_1014_a_on:0 "임무가 끝나면 궁정으로 돌아오길 바라네."
+erm_1014_a_off:0 "임무가 끝나면 다른 백작령을 진행해주게."
