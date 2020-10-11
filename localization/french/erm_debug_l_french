@@ -1,0 +1,52 @@
+l_french:
+erm_debug_0001:0 "Firing event: erm.0900"
+
+erm_debug_0002:0 "Firing event: erm.0001"
+erm_debug_0003:0 "Il y a [GetPlayer.MakeScope.Var('heathens_count').GetValue] comtés hérétiques"
+erm_debug_0004:0 "Tout les éléments suivants sont respectés: \n - selected_county != null \n - councillor_court_chaplain.liege == root"
+erm_debug_0005:0 "Démarrer la conversion religieuse à [GetPlayer.MakeScope.Var('saved_scope').Title.GetNameNoTooltip]"
+erm_debug_0006:0 "Au moins un des éléments suivants n'est pas respecté: \n - selected_county != null \n - councillor_court_chaplain.liege == root"
+
+erm_debug_0007:0 "Firing event: erm.0901"
+
+erm_debug_0008:0 "Firing event: erm.0002"
+erm_debug_0009:0 "Il y a [GetPlayer.MakeScope.Var('foreigners_count').GetValue] comtés de culture étrangère"
+erm_debug_0010:0 "Tout les éléments suivants sont respectés: \n - selected_county != null \n - councillor_steward.liege == root"
+erm_debug_0011:0 "Démarrer la conversion culturelle à [GetPlayer.MakeScope.Var('saved_scope').Title.GetNameNoTooltip]"
+erm_debug_0012:0 "Au moins un des éléments suivants n'est pas respecté: \n - selected_county != null \n - councillor_steward.liege == root"
+
+erm_debug_0013:0 "Firing event: erm.0902"
+
+erm_debug_0014:0 "Firing event: erm.0003"
+erm_debug_0015:0 "Le contrôle comtale est faible dans [GetPlayer.MakeScope.Var('rebels_count').GetValue] comtés"
+erm_debug_0016:0 "Tout les éléments suivants sont respectés: \n - selected_county != null \n - councillor_marshal.liege == root"
+erm_debug_0017:0 "Démarrer l'augmentation automatique du contrôl comtale à [GetPlayer.MakeScope.Var('saved_scope').Title.GetNameNoTooltip]"
+erm_debug_0018:0 "Au moins un des éléments suivants n'est pas respecté: \n - selected_county != null \n - councillor_marshal.liege == root"
+
+erm_debug_0019:0 "Firing event: erm.0950"
+
+erm_debug_0020:0 "Firing event: erm_letters.0001"
+erm_debug_0021:0 "Firing event: erm_letters.0002"
+erm_debug_0022:0 "Firing event: erm_letters.0003"
+
+erm_debug_0023:0 "Firing event: erm.0400"
+erm_debug_0024:0 "Firing event: erm.0401"
+erm_debug_0025:0 "Firing event: erm.0402"
+
+erm_debug_0026:0 "Firing event: erm.1000"
+
+erm_debug_0027:0 "Firing event: erm.0903"
+
+erm_debug_0028:0 "Firing event: erm.0004"
+erm_debug_0029:0 "Le développement comtale est faible dans [GetPlayer.MakeScope.Var('rural_count').GetValue] comtés"
+erm_debug_0030:0 "Tout les éléments suivants sont respectés: \n - selected_county != null \n - councillor_steward.liege == root"
+erm_debug_0031:0 "Démarrer le développement comtale à [GetPlayer.MakeScope.Var('saved_scope').Title.GetNameNoTooltip]"
+erm_debug_0032:0 "Au moins un des éléments suivants n'est pas respecté: \n - selected_county != null \n - councillor_steward.liege == root"
+
+erm_debug_0033:0 "Firing event: erm_letters.0004"
+
+erm_debug_0034:0 "Firing event: erm.0403"
+
+erm_debug_0035:0 "Firing event: erm.0600"
+
+
