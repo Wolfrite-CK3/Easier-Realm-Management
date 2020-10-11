@@ -1,0 +1,30 @@
+﻿l_french:
+erm_county_religion_conversion_t:0 "Convertir les hérétiques à votre religion"
+erm_county_religion_conversion_desc:0 "Ordonner à votre chapelain de parcourir votre domaine pour convertir les infidèles à votre religion. Pour le salut de leur âme !"
+erm_county_religion_conversion_tooltip:0 "Démarrer la conversion de votre domaine à votre religion"
+erm_county_religion_conversion_confirm:0 "Démarrer la conversion religieuse"
+
+erm_county_culture_promotion_t:0 "Convertir les étrangers à votre culture"
+erm_county_culture_promotion_desc:0 "Ordonner à votre intendant de parcourir votre domaine pour convertir les étrangers à votre culture."
+erm_county_culture_promotion_tooltip:0 "Démarrer la conversion de votre domaine à votre culture"
+erm_county_culture_promotion_confirm:0 "Démarrer la conversion culturelle"
+
+erm_county_development_t:0 "Développer vos propriétés"
+erm_county_development_desc:0 "Ordonner à votre intendant de parcourir votre domaine pour développer vos propriétés."
+erm_county_development_tooltip:0 "Démarrer le développement de vos propriétés"
+erm_county_development_confirm:0 "Démarrer le développement"
+
+erm_county_increase_control_t:0 "Augmenter le contrôle comtal"
+erm_county_increase_control_desc:0 "Ordonner à votre maréchal de parcourir votre domaine pour augmenter le contrôle de vos propriétés."
+erm_county_increase_control_tooltip:0 "Augmenter le contrôle de vos propriétés"
+erm_county_increase_control_confirm:0 "Augmenter le contrôle comtale"
+
+erm_mute_councillor_t:0 "Retirer les lettres d'un conseiller"
+erm_mute_councillor_desc:0 "Empêchez le type de conseiller choisi d'envoyer des lettres. La tâche sera toujours exécutée normalement. Pour faire taire une tâche, vous devez avoir un conseiller de ce type. \Si une tâche, qui normalement nécessite une simple décision oui/non, est réduite au silence, la réponse la plus aimable est automatiquement choisie. \Le silence ne fait qu'affecter les lettres !"
+erm_mute_councillor_tooltip:0 "Retirer les lettres d'une tâche sélectionnée"
+erm_mute_councillor_confirm:0 "Retirer les lettres"
+
+erm_alter_tasks_t:0 "Modifier le fonctionnement d'une tâche"
+erm_alter_tasks_desc:0 "Modifier la manière dont la tâche du conseiller choisi est accomplie. \nLa description des tâches sera mise à jour pour indiquer comment la tâche fonctionne, avec les modifications choisies."
+erm_alter_tasks_tooltip:0 "Modifier la tâche sélectionnée"
+erm_alter_tasks_confirm:0 "Modifier la tâche"

@@ -1,0 +1,102 @@
+﻿l_french:
+erm_letters_0003_opening:0 "[councillor.Custom2('AppropriateGreeting', ROOT.Char)]"
+erm_letters_0003_county_complete:0 "Avec l'aide de [councillor.GetFirstNameNoTooltip], nous avons amélioré le contrôle comtale de [county.GetNameNoTier]."
+erm_letters_0003_a:0 "Beau travail, [councillor.GetFirstNameNoTooltip]!"
+
+erm_letters_0004_opening:0 "[councillor.Custom2('AppropriateGreeting', ROOT.Char)]"
+erm_letters_0004_county_complete:0 "Avec l'aide de [councillor.GetFirstNameNoTooltip], nous avons amélioré le développement comtale de [county.GetNameNoTier]."
+erm_letters_0004_a:0 "Beau travail [councillor.GetFirstNameNoTooltip]!"
+
+erm_0001_mes1_t:0 "Conversion religieuse de [GetPlayer.MakeScope.Var('saved_scope').Title.GetNameNoTooltip]."
+erm_0001_mes1_description:0 "[GetPlayer.MakeScope.Var('heathens_count').GetValue] comtés restent à convertir."
+
+erm_0002_mes1_t:0 "Conversion culturelle de [GetPlayer.MakeScope.Var('saved_scope').Title.GetNameNoTooltip]."
+erm_0002_mes1_description:0 "[GetPlayer.MakeScope.Var('foreigners_count').GetValue] comtés restent à convertir."
+
+erm_0003_mes1_t:0 "Augmentation du contrôle de [GetPlayer.MakeScope.Var('saved_scope').Title.GetNameNoTooltip]."
+erm_0003_mes1_description:0 "[GetPlayer.MakeScope.Var('rebels_count').GetValue] comtés restent hors de contrôle."
+
+erm_0004_mes1_t:0 "Développement comtale à [GetPlayer.MakeScope.Var('saved_scope').Title.GetNameNoTooltip]."
+erm_0004_mes1_description:0 "[GetPlayer.MakeScope.Var('rural_count').GetValue] ccomtés restent à développer."
+
+erm_0900_t:1 "Convertir les hérétiques ou non"
+erm_0900_desc:1 "Devrions-nous commencer à convertir certains hérétiques à la religion du puissant chef de ce domaine, ou devrions-nous attendre un peu plus longtemps ?"
+erm_0900_a:0 "Voyagez loin et prêchez pour notre foi"
+erm_0900_b:0 "J'ai besoin de vous au conseil maintenant."
+
+erm_0901_t:0 "Promouvoir la culture ou non"
+erm_0901_desc:0 "Devrions-nous commencer à convertir certains étrangers à notre culture, ou devrions-nous attendre un peu plus longtemps ?"
+erm_0901_a:0 "Voyagez loin et montrez leur le droit chemin"
+erm_0901_b:0 "J'ai besoin de vous au conseil maintenant."
+
+erm_0902_t:0 "Augmenter le contrôle ou non"
+erm_0902_desc:0 "Devrions-nous commencer à augmenter le contrôle dans notre domaine, ou devrions-nous attendre un peu plus longtemps ?"
+erm_0902_a:0 "Voyagez loins et imposez mes règles"
+erm_0902_b:0 "J'ai besoin de vous au conseil maintenant."
+
+erm_0903_t:0 "Développer les comtés ou non"
+erm_0903_desc:0 "Devrions-nous commencer à développer les comtés dans le domaine, ou devrions-nous attendre un peu plus longtemps ?"
+erm_0903_a:0 "Voyagez loins et améliorez nos terres"
+erm_0903_b:0 "J'ai besoin de vous au conseil maintenant."
+
+erm_0950_t:0 "Faire taire les lettres"
+erm_0950_desc:0 "Je reçois de nombreuses lettres de mes conseillers, dont je sais qu'ils font du bon travail, même s'ils ne me le disent pas à chaque fois.  \n \nMais quelles sont les lettres que je souhaite faire taire ?"
+erm_0950_a:0 "Mon [GetPlayer.MakeScope.Var('saved_court_chaplain').GetCharacter.GetCouncilTitle ]"
+erm_0950_c:0 "Mon [GetPlayer.MakeScope.Var('saved_steward').GetCharacter.GetCouncilTitle ]"
+erm_0950_d:0 "Mon [GetPlayer.MakeScope.Var('saved_marshal').GetCharacter.GetCouncilTitle ]"
+erm_0950_f:0 "Peu importe"
+erm_0950_g:0 "Je n'ai besoin d'aucune de vos lettres"
+
+
+erm_mute_desc:0 "J'aimerais avoir une discussion sur les obligations concernant les lettres..."
+erm_mute_complete:0 "Tout est comme il se doit, pour l'instant..."
+
+erm_0951_t:0 "Faire taire les lettres du [GetPlayer.MakeScope.Var('saved_court_chaplain').GetCharacter.GetCouncilTitle]"
+erm_0951_a_on:0 "Je veux des lettres, quand vous en aurez fini avec une conversion de la foi"
+erm_0951_a_off:0 "Je ne veux pas de lettres, lorsque vous avez terminé une conversion de la foi"
+
+erm_0953_t:0 "Faire taire les lettres de l'[GetPlayer.MakeScope.Var('saved_steward').GetCharacter.GetCouncilTitle]"
+erm_0953_a_on:0 "Je veux des lettres, quand vous en aurez fini avec une conversion de la culture"
+erm_0953_a_off:0 "Je ne veux pas de lettres, quand vous en aurez fini avec une promotion de la culture"
+erm_0953_b_on:0 "Je veux des lettres, quand vous en aurez fini avec le développement d'un comté"
+erm_0953_b_off:0 "Je ne veux pas de lettres, quand vous en aurez fini avec le développement d'un comté"
+
+erm_0954_t:0 "Faire taire les lettres du [GetPlayer.MakeScope.Var('saved_marshal').GetCharacter.GetCouncilTitle]"
+erm_0954_a_on:0 "Je veux des lettres, quand vous en aurez fini d'augmenter le contrôle"
+erm_0954_a_off:0 "Je ne veux pas de lettres, quand vous en aurez fini d'augmenter le contrôle"
+
+erm_1000_t:0 "Modifier le fonctionnement de tâches"
+erm_1000_desc:0 "Je pourrais peut-être demander à mes conseillers d'accomplir certaines de leurs tâches différemment. \n \nMais quelles sont les tâches qui devraient être exécutées différemment ?"
+erm_1000_a:0 "Mon [GetPlayer.MakeScope.Var('saved_court_chaplain').GetCharacter.GetCouncilTitle ]"
+erm_1000_c:0 "Mon [GetPlayer.MakeScope.Var('saved_steward').GetCharacter.GetCouncilTitle ]"
+erm_1000_d:0 "Mon [GetPlayer.MakeScope.Var('saved_marshal').GetCharacter.GetCouncilTitle ]"
+erm_1000_f:0 "Peu importe"
+
+erm_mode_desc:0 "J'aimerais avoir une discussion sur la façon dont vous accomplissez votre tâche..."
+erm_mode_complete:0 "Tout est comme il se doit, pour l'instant..."
+
+erm_1001_t:0 "Modifier le fonctionnement de tâches"
+erm_1001_desc:0 "Quelles sont les tâches qui devraient être exécutées différemment ?"
+erm_1001_cancel:0 "Peu importe"
+erm_1001_convert_religion:0 "Conversion religieuse d'un comté"
+erm_1001_promote_culture:0 "Conversion cuturelle d'un conté"
+erm_1001_develop_county:0 "Développement d'un comté"
+erm_1001_increase_control:0 "Augmentation du contrôle comtal"
+
+erm_1011_t:0 "Modifier la tâche de conversion religieuse"
+erm_1011_a_on:0 "Je veux que vous retourniez à la cour, quand vous aurez terminé."
+erm_1011_a_off:0 "Je veux que vous continuiez dans d'autres comtés, quand vous aurez terminé."
+
+erm_1012_t:0 "Modifier la tâche de développement comtal"
+erm_1012_a_on:0 "Je veux que vous retourniez à la cour, quand vous aurez terminé."
+erm_1012_a_off:0 "Je veux que vous continuiez dans d'autres comtés, quand vous aurez terminé."
+erm_1012_b_on:0 "Je veux que vous vous concentriez sur le développement."
+erm_1012_b_off:0 "Je veux que vous etendiez le développement."
+
+erm_1013_t:0 "Modifier la tâche de conversion culturelle"
+erm_1013_a_on:0 "Je veux que vous retourniez à la cour, quand vous aurez terminé."
+erm_1013_a_off:0 "Je veux que vous continuiez dans d'autres comtés, quand vous aurez terminé."
+
+erm_1014_t:0 "Modifier la tâche d'augmentation du contrôle comtale"
+erm_1014_a_on:0 "Je veux que vous retourniez à la cour, quand vous aurez terminé."
+erm_1014_a_off:0 "Je veux que vous continuiez dans d'autres comtés, quand vous aurez terminé."
