@@ -33,7 +33,7 @@
 			triggered_desc = {
 				trigger = {
 					scope:councillor_liege = {
-						has_character_flag = erm_allow_automatic_scatter_develop_county
+						has_character_flag = erm_allow_automatic_develop_county_scatter
 					}
 				}
 				desc = erm_overwrite_0004_scatter
@@ -41,12 +41,31 @@
 			triggered_desc = {
 				trigger = {
 					scope:councillor_liege = {
-						NOT = { has_character_flag = erm_allow_automatic_scatter_develop_county }
+						NOT = { has_character_flag = erm_allow_automatic_develop_county_scatter }
 					}
 				}
 				desc = erm_overwrite_0004_focused
 			}			
 		}
+		desc = {
+			triggered_desc = {
+				trigger = {
+					scope:councillor_liege = { 
+						has_character_flag = erm_allow_automatic_develop_county_own_culture
+					}
+				}
+				desc = erm_overwrite_0004_own_culture
+			}
+			triggered_desc = {
+				trigger = {
+					scope:councillor_liege = {
+						NOT = { has_character_flag = erm_allow_automatic_develop_county_own_culture }
+					}
+				}
+				desc = erm_overwrite_0004_any_culture
+			}
+		}
+
 		desc = {
 			triggered_desc = {
 				trigger = {

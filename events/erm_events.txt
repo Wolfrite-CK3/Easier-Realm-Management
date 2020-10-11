@@ -698,19 +698,39 @@ erm.1012 = { # Configure Develop County
 		name = erm_1012_b_off
 		trigger = {
 			NOT = {
-				has_character_flag = erm_allow_automatic_scatter_develop_county				
+				has_character_flag = erm_allow_automatic_develop_county_scatter				
 			}
 		}
-		add_character_flag = { flag = erm_allow_automatic_scatter_develop_county }
+		add_character_flag = { flag = erm_allow_automatic_develop_county_scatter }
 		trigger_event = erm.1012
 	}
 
 	option = {
 		name = erm_1012_b_on
 		trigger = {
-			has_character_flag = erm_allow_automatic_scatter_develop_county
+			has_character_flag = erm_allow_automatic_develop_county_scatter
 		}
-		remove_character_flag = erm_allow_automatic_scatter_develop_county
+		remove_character_flag = erm_allow_automatic_develop_county_scatter
+		trigger_event = erm.1012
+	}
+
+	option = {
+		name = erm_1012_c_off
+		trigger = {
+			NOT = {
+				has_character_flag = erm_allow_automatic_develop_county_own_culture				
+			}
+		}
+		add_character_flag = { flag = erm_allow_automatic_develop_county_own_culture }
+		trigger_event = erm.1012
+	}
+
+	option = {
+		name = erm_1012_c_on
+		trigger = {
+			has_character_flag = erm_allow_automatic_develop_county_own_culture
+		}
+		remove_character_flag = erm_allow_automatic_develop_county_own_culture
 		trigger_event = erm.1012
 	}
 

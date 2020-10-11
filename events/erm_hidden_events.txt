@@ -250,7 +250,40 @@ erm.0004 = {
 				} 
 				add_to_list = rural
 			}
-		}		
+		}
+		
+		if = {
+			limit = {
+				has_character_flag = erm_allow_automatic_develop_county_own_culture
+			}
+			every_in_list = {
+				list = rural
+				if = {
+					limit = {
+						NOT = {	culture = root.culture }
+					}
+					remove_from_list = rural
+				}
+			}
+			if = {
+				limit = {
+					list_size = {
+						name = rural
+						value = 0
+					}
+				}
+				every_sub_realm_county = {
+					if = {
+						limit = { 
+							NOT = { 
+								development_level >= root.development_hard_cap
+							}	
+						} 
+						add_to_list = rural
+					}
+				}
+			}
+		}
 
 		if = {
 			limit = {
@@ -482,7 +515,7 @@ erm.0403 = {
 			if = { # Scatter Mode
 				limit = {
 					has_character_flag = erm_allow_automatic_develop_county
-					has_character_flag = erm_allow_automatic_scatter_develop_county
+					has_character_flag = erm_allow_automatic_develop_county_scatter
 					is_ai = no
 				}
 				scope:councillor = {
@@ -588,10 +621,10 @@ erm.0600 = { # Inherit Settings
 			}
 			if = {
 				limit = {
-					has_character_flag = erm_allow_automatic_scatter_develop_county
+					has_character_flag = erm_allow_automatic_develop_county_scatter
 				}
 				player_heir = {
-					add_character_flag = { flag = erm_allow_automatic_scatter_develop_county }
+					add_character_flag = { flag = erm_allow_automatic_develop_county_scatter }
 				}
 			}
 

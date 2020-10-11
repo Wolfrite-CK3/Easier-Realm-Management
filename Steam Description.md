@@ -24,21 +24,24 @@ Some issues might be marked with a "Suggestion" label, in which case I would lov
 Another important label is the "Question" label. This label I will add to issues involving questions by either me or others, about some potential suggestion. Much like the "Suggestion" label, this label invites to conversation, centered on the question asked, and again I would love any input from others.
 
 [h1] Supported languages [/h1]
-English
+English - By BlueishTigerDK (Steam) / andr9528 (GitHub)
+Korean - By fuzzypurge (Steam) / fuzzypurge (GitHub)
+French - By dodoz371 (GitHub)
+
 [h2] Want my mod to support your language? [/h2]
 
 If that is the case, then follow this short list, and add the missing translations.
 [olist]
-[*] Fork The  [url=https://github.com/WolfDKs-CK3-Modding/Easier-Realm-Management] GitHub Repository [/url] .
-[*] Make the necessary localization files and translations.
-[*] Create a Pull Request, wherein you explain the changes you have made i.e which language you have made support for.
+[*] Fork the [url=https://github.com/WolfDKs-CK3-Modding/Easier-Realm-Management] GitHub Repository [/url] .
+[*] Make the necessary localization files and translations in your fork.
+[*] Create a issue or write a comment to an existing issue on my issue page, stating which language you have made support for.
 [/olist]
 
 For this to work, CK3 has to support the language, so do keep that in mind.
 
 [h1] Incompatibility [/h1]
 [list]
-[*] Due to how it is coded, any mod that changes the Convert Religion Task, will be incompatibility, without a patch.
+[*] Due to how it is coded, any mod that changes the Convert Faith Task, will be incompatibility, without a patch.
 [*] Due to how it is coded, any mod that changes the Promote Culture Task, will be incompatibility, without a patch.
 [*] Due to how it is coded, any mod that changes the Increase Control Task, will be incompatibility, without a patch.
 [*] Due to how it is coded, any mod that changes the Develop County Task, will be incompatibility, without a patch.
@@ -56,14 +59,23 @@ If you encounter a bug/issue with my mod, check that you do not have something e
 
 [h1] Credits [/h1]
 
-Many thanks to null#7817 on discord for assistance with fixing many functionality issues.
+Many thanks to null#7817 on Discord for assistance with finding solutions to many problem.
+Many thanks to fuzzypurge on Steam/GitHub for Korean translation.
+Many thanks to dodoz371 on GitHub for French translation.
 
 [h1] Versions [/h1]
 
 At the moment I am working toward any issues marked with "V1.1.0 on the [url=https://github.com/WolfDKs-CK3-Modding/Easier-Realm-Management/issues] GitHub issue page [/url].
 To known which version the mod is on currently, look for the version below, which is underlined.
 
-[u] [b] V1.0.1 [/b] [/u]
+[u] [b] V1.0.3 [/b] [/u]
+- Added French Translation.
+- Added Setting for Develop County, to target counties of player culture first
+
+[b] V1.0.2 [/b]
+- Added Korean translation.
+
+[b] V1.0.1 [/b]
 - Fixed a few Localization mistakes.
 - Added automation of Develop County.
 - Added Silence all letters option.
