@@ -1,0 +1,18 @@
+﻿l_french:
+erm_overwrite_0001_auto:0 "Quand j'en aurai fini avec un comté, je passerai à un autre, s'il y a d'autres comtés où prêcher notre religion. Sinon, je retournerai à la cour. \n \n"
+erm_overwrite_0001_van:0 "Quand j'en aurai fini avec un comté, je retournerai à la cour. \n \n"
+erm_overwrite_0001_mute:0 "Quand j'en aurai fini avec un comté, je ne vous enverrai pas de lettre. \n \n"
+
+erm_overwrite_0002_auto:0 "Quand j'en aurai fini avec un comté, je passerai à un autre, s'il y a d'autres comtés où promouvoir notre culture. Sinon, je retournerai à la cour. \n \n"
+erm_overwrite_0002_van:0 "Quand j'en aurai fini avec un comté, je retournerai à la cour. \n \n"
+erm_overwrite_0002_mute:0 "Quand j'en aurai fini avec un comté, je ne vous enverrai pas de lettre. \n \n"
+
+erm_overwrite_0003_auto:0 "Quand j'en aurai fini avec un comté, je passerai à un autre, s'il y a d'autres comtés dont le contrôle est inférier à 100. Sinon, je retournerai à la cour. \n \n"
+erm_overwrite_0003_van:0 "Quand j'en aurai fini avec un comté, je retournerai à la cour. \n \n"
+erm_overwrite_0003_mute:0 "Quand j'en aurai fini avec un comté, je ne vous enverrai pas de lettre. \n \n"
+
+erm_overwrite_0004_auto:0 "Lorsque j'aurai fini d'augmenter le développement d'un comté, je resterai et l'augmenterai encore ou je passerai à d'autres comté, s'il y a d'autres comté dont le développement est bas. Sinon, je retournerai à la cour. \n \n"
+erm_overwrite_0004_van:0 "Lorsque j'aurai fini d'augmenter le développement d'un comté, je retournerai à la cour. \n \n"
+erm_overwrite_0004_focused:0 "Quand j'aurai fini d'augmenter le développement d'une unité, je continuerai jusqu'à ce qu'il atteigne la limite. \n \n"
+erm_overwrite_0004_scatter:0 "Quand j'aurai fini d'augmenter le développement d'un comté, soit je déménagerai dans un autre comté, soit je retournerai à la court.\n \n"
+erm_overwrite_0004_mute:0 "Quand j'en aurai fini avec un comté, je ne vous enverrai pas de lettre. \n \n"
