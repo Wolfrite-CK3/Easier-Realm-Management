@@ -16,3 +16,5 @@ erm_overwrite_0004_van:0 "개발도가 1 올라가면, 궁정으로 돌아옵니
 erm_overwrite_0004_focused:0 "개발 한계에 도달할 때까지 임무를 계속합니다.\n \n"
 erm_overwrite_0004_scatter:0 "개발도가 1 올라가면, 다른 백작령으로 이동하거나 궁정으로 돌아옵니다. \n \n"
 erm_overwrite_0004_mute:0 "개발도가 1 올라가면, 알림을 보내지 않습니다. \n \n"
+erm_overwrite_0004_own_culture:0 "다른 백작령으로 이동할 때 당신의 문화를 우선적으로 선택합니다. \n \n"
+erm_overwrite_0004_any_culture:0 "다른 백작령으로 이동할 때 문화를 고려하지 않습니다. \n \n"
