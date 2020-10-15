@@ -1,0 +1,52 @@
+﻿l_russian:
+erm_debug_0001:0 "Firing event: erm.0900"
+
+erm_debug_0002:0 "Firing event: erm.0001"
+erm_debug_0003:0 "In the Heathens list there are [GetPlayer.MakeScope.Var('heathens_count').GetValue] counties left"
+erm_debug_0004:0 "All of the following evaluated to true: \n - selected_county != null \n - councillor_court_chaplain.liege == root"
+erm_debug_0005:0 "Starting automatic conversion of religion in [GetPlayer.MakeScope.Var('saved_scope').Title.GetNameNoTooltip]"
+erm_debug_0006:0 "At least one of the following evaluated to false: \n - selected_county != null \n - councillor_court_chaplain.liege == root"
+
+erm_debug_0007:0 "Firing event: erm.0901"
+
+erm_debug_0008:0 "Firing event: erm.0002"
+erm_debug_0009:0 "In the Foreigners list there are [GetPlayer.MakeScope.Var('foreigners_count').GetValue] counties left"
+erm_debug_0010:0 "All of the following evaluated to true: \n - selected_county != null \n - councillor_steward.liege == root"
+erm_debug_0011:0 "Starting automatic promotion of culture in [GetPlayer.MakeScope.Var('saved_scope').Title.GetNameNoTooltip]"
+erm_debug_0012:0 "At least one of the following evaluated to false: \n - selected_county != null \n - councillor_steward.liege == root"
+
+erm_debug_0013:0 "Firing event: erm.0902"
+
+erm_debug_0014:0 "Firing event: erm.0003"
+erm_debug_0015:0 "In the Foreigners list there are [GetPlayer.MakeScope.Var('rebels_count').GetValue] counties left"
+erm_debug_0016:0 "All of the following evaluated to true: \n - selected_county != null \n - councillor_marshal.liege == root"
+erm_debug_0017:0 "Starting automatic increase of control in [GetPlayer.MakeScope.Var('saved_scope').Title.GetNameNoTooltip]"
+erm_debug_0018:0 "At least one of the following evaluated to false: \n - selected_county != null \n - councillor_marshal.liege == root"
+
+erm_debug_0019:0 "Firing event: erm.0950"
+
+erm_debug_0020:0 "Firing event: erm_letters.0001"
+erm_debug_0021:0 "Firing event: erm_letters.0002"
+erm_debug_0022:0 "Firing event: erm_letters.0003"
+
+erm_debug_0023:0 "Firing event: erm.0400"
+erm_debug_0024:0 "Firing event: erm.0401"
+erm_debug_0025:0 "Firing event: erm.0402"
+
+erm_debug_0026:0 "Firing event: erm.1000"
+
+erm_debug_0027:0 "Firing event: erm.0903"
+
+erm_debug_0028:0 "Firing event: erm.0004"
+erm_debug_0029:0 "In the Rural list there are [GetPlayer.MakeScope.Var('rural_count').GetValue] counties left"
+erm_debug_0030:0 "All of the following evaluated to true: \n - selected_county != null \n - councillor_steward.liege == root"
+erm_debug_0031:0 "Starting automatic development of county in [GetPlayer.MakeScope.Var('saved_scope').Title.GetNameNoTooltip]"
+erm_debug_0032:0 "At least one of the following evaluated to false: \n - selected_county != null \n - councillor_steward.liege == root"
+
+erm_debug_0033:0 "Firing event: erm_letters.0004"
+
+erm_debug_0034:0 "Firing event: erm.0403"
+
+erm_debug_0035:0 "Firing event: erm.0600"
+
+
