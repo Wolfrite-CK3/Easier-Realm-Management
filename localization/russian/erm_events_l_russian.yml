@@ -1,0 +1,104 @@
+﻿l_russian:
+erm_letters_0003_opening:0 "[councillor.Custom2('AppropriateGreeting', ROOT.Char)]"
+erm_letters_0003_county_complete:0 "Управляющий [councillor.GetFirstNameNoTooltip] помог нам установить полный контроль в графстве [county.GetNameNoTier]."
+erm_letters_0003_a:0 "Отличная работа, [councillor.GetFirstNameNoTooltip]!"
+
+erm_letters_0004_opening:0 "[councillor.Custom2('AppropriateGreeting', ROOT.Char)]"
+erm_letters_0004_county_complete:0 "Управляющий [councillor.GetFirstNameNoTooltip] помог нам усилить развитие в графстве [county.GetNameNoTier]."
+erm_letters_0004_a:0 "Отличная работа, [councillor.GetFirstNameNoTooltip]!"
+
+erm_0001_mes1_t:0 "Смена конфессии в [GetPlayer.MakeScope.Var('saved_scope').Title.GetNameNoTooltip]."
+erm_0001_mes1_description:0 "[GetPlayer.MakeScope.Var('heathens_count').GetValue] графств осталось."
+
+erm_0002_mes1_t:0 "Распространение культуры в [GetPlayer.MakeScope.Var('saved_scope').Title.GetNameNoTooltip]."
+erm_0002_mes1_description:0 "[GetPlayer.MakeScope.Var('foreigners_count').GetValue] графств осталось."
+
+erm_0003_mes1_t:0 "Усиление контроля в [GetPlayer.MakeScope.Var('saved_scope').Title.GetNameNoTooltip]."
+erm_0003_mes1_description:0 "[GetPlayer.MakeScope.Var('rebels_count').GetValue] графств осталось."
+
+erm_0004_mes1_t:0 "Усиление развития графства в [GetPlayer.MakeScope.Var('saved_scope').Title.GetNameNoTooltip]."
+erm_0004_mes1_description:0 "[GetPlayer.MakeScope.Var('rural_count').GetValue] графств осталось."
+
+erm_0900_t:1 "Сменить конфессию или нет?"
+erm_0900_desc:1 "Должны ли мы начать смену конфессии в религию могущественного лидера этой державы, или, возможно, подождать еще немного?"
+erm_0900_a:0 "Идите и проповедуйте нашего Бога (богов)!"
+erm_0900_b:0 "Вы нужны мне в совете прямо сейчас."
+
+erm_0901_t:0 "Распространять культуру или нет?"
+erm_0901_desc:0 "Стоит ли нам начать продвигать нашу культуру среди иностранцев нашей державы или, может быть, подождать еще немного?"
+erm_0901_a:0 "Идите и учите их нашему пути!"
+erm_0901_b:0 "Вы нужны мне в совете прямо сейчас."
+
+erm_0902_t:0 "Усилить контроль или нет?"
+erm_0902_desc:0 "Должны ли мы начать усиливать контроль в нашей державе или, возможно, подождать еще немного?"
+erm_0902_a:0 "Идите и усильте мою власть!"
+erm_0902_b:0 "Вы нужны мне в совете прямо сейчас."
+
+erm_0903_t:0 "Усилить развитие графства или нет?"
+erm_0903_desc:0 "Следует ли нам начать развивать графства в державе или, возможно, подождать еще немного?"
+erm_0903_a:0 "Идите и улучшайте наши земли!"
+erm_0903_b:0 "Вы нужны мне в совете прямо сейчас."
+
+erm_0950_t:0 "Заглушить письма"
+erm_0950_desc:0 "Я получаю много писем от моих советников, которые, как я знаю, делают хорошую работу, даже если они мне не говорят каждый раз. \n \nНо чьи письма я хочу замолчать?"
+erm_0950_a:0 "Мой [GetPlayer.MakeScope.Var('saved_court_chaplain').GetCharacter.GetCouncilTitle ]"
+erm_0950_c:0 "Мой [GetPlayer.MakeScope.Var('saved_steward').GetCharacter.GetCouncilTitle ]"
+erm_0950_d:0 "Мой [GetPlayer.MakeScope.Var('saved_marshal').GetCharacter.GetCouncilTitle ]"
+erm_0950_f:0 "Не берите в голову"
+erm_0950_g:0 "Мне не нужны ничьи письма"
+
+
+erm_mute_desc:0 "Я хочу поговорить об обязательствах по письмам..."
+erm_mute_complete:0 "Пока всё как должно быть..."
+
+erm_0951_t:0 "Заглушить письма от [GetPlayer.MakeScope.Var('saved_court_chaplain').GetCharacter.GetCouncilTitle]"
+erm_0951_a_on:0 "Я ХОЧУ получать письма, когда Вы заканчиваете с обращением веры"
+erm_0951_a_off:0 "Я НЕ хочу получать письма, когда Вы заканчиваете с обращением веры"
+
+erm_0953_t:0 "Заглушить письма от [GetPlayer.MakeScope.Var('saved_steward').GetCharacter.GetCouncilTitle]"
+erm_0953_a_on:0 "Я ХОЧУ получать письма, когда Вы заканчиваете с распространением культуры"
+erm_0953_a_off:0 "Я НЕ хочу получать письма, когда Вы заканчиваете с распространением культуры"
+erm_0953_b_on:0 "Я ХОЧУ получать письма, когда Вы заканчиваете с развитием графства"
+erm_0953_b_off:0 "Я НЕ хочу получать письма, когда Вы заканчиваете с развитием графства"
+
+erm_0954_t:0 "Заглушить письма от [GetPlayer.MakeScope.Var('saved_marshal').GetCharacter.GetCouncilTitle]"
+erm_0954_a_on:0 "Я ХОЧУ получать письма, когда Вы заканчиваете с усилением контроля"
+erm_0954_a_off:0 "Я НЕ хочу получать письма, когда Вы заканчиваете с усилением контроля"
+
+erm_1000_t:0 "Изменить функциональность задач"
+erm_1000_desc:0 "Возможно, я мог бы попросить своих советников по-другому выполнять некоторые из своих задач. \n \nНо чьи задачи нужно выполнять по-другому?"
+erm_1000_a:0 "Мой [GetPlayer.MakeScope.Var('saved_court_chaplain').GetCharacter.GetCouncilTitle ]"
+erm_1000_c:0 "Мой [GetPlayer.MakeScope.Var('saved_steward').GetCharacter.GetCouncilTitle ]"
+erm_1000_d:0 "Мой [GetPlayer.MakeScope.Var('saved_marshal').GetCharacter.GetCouncilTitle ]"
+erm_1000_f:0 "Не берите в голову"
+
+erm_mode_desc:0 "Я бы хотел поговорить о том, как Вы выполняете свою задачу..."
+erm_mode_complete:0 "Пока всё как должно быть..."
+
+erm_1001_t:0 "Изменить функциональность задачи"
+erm_1001_desc:0 "Какую задачу нужно выполнять по-другому?"
+erm_1001_cancel:0 "Не берите в голову"
+erm_1001_convert_religion:0 "Смена конфессии в графстве"
+erm_1001_promote_culture:0 "Распространение культуры"
+erm_1001_develop_county:0 "Усиление развития в графстве"
+erm_1001_increase_control:0 "Усиление контроля над графством"
+
+erm_1011_t:0 "Изменение задачи смены конфессии"
+erm_1011_a_on:0 "Я хочу, чтобы Вы вернулись в совет, когда закончите."
+erm_1011_a_off:0 "Я хочу, чтобы Вы продолжили в других графствах, когда закончите."
+
+erm_1012_t:0 "Изменение задачи усиления развития"
+erm_1012_a_on:0 "Я хочу, чтобы Вы вернулись в совет, когда закончите."
+erm_1012_a_off:0 "Я хочу, чтобы Вы продолжили в других графствах, когда закончите."
+erm_1012_b_on:0 "Я хочу, чтобы Вы сфокусировались на развитии."
+erm_1012_b_off:0 "Я хочу, чтобы Вы распространяли развитие."
+erm_1012_c_on:0 "Я хочу, чтобы Вы развивали любое графство."
+erm_1012_c_off:0 "Я хочу, чтобы Вы развивали графства моей культуры."
+
+erm_1013_t:0 "Изменение задачи распространения культуры"
+erm_1013_a_on:0 "Я хочу, чтобы Вы вернулись в совет, когда закончите."
+erm_1013_a_off:0 "Я хочу, чтобы Вы продолжили в других графствах, когда закончите."
+
+erm_1014_t:0 "Изменение задачи усиления контроля"
+erm_1014_a_on:0 "Я хочу, чтобы Вы вернулись в совет, когда закончите."
+erm_1014_a_off:0 "Я хочу, чтобы Вы продолжили в других графствах, когда закончите."

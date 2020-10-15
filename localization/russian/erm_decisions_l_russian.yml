@@ -1,0 +1,30 @@
+﻿l_russian:
+erm_county_religion_conversion_t:0 "Смена конфессии в графстве"
+erm_county_religion_conversion_desc:0 "Приказать вашему каппелану путешествовать по державе и менять конфессии всех владений в вашу религию. Во имя Бога (богов)!"
+erm_county_religion_conversion_tooltip:0 "Начать смену конфессии в вашу религию в державе"
+erm_county_religion_conversion_confirm:0 "Начать смену конфессии"
+
+erm_county_culture_promotion_t:0 "Распространить культуры"
+erm_county_culture_promotion_desc:0 "Приказать своему советнику путешествовать по державе и обращать все владения в вашу культуру."
+erm_county_culture_promotion_tooltip:0 "Начать распространие культуры в вашей державе"
+erm_county_culture_promotion_confirm:0 "Начать распространие культуры"
+
+erm_county_development_t:0 "Усилить развитие в графстве"
+erm_county_development_desc:0 "Приказать своему советнику путешествовать по державе и развивать все владения."
+erm_county_development_tooltip:0 "Начать усиление развития в графствах"
+erm_county_development_confirm:0 "Начать усиление развития"
+
+erm_county_increase_control_t:0 "Усилить контроль над графством"
+erm_county_increase_control_desc:0 "Приказать своему маршалу путешествовать по державе и усиливать контроль во всех ваших владениях."
+erm_county_increase_control_tooltip:0 "Усилить контроль в вашей державе"
+erm_county_increase_control_confirm:0 "Усилить контроль"
+
+erm_mute_councillor_t:0 "Заглушить письма советников"
+erm_mute_councillor_desc:0 "Запретить выбранному советнику отправлять письма. Задача по-прежнему будет выполняться в обычном режиме. Чтобы заглушить, вам нужен советник такого типа. \nЕсли какая-либо задача, которая обычно требует простого решения да / нет, заглушена, автоматически выбирается наиболее добрый ответ. \n \n Заглушение влияет только на письма!"
+erm_mute_councillor_tooltip:0 "Заглушить письма советников по конкретной задаче"
+erm_mute_councillor_confirm:0 "Заглушить письма"
+
+erm_alter_tasks_t:0 "Изменить функциональность задач"
+erm_alter_tasks_desc:0 "Изменить способ выполнения заданий выбранного советника. \n \nОписание задач будет обновлено, чтобы показать, как задача будет выполняться."
+erm_alter_tasks_tooltip:0 "Изменить функциональность выбранной задачи"
+erm_alter_tasks_confirm:0 "Изменить"
