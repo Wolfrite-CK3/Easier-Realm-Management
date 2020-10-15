@@ -27,6 +27,7 @@ Another important label is the "Question" label. This label I will add to issues
 English - By BlueishTigerDK (Steam) / andr9528 (GitHub)
 Korean - By fuzzypurge (Steam) / fuzzypurge (GitHub)
 French - By dodoz371 (GitHub)
+Russian - By vlsergey (GitHub)
 
 [h2] Want my mod to support your language? [/h2]
 
@@ -62,13 +63,17 @@ If you encounter a bug/issue with my mod, check that you do not have something e
 Many thanks to null#7817 on Discord for assistance with finding solutions to many problem.
 Many thanks to fuzzypurge on Steam/GitHub for Korean translation.
 Many thanks to dodoz371 on GitHub for French translation.
+Many thanks to vlsergey on GitHub for Russian translation.
 
 [h1] Versions [/h1]
 
 At the moment I am working toward any issues marked with "V1.1.0 on the [url=https://github.com/WolfDKs-CK3-Modding/Easier-Realm-Management/issues] GitHub issue page [/url].
 To known which version the mod is on currently, look for the version below, which is underlined.
 
-[u] [b] V1.0.3 [/b] [/u]
+[u] [b] V1.0.4 [/b] [/u]
+- Added Russian Translation
+
+[b] V1.0.3 [/b]
 - Added French Translation.
 - Added Setting for Develop County, to target counties of player culture first
 
