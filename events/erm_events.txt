@@ -128,7 +128,7 @@ erm.0902 = { # Increase Control
 }
 
 erm.0903 = { # Develop County
-type = character_event
+	type = character_event
 	title = erm_0903_t
 	desc = erm_0903_desc
 	theme = culture_change
@@ -824,5 +824,65 @@ erm.1014 = { # Configure Increase Control
 		name = erm_mode_complete
 
 		remove_variable = saved_marshal
+	}
+}
+
+erm.1100 = {
+	type = character_event
+	title = erm_1100_t
+	desc = erm_1100_desc
+	theme = realm
+
+	left_portrait = {
+		character = root
+		animation = personality_rational
+	}
+
+	option = {
+		name = erm_1100_a
+
+		trigger_event = erm.1101
+	}
+	
+	option = {
+		name = erm_1100_b
+		
+		trigger_event = erm.1102
+	}
+
+	option = {
+		name = erm_1100_c
+	}
+}
+
+erm.1101 = {
+	type = character_event
+	title = erm_1101_t
+	desc = erm_1101_desc
+	theme = realm
+
+	immediate = {
+		
+	}
+
+	option = {
+		name = erm_1101_cancel
+	}
+}
+
+erm.1102 = {
+	type = character_event
+	title = erm_1102_t
+	desc = erm_1102_desc
+	theme = realm
+
+	immediate = {
+		every_sub_realm_county = {
+			debug_log_scopes = yes			 
+		}
+	}
+	
+	option = {
+		name = erm_1102_cancel
 	}
 }

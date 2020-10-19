@@ -15,7 +15,7 @@ Current Effected Tasks include:
 
 [h1] Planned Features [/h1]
 
-See the [url=https://github.com/WolfDKs-CK3-Modding/Easier-Realm-Management/issues] Github Issues [/url], for issues marked with "Enhancement" label. Issues marked with "Enhancement" also tend to have another label, indicating for which version of the mod, I am planning to have that feature implemented in. 
+See the [url=https://github.com/WolfDKs-CK3-Modding/Easier-Realm-Management/issues] GitHub Issues [/url], for issues marked with "Enhancement" label. Issues marked with "Enhancement" also tend to have another label, indicating for which version of the mod, I am planning to have that feature implemented in. 
 
 [h2] Other Noticeable Labels [/h2]
 

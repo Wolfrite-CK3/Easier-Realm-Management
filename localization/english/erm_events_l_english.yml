@@ -102,3 +102,17 @@ erm_1013_a_off:0 "I want you to continue in other counties, when you are done."
 erm_1014_t:0 "Altering Increase Control Task"
 erm_1014_a_on:0 "I want you to return to the court, when you are done."
 erm_1014_a_off:0 "I want you to continue in other counties, when you are done."
+
+erm_1100_t:0 "Develop County Holdings"
+erm_1100_desc:0 "Should i construct new buildings in my realm or should i Upgrade existing ones?"
+erm_1100_a:0 "Build New Ones"
+erm_1100_b:0 "Upgrade Existing Ones"
+erm_1100_c:0 "Nevermind"
+
+erm_1101_t:0 "Develop County Holdings - Construct New"
+erm_1101_desc:0 "Should i construct new buildings in my realm or should i Upgrade existing ones?"
+erm_1101_cancel:0 "Nevermind"
+
+erm_1102_t:0 "Develop County Holdings - Upgrade Existing"
+erm_1102_desc:0 "Should i construct new buildings in my realm or should i Upgrade existing ones?"
+erm_1102_cancel:0 "Nevermind"
