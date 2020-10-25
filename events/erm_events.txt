@@ -276,7 +276,7 @@ erm.0950 = { # Mute Start
 	}
 
 	option = { # Cancel
-		name = erm_0950_f	
+		name = erm_nevermind	
 		
 		remove_variable = saved_court_chaplain
 		remove_variable = saved_steward
@@ -517,7 +517,7 @@ erm.1000 = { # Modes Start
 	}
 
 	option = { # Cancel
-		name = erm_1000_f	
+		name = erm_nevermind	
 		
 		remove_variable = saved_court_chaplain
 		remove_variable = saved_steward
@@ -607,7 +607,7 @@ erm.1001 = { # Modes Chose Task
 	}
 
 	option = { # Cancel
-		name = erm_1001_cancel	
+		name = erm_nevermind	
 		
 		remove_variable = saved_court_chaplain
 		remove_variable = saved_steward
@@ -841,48 +841,109 @@ erm.1100 = {
 	option = {
 		name = erm_1100_a
 
-		trigger_event = erm.1101
+		if = {
+			limit = {
+				has_government = tribal_government
+			}
+			trigger_event = erm.1110
+		}
+		else = {
+			trigger_event = erm.1140
+		}
+		
 	}
 	
 	option = {
 		name = erm_1100_b
 		
-		trigger_event = erm.1102
+		trigger_event = erm.1120
 	}
 
 	option = {
-		name = erm_1100_c
+		name = erm_nevermind
 	}
 }
 
-erm.1101 = {
+erm.1110 = { # New Tribal Building
 	type = character_event
-	title = erm_1101_t
-	desc = erm_1101_desc
+	title = erm_construct_new_t
+	desc = erm_construct_new_desc
 	theme = realm
 
 	immediate = {
-		
-	}
-
-	option = {
-		name = erm_1101_cancel
-	}
-}
-
-erm.1102 = {
-	type = character_event
-	title = erm_1102_t
-	desc = erm_1102_desc
-	theme = realm
-
-	immediate = {
-		every_sub_realm_county = {
-			debug_log_scopes = yes			 
+		any_realm_province = {
+			trigger = {
+				has_free_building_slot = yes
+				has_ongoing_construction = no
+			}
+			add_to_list = provinces
 		}
 	}
-	
+
 	option = {
-		name = erm_1102_cancel
+		name = erm_nevermind
+	}
+}
+
+erm.1120 = { # Upgrade Tribal Building
+	type = character_event
+	title = erm_upgrade_existing_t
+	desc = erm_upgrade_existing_desc
+	theme = realm
+	
+	immediate = {
+		any_realm_province = {
+			trigger = {
+				num_buildings > 0
+				has_ongoing_construction = no
+			}
+			add_to_list = provinces
+		}
+	}
+
+	option = {
+		name = erm_nevermind
+	}
+}
+
+erm.1140 = { # New Non-Tribal Building
+	type = character_event
+	title = erm_construct_new_t
+	desc = erm_construct_new_desc
+	theme = realm
+
+	immediate = {
+		any_realm_province = {
+			trigger = {
+				has_free_building_slot = yes
+				has_ongoing_construction = no
+			}
+			add_to_list = provinces
+		}
+	}
+
+	option = {
+		name = erm_nevermind
+	}
+}
+
+erm.1190 = { # Upgrade Non-Tribal Building
+	type = character_event
+	title = erm_upgrade_existing_t
+	desc = erm_upgrade_existing_desc
+	theme = realm
+	
+	immediate = {
+		any_realm_province = {
+			trigger = {
+				num_buildings > 0
+				has_ongoing_construction = no
+			}
+			add_to_list = provinces
+		}
+	}
+
+	option = {
+		name = erm_nevermind
 	}
 }
