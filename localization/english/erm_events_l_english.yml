@@ -94,6 +94,9 @@ erm_1012_b_on:0 "I want you to focus the development."
 erm_1012_b_off:0 "I want you to spread out the development."
 erm_1012_c_on:0 "I want you to develop any county."
 erm_1012_c_off:0 "I want you to develop counties of my culture."
+erm_1012_d_on:0 "I want you to ignore current development."
+erm_1012_d_off:0 "I want you to consider current development."
+
 
 erm_1013_t:0 "Altering Promote Culture Task"
 erm_1013_a_on:0 "I want you to return to the court, when you are done."

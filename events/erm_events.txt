@@ -735,6 +735,26 @@ erm.1012 = { # Configure Develop County
 	}
 
 	option = {
+		name = erm_1012_d_off
+		trigger = {
+			NOT = {
+				has_character_flag = erm_allow_automatic_develop_county_ignore_cap				
+			}
+		}
+		add_character_flag = { flag = erm_allow_automatic_develop_county_ignore_cap }
+		trigger_event = erm.1012
+	}
+
+	option = {
+		name = erm_1012_d_on
+		trigger = {
+			has_character_flag = erm_allow_automatic_develop_county_ignore_cap
+		}
+		remove_character_flag = erm_allow_automatic_develop_county_ignore_cap
+		trigger_event = erm.1012
+	}
+
+	option = {
 		name = erm_mode_complete
 
 		remove_variable = saved_steward
@@ -827,6 +847,9 @@ erm.1014 = { # Configure Increase Control
 	}
 }
 
+
+# Incomplete Features
+# - Missing Building as valid Scopes or similar.
 erm.1100 = {
 	type = character_event
 	title = erm_1100_t

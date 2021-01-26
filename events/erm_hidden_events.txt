@@ -541,11 +541,16 @@ erm.0403 = {
 					trigger_event = { id = erm.0004 }
 				}
 			}
-			else_if = { # Vanilla Mode
+			else_if = { # Vanilla Mode - With Cap
 				limit = {
 					exists = scope:county
 					scope:county = {
 						development_level >= root.development_hard_cap
+					}
+					scope:root = {
+						NOT = {
+							has_character_flag = erm_allow_automatic_develop_county_ignore_cap
+						}												
 					}
 				}
 				scope:councillor = {
@@ -564,7 +569,34 @@ erm.0403 = {
 						years = 10
 					}
 				}			
-			}			
+			}
+			else_if = { # Vanilla Mode - Without Cap
+				limit = {
+					exists = scope:county
+					scope:county = {
+						development_level >= max_development_level
+					}
+					scope:root = {
+						has_character_flag = erm_allow_automatic_develop_county_ignore_cap																
+					}
+				}
+				scope:councillor = {
+					start_default_task = yes
+				}
+				if = {
+					limit = {
+						is_ai = no
+						has_character_flag = erm_allow_automatic_develop_county
+					}
+					remove_character_flag = erm_allow_automatic_develop_county
+				}				
+				scope:councillor.liege = {
+					add_character_flag = {
+						flag = no_ai_increase_development
+						years = 10
+					}
+				}			
+			}						
 		}
 	}
 }
@@ -627,7 +659,14 @@ erm.0600 = { # Inherit Settings
 					add_character_flag = { flag = erm_allow_automatic_develop_county_scatter }
 				}
 			}
-
+			if = {
+				limit = {
+					has_character_flag = erm_allow_automatic_develop_county_ignore_cap
+				}
+				player_heir = {
+					add_character_flag = { flag = erm_allow_automatic_develop_county_ignore_cap }
+				}
+			}
 
 			# Mute Flags
 			if = {

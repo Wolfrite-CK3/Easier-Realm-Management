@@ -2,7 +2,7 @@
 [list]
 [*] The ability for councilors to automatically move on to other counties that are valid for their tasks.
 [*] Adds decisions to assign councilors to perform certain task without having to find valid targets.
-[*] The ability to toggle on or off, automatically moving on to other valid counties.    
+[*] The ability to toggle on or off, automatically moving on to other valid counties.
 [*] The ability to toggle on or off, letters sent by the councilors when they complete certain tasks.
 [/list]
 Current Effected Tasks include:
@@ -15,7 +15,7 @@ Current Effected Tasks include:
 
 [h1] Planned Features [/h1]
 
-See the [url=https://github.com/WolfDKs-CK3-Modding/Easier-Realm-Management/issues] GitHub Issues [/url], for issues marked with "Enhancement" label. Issues marked with "Enhancement" also tend to have another label, indicating for which version of the mod, I am planning to have that feature implemented in. 
+See the [url=https://github.com/WolfDKs-CK3-Modding/Easier-Realm-Management/issues] GitHub Issues [/url], for issues marked with "Enhancement" label. Issues marked with "Enhancement" also tend to have another label, indicating for which version of the mod, I am planning to have that feature implemented in.
 
 [h2] Other Noticeable Labels [/h2]
 
@@ -33,7 +33,7 @@ Russian - By vlsergey (GitHub)
 
 If that is the case, then follow this short list, and add the missing translations.
 [olist]
-[*] Fork the [url=https://github.com/WolfDKs-CK3-Modding/Easier-Realm-Management] GitHub Repository [/url] .
+[*] Fork the [url=https://github.com/WolfDKs-CK3-Modding/Easier-Realm-Management] GitHub Repository [/url].
 [*] Make the necessary localization files and translations in your fork.
 [*] Create a issue or write a comment to an existing issue on my issue page, stating which language you have made support for.
 [/olist]
@@ -71,20 +71,17 @@ At the moment I am working toward any issues marked with "V1.1.0 on the [url=htt
 To known which version the mod is on currently, look for the version below, which is underlined.
 
 [u] [b] V1.0.4 [/b] [/u]
+
 - Added Russian Translation
+- Included Changes from version 1.2 of game
+- Added New Option to ignore Soft Cap of Develop County
+  - Soft Cap is not ingored when locating valid counties for automatic assignment!
 
-[b] V1.0.3 [/b]
-- Added French Translation.
-- Added Setting for Develop County, to target counties of player culture first
+For older changes to the mod, go to the [ult=https://github.com/WolfDKs-CK3-Modding/Easier-Realm-Management/wiki] GitHub Wiki [/url], where they are listed, from newest to oldest.
 
-[b] V1.0.2 [/b]
-- Added Korean translation.
+[h1] Donations [/h1]
 
-[b] V1.0.1 [/b]
-- Fixed a few Localization mistakes.
-- Added automation of Develop County.
-- Added Silence all letters option.
-- Added Inheriting of settings
+Fell free to donate to me using the below Paypal donation button.
+Donations is not meant to incentivise my contiued development, but as a general token of appreciation for the mod i have developed.
 
-[b] V1.0.0 [/b]
-Initial Release
+[url=https://www.paypal.com/donate?hosted_button_id=CETB338H5BPCC] [img]https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif[/img] [/url]

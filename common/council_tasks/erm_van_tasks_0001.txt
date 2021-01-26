@@ -40,7 +40,6 @@
 		#
 				
 		desc = task_conversion_effect_desc
-				
 		desc = {
 			desc = council_task_possible_side_effects
 			triggered_desc = {
@@ -98,10 +97,12 @@
 				add = {
 					add = scope:councillor.court_chaplain_progress_percentage
 					multiply = scope:councillor.faith.fervor
+					multiply = convert_faith_fervor_modifier_scale
 				}
 				subtract = {
 					add = scope:councillor.court_chaplain_progress_percentage
 					multiply = scope:county.faith.fervor
+					multiply = convert_faith_fervor_modifier_scale
 				}
 				if = {
 					limit = {
