@@ -77,11 +77,11 @@ To known which version the mod is on currently, look for the version below, whic
 - Added New Option to ignore Soft Cap of Develop County
   - Soft Cap is not ingored when locating valid counties for automatic assignment!
 
-For older changes to the mod, go to the [ult=https://github.com/WolfDKs-CK3-Modding/Easier-Realm-Management/wiki] GitHub Wiki [/url], where they are listed, from newest to oldest.
+For older changes to the mod, go to the [url=https://github.com/WolfDKs-CK3-Modding/Easier-Realm-Management/wiki] GitHub Wiki [/url], where they are listed, from newest to oldest.
 
 [h1] Donations [/h1]
 
 Fell free to donate to me using the below Paypal donation button.
 Donations is not meant to incentivise my contiued development, but as a general token of appreciation for the mod i have developed.
 
-[url=https://www.paypal.com/donate?hosted_button_id=CETB338H5BPCC] [img]https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif[/img] [/url]
+[url=https://www.paypal.com/donate?hosted_button_id=CETB338H5BPCC] [img]https://i.imgur.com/0PlEnHJ.png[/img] [/url]
