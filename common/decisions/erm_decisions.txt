@@ -1,58 +1,167 @@
-﻿erm_county_religion_conversion_decision = {
+﻿# erm_county_religion_conversion_decision = {
 	
-	title = erm_county_religion_conversion_t
-	desc = erm_county_religion_conversion_desc	
-	picture = "gfx/interface/illustrations/decisions/decision_personal_religious.dds"
-	major = no
+# 	title = erm_county_religion_conversion_t
+# 	desc = erm_county_religion_conversion_desc	
+# 	picture = "gfx/interface/illustrations/decisions/decision_personal_religious.dds"
+# 	major = no
 
-	# uncomment cooldown, when mod is done
-	#cooldown = { days = 30 }
+# 	# uncomment cooldown, when mod is done
+# 	#cooldown = { days = 30 }
 
-	confirm_text = erm_county_religion_conversion_confirm
-	selection_tooltip = erm_county_religion_conversion_tooltip
-	ai_check_interval = 0
+# 	confirm_text = erm_county_religion_conversion_confirm
+# 	selection_tooltip = erm_county_religion_conversion_tooltip
+# 	ai_check_interval = 0
 	
-	is_shown = {
-		highest_held_title_tier >= tier_duchy
-	}
+# 	is_shown = {
+# 		highest_held_title_tier >= tier_duchy
+# 	}
 
-	is_valid_showing_failures_only = {	
+# 	is_valid_showing_failures_only = {	
 
-	} 	
+# 	} 	
 
-	is_valid = {
+# 	is_valid = {
 
-	}
+# 	}
 	
-	ai_potential = {
-		always = no
-	}
+# 	ai_potential = {
+# 		always = no
+# 	}
 
-	ai_will_do = {
-		base = 0
-	}
+# 	ai_will_do = {
+# 		base = 0
+# 	}
 
-	effect = {
-		trigger_event = erm.0900
-	}
-}
+# 	effect = {
+# 		trigger_event = erm.0900
+# 	}
+# }
 
-erm_county_culture_promotion_decision = {	
-	title = erm_county_culture_promotion_t
-	desc = erm_county_culture_promotion_desc	
+# erm_county_culture_promotion_decision = {	
+# 	title = erm_county_culture_promotion_t
+# 	desc = erm_county_culture_promotion_desc	
+# 	picture = "gfx/interface/illustrations/decisions/decision_realm.dds"
+# 	major = no
+
+# 	# uncomment cooldown, when mod is done
+# 	#cooldown = { days = 30 }
+
+# 	confirm_text = erm_county_culture_promotion_confirm
+# 	selection_tooltip = erm_county_culture_promotion_tooltip
+# 	ai_check_interval = 0
+	
+# 	is_shown = {
+# 		highest_held_title_tier >= tier_duchy
+# 	}
+
+# 	is_valid_showing_failures_only = {	
+
+# 	} 	
+
+# 	is_valid = {
+
+# 	}
+	
+# 	ai_potential = {
+# 		always = no
+# 	}
+
+# 	ai_will_do = {
+# 		base = 0
+# 	}
+
+# 	effect = {
+# 		trigger_event = erm.0901
+# 	}
+# }
+
+# erm_county_increase_control_decision = {
+	
+# 	title = erm_county_increase_control_t
+# 	desc = erm_county_increase_control_desc	
+# 	picture = "gfx/interface/illustrations/decisions/decision_realm.dds"
+# 	major = no
+
+# 	# uncomment cooldown, when mod is done
+# 	#cooldown = { days = 30 }
+
+# 	confirm_text = erm_county_increase_control_confirm
+# 	selection_tooltip = erm_county_increase_control_tooltip
+# 	ai_check_interval = 0
+	
+# 	is_shown = {
+# 		highest_held_title_tier >= tier_duchy
+# 	}
+
+# 	is_valid_showing_failures_only = {	
+
+# 	} 	
+
+# 	is_valid = {
+
+# 	}
+	
+# 	ai_potential = {
+# 		always = no
+# 	}
+
+# 	ai_will_do = {
+# 		base = 0
+# 	}
+
+# 	effect = {
+# 		trigger_event = erm.0902
+# 	}
+# }
+
+# erm_county_development_decision = {
+# 	title = erm_county_development_t
+# 	desc = erm_county_development_desc	
+# 	picture = "gfx/interface/illustrations/decisions/decision_realm.dds"
+# 	major = no
+
+# 	# uncomment cooldown, when mod is done
+# 	#cooldown = { days = 30 }
+
+# 	confirm_text = erm_county_development_confirm
+# 	selection_tooltip = erm_county_development_tooltip
+# 	ai_check_interval = 0
+	
+# 	is_shown = {
+# 		highest_held_title_tier >= tier_duchy
+# 	}
+
+# 	is_valid_showing_failures_only = {	
+
+# 	} 	
+
+# 	is_valid = {
+
+# 	}
+	
+# 	ai_potential = {
+# 		always = no
+# 	}
+
+# 	ai_will_do = {
+# 		base = 0
+# 	}
+
+# 	effect = {
+# 		trigger_event = erm.0903
+# 	}
+# }
+
+erm_manage_realm_decision = {
+	title = erm_manage_realm_t
+	desc = erm_manage_realm_desc
+
 	picture = "gfx/interface/illustrations/decisions/decision_realm.dds"
 	major = no
 
-	# uncomment cooldown, when mod is done
-	#cooldown = { days = 30 }
-
-	confirm_text = erm_county_culture_promotion_confirm
-	selection_tooltip = erm_county_culture_promotion_tooltip
+	confirm_text = erm_manage_realm_confirm
+	selection_tooltip = erm_manage_realm_tooltip
 	ai_check_interval = 0
-	
-	is_shown = {
-		highest_held_title_tier >= tier_duchy
-	}
 
 	is_valid_showing_failures_only = {	
 
@@ -71,84 +180,7 @@ erm_county_culture_promotion_decision = {
 	}
 
 	effect = {
-		trigger_event = erm.0901
-	}
-}
-
-erm_county_increase_control_decision = {
-	
-	title = erm_county_increase_control_t
-	desc = erm_county_increase_control_desc	
-	picture = "gfx/interface/illustrations/decisions/decision_realm.dds"
-	major = no
-
-	# uncomment cooldown, when mod is done
-	#cooldown = { days = 30 }
-
-	confirm_text = erm_county_increase_control_confirm
-	selection_tooltip = erm_county_increase_control_tooltip
-	ai_check_interval = 0
-	
-	is_shown = {
-		highest_held_title_tier >= tier_duchy
-	}
-
-	is_valid_showing_failures_only = {	
-
-	} 	
-
-	is_valid = {
-
-	}
-	
-	ai_potential = {
-		always = no
-	}
-
-	ai_will_do = {
-		base = 0
-	}
-
-	effect = {
-		trigger_event = erm.0902
-	}
-}
-
-erm_county_development_decision = {
-	title = erm_county_development_t
-	desc = erm_county_development_desc	
-	picture = "gfx/interface/illustrations/decisions/decision_realm.dds"
-	major = no
-
-	# uncomment cooldown, when mod is done
-	#cooldown = { days = 30 }
-
-	confirm_text = erm_county_development_confirm
-	selection_tooltip = erm_county_development_tooltip
-	ai_check_interval = 0
-	
-	is_shown = {
-		highest_held_title_tier >= tier_duchy
-	}
-
-	is_valid_showing_failures_only = {	
-
-	} 	
-
-	is_valid = {
-
-	}
-	
-	ai_potential = {
-		always = no
-	}
-
-	ai_will_do = {
-		base = 0
-	}
-
-	effect = {
-		trigger_event = erm.0903
+		trigger_event = erm.0800
 	}
 }
 

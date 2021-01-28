@@ -2,8 +2,51 @@
 
 #
 # Events for decisions
-# Range - 0900-1299
+# Range - 0800-1299
 #
+erm.0800 = { # Manage realm
+	type = character_event
+	title = erm_0800_t
+	desc = erm_0800_desc
+	theme = family
+
+	left_portrait = {
+		character = root
+		animation = personality_rational
+	}
+
+	immediate = {
+		debug_log = erm_debug_0036	#Firing event...
+	}
+
+	option = {
+		name = erm_county_religion_conversion_t
+
+		trigger_event = erm.0900
+	}
+
+	option = {
+		name = erm_county_culture_promotion_t
+
+		trigger_event = erm.0901
+	}
+
+	option = {
+		name = erm_county_development_t
+
+		trigger_event = erm.0902
+	}
+
+	option = {
+		name = erm_county_increase_control_t
+
+		trigger_event = erm.0903
+	}
+
+	option = {
+		name = erm_nevermind
+	}
+}
 
 erm.0900 = { # Convert Religion
 	type = character_event

@@ -3,20 +3,20 @@
 erm_letters.0001 = { # councillor_court_chaplain task_conversion on_finish_task_county letter
 	type = letter_event
 	opening = {
-		desc = court_chaplain_task.0201.opening
+		desc = erm_letters_0001_opening
 	}
-	desc = court_chaplain_task.0201.county_complete
+	desc = erm_letters_0001_county_complete
 	sender = scope:councillor
 
 	option = {
-		name = court_chaplain_task.0201.a
+		name = erm_letters_0001_a
 		trigger = {
 			scope:councillor.faith = root.faith
 		}
 	}
 
 	option = {
-		name = court_chaplain_task.0201.b
+		name = erm_letters_0001_b
 		trigger = {
 			NOT = { scope:councillor.faith = root.faith }
 		}		
@@ -32,13 +32,13 @@ erm_letters.0001 = { # councillor_court_chaplain task_conversion on_finish_task_
 erm_letters.0002 = { # councillor_steward task_promote_culture on_finish_task_county letter
 	type = letter_event
 	opening = {
-		desc = steward_task.0301.opening
+		desc = erm_letters_0002_opening
 	}
-	desc = steward_task.0301.county_complete
+	desc = erm_letters_0002_county_complete
 	sender = scope:councillor
 
 	option = {
-		name = steward_task.0301.a		
+		name = erm_letters_0002_a		
 	}
 
 	immediate = {

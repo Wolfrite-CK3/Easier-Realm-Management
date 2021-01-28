@@ -58,6 +58,8 @@ Due to the changes mentioned above, it is likely that the mod does not support I
 
 If you encounter a bug/issue with my mod, check that you do not have something else installed, that the mod is incompatible with. If you still have problems after this, then create an issue on the [url=https://github.com/WolfDKs-CK3-Modding/Easier-Realm-Management/issues] GitHub issue page [/url].  You can also write a comment on the steam workshop page, but it is more likely I will respond, if it is on a GitHub issue.
 
+Please avoid writeing lengthy bug reports in the comments of the Workshop page - take these to the GitHub issue page mentioned above!
+
 [h1] Credits [/h1]
 
 Many thanks to null#7817 on Discord for assistance with finding solutions to many problem.
@@ -68,14 +70,14 @@ Many thanks to vlsergey on GitHub for Russian translation.
 [h1] Versions [/h1]
 
 At the moment I am working toward any issues marked with "V1.1.0 on the [url=https://github.com/WolfDKs-CK3-Modding/Easier-Realm-Management/issues] GitHub issue page [/url].
-To known which version the mod is on currently, look for the version below, which is underlined.
 
-[u] [b] V1.0.4 [/b] [/u]
+[b] V1.0.5 [/b]
 
-- Added Russian Translation
-- Included Changes from version 1.2 of game
-- Added New Option to ignore Soft Cap of Develop County
-  - Soft Cap is not ingored when locating valid counties for automatic assignment!
+- Actually included the changes from last version. Woops :)
+- Fixed a few broken Localization, due to Paradox removing them in favor of others.
+- Compressed most of the decisions into one.
+- Added misisng description part to Develop County
+- Added missing Focused Development with Uncapped case (I think)
 
 For older changes to the mod, go to the [url=https://github.com/WolfDKs-CK3-Modding/Easier-Realm-Management/wiki] GitHub Wiki [/url], where they are listed, from newest to oldest.
 

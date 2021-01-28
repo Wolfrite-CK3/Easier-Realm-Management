@@ -19,3 +19,5 @@ erm_overwrite_0004_scatter:0 "When i'm done increasing development by one, i wil
 erm_overwrite_0004_mute:0 "When i'm done increasing development by one, i will not send a letter to you. \n \n"
 erm_overwrite_0004_own_culture:0 "When assigning or moving automatically i will target valid counties of your culture first. \n \n"
 erm_overwrite_0004_any_culture:0 "When assigning or moving automatically i will target any valid county. \n \n"
+erm_overwrite_0004_capped:0 "When i'm done i will move on if the counties development is at the soft cap. \n \n"
+erm_overwrite_0004_uncapped:0 "When i'm done i will move on if the counties development is at the hard cap. \n \n"

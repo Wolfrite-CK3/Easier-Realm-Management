@@ -525,13 +525,37 @@ erm.0403 = {
 					trigger_event = { id = erm.0004 }
 				}
 			}
-			else_if = { # Focused Mode
+			else_if = { # Focused Mode - With Cap
 				limit = {
 					exists = scope:county
 					scope:county = {
 						development_level >= root.development_hard_cap
 					}
 					has_character_flag = erm_allow_automatic_develop_county
+					scope:root = {
+						NOT = {
+							has_character_flag = erm_allow_automatic_develop_county_ignore_cap
+						}												
+					}
+					is_ai = no
+				}
+				scope:councillor = {
+					remove_variable = stored_development
+				}
+				scope:councillor.liege = {
+					trigger_event = { id = erm.0004 }
+				}
+			}
+			else_if = { # Focused Mode - Without Cap
+				limit = {
+					exists = scope:county
+					scope:county = {
+						development_level >= max_development_level
+					}
+					has_character_flag = erm_allow_automatic_develop_county
+					scope:root = {
+						has_character_flag = erm_allow_automatic_develop_county_ignore_cap																
+					}
 					is_ai = no
 				}
 				scope:councillor = {

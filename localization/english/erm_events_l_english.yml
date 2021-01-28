@@ -2,6 +2,15 @@
 erm_nevermind:0 "Nevermind"
 erm_more_options:0 "Show me more options"
 
+ erm_letters_0001_opening:0 "[councillor.Custom2('AppropriateGreeting', ROOT.Char)]"
+ erm_letters_0001_county_complete:0 "The people of the [county.GetName] have finally been convinced to convert to the true faith!\n\nThere are practically no more heretics in the whole of [county.GetNameNoTier]!"
+ erm_letters_0001_a:0 "Brilliant work, [councillor.GetFirstNameNoTooltip]!"
+ erm_letters_0001_b:0 "Uh, which faith is that, now?"
+
+ erm_letters_0002_opening:0 "[councillor.Custom2('AppropriateGreeting', ROOT.Char)]"
+ erm_letters_0002_county_complete:0 "With [ROOT.Char.GetCulture.GetName] settlement and the installation of a new administration, the people of [county.GetNameNoTier] have fully embraced [ROOT.Char.GetCulture.GetName] traditions."
+ erm_letters_0002_a:0 "Great work, [councillor.GetFirstNameNoTooltip]!"
+
 erm_letters_0003_opening:0 "[councillor.Custom2('AppropriateGreeting', ROOT.Char)]"
 erm_letters_0003_county_complete:0 "With the help of [councillor.GetFirstNameNoTooltip], we have seized full control of [county.GetNameNoTier]."
 erm_letters_0003_a:0 "Great work, [councillor.GetFirstNameNoTooltip]!"
@@ -22,8 +31,11 @@ erm_0003_mes1_description:0 "[GetPlayer.MakeScope.Var('rebels_count').GetValue] 
 erm_0004_mes1_t:0 "Developing County in [GetPlayer.MakeScope.Var('saved_scope').Title.GetNameNoTooltip]."
 erm_0004_mes1_description:0 "[GetPlayer.MakeScope.Var('rural_count').GetValue] counties remain to be developed."
 
-erm_0900_t:1 "To Convert the Heathens or Not"
-erm_0900_desc:1 "Should we start converting any Heathens to the religion of the mighty leader of this realm, or perhaps wait a little longer?"
+erm_0800_t:0 "Manage Realm"
+erm_0800_desc:0 "What do you want to manage?"
+
+erm_0900_t:0 "To Convert the Heathens or Not"
+erm_0900_desc:0 "Should we start converting any Heathens to the religion of the mighty leader of this realm, or perhaps wait a little longer?"
 erm_0900_a:0 "Travel far and vide and preach of our god(s)!"
 erm_0900_b:0 "I need you at the council right now."
 
