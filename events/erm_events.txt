@@ -32,13 +32,13 @@ erm.0800 = { # Manage realm
 	}
 
 	option = {
-		name = erm_county_development_t
+		name = erm_county_increase_control_t
 
 		trigger_event = erm.0902
 	}
 
 	option = {
-		name = erm_county_increase_control_t
+		name = erm_county_development_t
 
 		trigger_event = erm.0903
 	}
