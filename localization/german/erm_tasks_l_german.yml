@@ -1,0 +1,23 @@
+l_german:
+erm_overwrite_0001_auto:0 "Wenn ich mit einer Grafschaft fertig bin, werde ich in eine andere weiterziehen, sofern es noch Grafschaften gibt, die zu unserer Religion bekehrt werden können. Andernfalls werde ich zum Hof zurückkehren.  \n \n"
+erm_overwrite_0001_van:0 "Wenn ich mit einer Grafschaft fertig bin, werde ich zum Hof zurückkehren.  \n \n"
+erm_overwrite_0001_mute:0 "Wenn ich mit einer Grafschaft fertig bin, werde ich Euch keinen Brief schicken. \n \n"
+
+erm_overwrite_0002_auto:0 "Wenn ich mit einer Grafschaft fertig bin, werde ich in eine andere weiterziehen, sofern es mehr Grafschaften gibt, in denen unsere Kultur gefördert werden kann. Andernfalls werde ich zum Hof zurückkehren.  \n \n"
+erm_overwrite_0002_van:0 "Wenn ich mit einer Grafschaft fertig bin, werde ich zum Hof zurückkehren. \n \n"
+erm_overwrite_0002_mute:0 "Wenn ich mit einer Grafschaft fertig bin, werde ich Euch keinen Brief schicken. \n \n"
+
+erm_overwrite_0003_auto:0 "Wenn ich mit einer Grafschaft fertig bin, werde ich zur nächsten weiterziehen, sofern es mehr Grafschaften mit einer Kontrolle unter 100 gibt. Andernfalls werde ich zum Hof zurückkehren. \n \n"
+erm_overwrite_0003_van:0 "Wenn ich mit einer Grafschaft fertig bin, werde ich zum Hof zurückkehren. \n \n"
+erm_overwrite_0003_mute:0 "Wenn ich mit einer Grafschaft fertig bin, werde ich Euch keinen Brief schicken. \n \n"
+
+erm_overwrite_0004_auto:0 "Wenn ich damit fertig bin, die Entwicklung um eins zu erhöhen, werde ich entweder bleiben und sie weiter steigern oder die Aufgabe in der nächsten Grafschaft fortsetzen, sofern es weitere Grafschaften gibt, deren Entwicklung unter dem weichen Grenzwert liegt. Ansonsten werde ich zum Hof zurückkehren. \n \n"
+erm_overwrite_0004_van:0 "Wenn ich damit fertig bin, die Entwicklung bis zum weichen Grenzwert zu fördern, werde ich zum Hof zurückkehren. \n \n"
+erm_overwrite_0004_van_focused:0 "Wenn ich damit fertig bin, die Entwicklung bis zum Maximum zu fördern, werde ich zum Hof zurückkehren."
+erm_overwrite_0004_focused:0 "Wenn ich mit der Verbesserung der Entwicklung um eins fertig bin, werde ich fortfahren, bis der weiche Grenzwert erreicht ist. \n \n"
+erm_overwrite_0004_scatter:0 "Wenn ich mit der Verbesserung der Entwicklung um eins fertig bin, werde ich entweder in eine andere Grafschaft ziehen oder zum Hof zurückkehren. \n \n"
+erm_overwrite_0004_mute:0 "Wenn ich mit der Verbesserung der Entwicklung um eins fertig bin, werde ich Euch keinen Brief schicken. \n \n"
+erm_overwrite_0004_own_culture:0 "Bei der Auswahl von Grafschaften, oder dem automatischen Weiterziehen in andere Grafschaften, werde ich zuerst die gültigen Bezirke Eurer Kultur ansteuern. \n \n"
+erm_overwrite_0004_any_culture:0 "Bei der Auswahl oder dem automatischen Weiterziehen werde ich jede gültige Grafschaft ansteuern. \n \n"
+erm_overwrite_0004_capped:0 "Wenn ich fertig bin, werde ich weitermachen, bis die Entwicklung der Grafschaften an der weichen Obergrenze liegt. \n \n"
+erm_overwrite_0004_uncapped:0 "Wenn ich fertig bin, werde ich weitermachen, bis die Entwicklung der Grafschaften an der harten Obergrenze liegt. \n \n"
