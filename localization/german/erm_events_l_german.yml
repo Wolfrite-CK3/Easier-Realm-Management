@@ -80,7 +80,7 @@ erm_0954_a_off:0 "Ich möchte KEINE Briefe, wenn Ihr mit der Erhöhung der Kontr
 erm_1000_t:0 "Änderung der Funktionsweise von Ratsaufgaben"
 erm_1000_desc:0 "Vielleicht könnte ich meine Ratsmitglieder bitten, einige ihrer Aufgaben anders zu erfüllen. \n \nAber wessen wessen Aufgaben sollen anders verrichtet werden?"
 erm_1000_a:0 "Die meines [GetPlayer.MakeScope.Var('saved_court_chaplain').GetCharacter.GetCouncilTitle ]"
-erm_1000_c:0 Die meines [GetPlayer.MakeScope.Var('saved_steward').GetCharacter.GetCouncilTitle ]"
+erm_1000_c:0 "Die meines [GetPlayer.MakeScope.Var('saved_steward').GetCharacter.GetCouncilTitle ]"
 erm_1000_d:0 "Die meines [GetPlayer.MakeScope.Var('saved_marshal').GetCharacter.GetCouncilTitle ]"
 
 erm_mode_desc:0 "Ich würde mich gerne mit Euch darüber unterhalten, wie Ihr Eure Aufgabe erfüllt..."
