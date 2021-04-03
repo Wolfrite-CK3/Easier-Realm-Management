@@ -1,0 +1,35 @@
+l_german:
+erm_county_religion_conversion_t:0 "Die Bekehrung der Heiden"
+erm_county_religion_conversion_desc:0 "Befehlt eurem Kaplan, das Reich zu bereisen und alle Besitztümer zu eurer Religion zu konvertieren!"
+erm_county_religion_conversion_tooltip:0 "Beginnt in Eurem Reich mit der Bekehrung zu Eurer Religion."
+erm_county_religion_conversion_confirm:0 "Beginnt mit der Bekehrung"
+
+erm_county_culture_promotion_t:0 "Die Förderung meiner Kultur"
+erm_county_culture_promotion_desc:0 "Befehlt Eurem Verwalter, das Reich zu bereisen und alle Besitztümer zu Eurer Kultur zu konvertieren."
+erm_county_culture_promotion_tooltip:0 "Beginnt mit der Werbung für Eure Kultur in Eurem Reich."
+erm_county_culture_promotion_confirm:0 "Beginnt die Förderung."
+
+erm_county_development_t:0 "Die Entwicklung ländlicher Gebiete"
+erm_county_development_desc:0 "Befiehlt Eurem Verwalter, das Reich zu bereisen und alle Besitztümer zu entwickeln."
+erm_county_development_tooltip:0 "Beginnt mit der Entwicklung in Eurem Reich."
+erm_county_development_confirm:0 "Beginnt mit der Entwicklung"
+
+erm_county_increase_control_t:0 "Die Erhöhung der Kontrolle in den Grafschaften"
+erm_county_increase_control_desc:0 "Befehlt Eurem Marschall, das Reich zu bereisen und die Kontrolle in all euren Besitzungen zu erhöhen."
+erm_county_increase_control_tooltip:0 "Ergreift die Kontrolle in Eurem Reich"
+erm_county_increase_control_confirm:0 "Kontrolle ergreifen"
+
+erm_mute_councillor_t:0 "Briefe von Ratsmitgliedern zurückhalten lassen"
+erm_mute_councillor_desc:0 "Stoppt das Versenden von Briefen für die gewählte Aufgabe des gewählten Ratsherrn-Typs. Die Aufgabe wird weiterhin wie gewohnt ausgeführt. Um eine Aufgabe stumm zu schalten, müssen Sie ein Ratsmitglied dieses Typs haben. \nWenn eine Aufgabe, die normalerweise eine einfache Ja/Nein-Entscheidung erfordert, stumm geschaltet wird, wird automatisch die freundlichste Antwort gewählt. \n \n Das Stummschalten wirkt sich NUR auf Briefe aus!"
+erm_mute_councillor_tooltip:0 "Zurückhalten von Briefen einer bestimmten Aufgabe"
+erm_mute_councillor_confirm:0 "Briefe zurückhalten"
+
+erm_alter_tasks_t:0 "Anpassen wie Ratsaufgaben verrichtet werden sollen"
+erm_alter_tasks_desc:0 "Ändern Sie, wie die Aufgabe eines ausgewählten Ratsmitglieds ausgeführt werden soll. \n \nDie Beschreibung der Aufgaben wird aktualisiert, um anzuzeigen, wie die Aufgaben mit den von Ihnen ausgewählten Änderungen funktionieren."
+erm_alter_tasks_tooltip:0 "Passe eine ausgewählte Aufgabe an"
+erm_alter_tasks_confirm:0 "Aufgaben anpassen"
+
+erm_manage_realm_t:0 "Reich verwalten"
+erm_manage_realm_desc:0 "Greifen Sie auf verschiedene Entscheidungen zu, um die Verwaltung des Reiches zu vereinfachen"
+erm_manage_realm_tooltip:0 "Verwalten Sie das Spielerreich"
+erm_manage_realm_confirm:0 "Reich verwalten"
