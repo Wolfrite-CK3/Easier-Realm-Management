@@ -28,6 +28,8 @@ English - By BlueishTigerDK (Steam) / andr9528 (GitHub)
 Korean - By fuzzypurge (Steam) / fuzzypurge (GitHub)
 French - By dodoz371 (GitHub)
 Russian - By vlsergey (GitHub)
+German - By Illusive (Steam) / Ic-h (GitHub)
+Chinese - By Juijote (Steam/Github)
 
 [h2] Want my mod to support your language? [/h2]
 
@@ -58,32 +60,34 @@ Due to the changes mentioned above, it is likely that the mod does not support I
 
 If you encounter a bug/issue with my mod, check that you do not have something else installed, that the mod is incompatible with. If you still have problems after this, then create an issue on the [url=https://github.com/WolfDKs-CK3-Modding/Easier-Realm-Management/issues] GitHub issue page [/url].  You can also write a comment on the steam workshop page, but it is more likely I will respond, if it is on a GitHub issue.
 
-Please avoid writeing lengthy bug reports in the comments of the Workshop page - take these to the GitHub issue page mentioned above!
+Please avoid writing lengthy bug reports in the comments of the Workshop page - take these to the GitHub issue page mentioned above!
 
 [h1] Credits [/h1]
 
 Many thanks to null#7817 on Discord for assistance with finding solutions to many problem.
-Many thanks to fuzzypurge on Steam/GitHub for Korean translation.
-Many thanks to dodoz371 on GitHub for French translation.
-Many thanks to vlsergey on GitHub for Russian translation.
+Many thanks to fuzzypurge (Steam/GitHub) for Korean translation.
+Many thanks to dodoz371 (GitHub) for French translation.
+Many thanks to vlsergey (GitHub) for Russian translation.
+Many thanks to Ic-h (GitHub) / Illusive (Steam) for German translation.
+Many thanks to Juijote (Steam/Github) for Chinese translation.
 
 [h1] Versions [/h1]
 
 At the moment I am working toward any issues marked with "V1.1.0 on the [url=https://github.com/WolfDKs-CK3-Modding/Easier-Realm-Management/issues] GitHub issue page [/url].
 
-[b] V1.0.5 [/b]
+[b] V1.0.6 [/b]
 
-- Actually included the changes from last version. Woops :)
-- Fixed a few broken Localization, due to Paradox removing them in favor of others.
-- Compressed most of the decisions into one.
-- Added misisng description part to Develop County
-- Added missing Focused Development with Uncapped case (I think)
+- Added German Translation.
+- Added Chinese translation.
+- Updated Supported game version to 1.3.*
+
+Notice: I haven't verified if anything major has changed in the games code. As such, do mention any abnormalities that occur.
 
 For older changes to the mod, go to the [url=https://github.com/WolfDKs-CK3-Modding/Easier-Realm-Management/wiki] GitHub Wiki [/url], where they are listed, from newest to oldest.
 
 [h1] Donations [/h1]
 
-Fell free to donate to me using the below Paypal donation button.
-Donations is not meant to incentivise my contiued development, but as a general token of appreciation for the mod i have developed.
+Fell free to donate to me using the below PayPal donation button.
+Donations is not meant to incentivize my continued development, but as a general token of appreciation for the mod i have developed.
 
 [url=https://www.paypal.com/donate?hosted_button_id=CETB338H5BPCC] [img]https://i.imgur.com/0PlEnHJ.png[/img] [/url]

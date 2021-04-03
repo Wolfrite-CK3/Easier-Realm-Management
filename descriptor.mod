@@ -8,5 +8,5 @@ tags={
 	"Utilities"
 }
 name="Easier Realm Management"
-supported_version="1.2.*"
+supported_version="1.3.*"
 remote_file_id="2251620116"
