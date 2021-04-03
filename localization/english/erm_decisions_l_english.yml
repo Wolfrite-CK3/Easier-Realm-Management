@@ -28,3 +28,8 @@ erm_alter_tasks_t:0 "Alter Tasks Functionality"
 erm_alter_tasks_desc:0 "Alter how the the chosen councillor's task is performed. \n \nThe description of the tasks will update to indicate how the task functions, with the chosen alterations."
 erm_alter_tasks_tooltip:0 "Alter a chosen Task"
 erm_alter_tasks_confirm:0 "Alter Tasks"
+
+erm_manage_realm_t:0 "Manage Realm"
+erm_manage_realm_desc:0 "Access different decions, that allows for managing the realm easier"
+erm_manage_realm_tooltip:0 "Manage player Realm"
+erm_manage_realm_confirm:0 "Manage Realm"

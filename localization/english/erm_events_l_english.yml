@@ -1,4 +1,16 @@
 ﻿l_english:
+erm_nevermind:0 "Nevermind"
+erm_more_options:0 "Show me more options"
+
+ erm_letters_0001_opening:0 "[councillor.Custom2('AppropriateGreeting', ROOT.Char)]"
+ erm_letters_0001_county_complete:0 "The people of the [county.GetName] have finally been convinced to convert to the true faith!\n\nThere are practically no more heretics in the whole of [county.GetNameNoTier]!"
+ erm_letters_0001_a:0 "Brilliant work, [councillor.GetFirstNameNoTooltip]!"
+ erm_letters_0001_b:0 "Uh, which faith is that, now?"
+
+ erm_letters_0002_opening:0 "[councillor.Custom2('AppropriateGreeting', ROOT.Char)]"
+ erm_letters_0002_county_complete:0 "With [ROOT.Char.GetCulture.GetName] settlement and the installation of a new administration, the people of [county.GetNameNoTier] have fully embraced [ROOT.Char.GetCulture.GetName] traditions."
+ erm_letters_0002_a:0 "Great work, [councillor.GetFirstNameNoTooltip]!"
+
 erm_letters_0003_opening:0 "[councillor.Custom2('AppropriateGreeting', ROOT.Char)]"
 erm_letters_0003_county_complete:0 "With the help of [councillor.GetFirstNameNoTooltip], we have seized full control of [county.GetNameNoTier]."
 erm_letters_0003_a:0 "Great work, [councillor.GetFirstNameNoTooltip]!"
@@ -19,8 +31,11 @@ erm_0003_mes1_description:0 "[GetPlayer.MakeScope.Var('rebels_count').GetValue] 
 erm_0004_mes1_t:0 "Developing County in [GetPlayer.MakeScope.Var('saved_scope').Title.GetNameNoTooltip]."
 erm_0004_mes1_description:0 "[GetPlayer.MakeScope.Var('rural_count').GetValue] counties remain to be developed."
 
-erm_0900_t:1 "To Convert the Heathens or Not"
-erm_0900_desc:1 "Should we start converting any Heathens to the religion of the mighty leader of this realm, or perhaps wait a little longer?"
+erm_0800_t:0 "Manage Realm"
+erm_0800_desc:0 "What do you want to manage?"
+
+erm_0900_t:0 "To Convert the Heathens or Not"
+erm_0900_desc:0 "Should we start converting any Heathens to the religion of the mighty leader of this realm, or perhaps wait a little longer?"
 erm_0900_a:0 "Travel far and vide and preach of our god(s)!"
 erm_0900_b:0 "I need you at the council right now."
 
@@ -44,7 +59,6 @@ erm_0950_desc:0 "I'm getting to many letters from my councilors, who i know is d
 erm_0950_a:0 "My [GetPlayer.MakeScope.Var('saved_court_chaplain').GetCharacter.GetCouncilTitle ]"
 erm_0950_c:0 "My [GetPlayer.MakeScope.Var('saved_steward').GetCharacter.GetCouncilTitle ]"
 erm_0950_d:0 "My [GetPlayer.MakeScope.Var('saved_marshal').GetCharacter.GetCouncilTitle ]"
-erm_0950_f:0 "Nevermind"
 erm_0950_g:0 "I have no need for any of your Letters"
 
 
@@ -70,14 +84,12 @@ erm_1000_desc:0 "Perhaps i could ask my councillors to perform some of their tas
 erm_1000_a:0 "My [GetPlayer.MakeScope.Var('saved_court_chaplain').GetCharacter.GetCouncilTitle ]"
 erm_1000_c:0 "My [GetPlayer.MakeScope.Var('saved_steward').GetCharacter.GetCouncilTitle ]"
 erm_1000_d:0 "My [GetPlayer.MakeScope.Var('saved_marshal').GetCharacter.GetCouncilTitle ]"
-erm_1000_f:0 "Nevermind"
 
 erm_mode_desc:0 "I would like to have a chat about how you perform your task..."
 erm_mode_complete:0 "Everything is as it should be, for now..."
 
 erm_1001_t:0 "Alter Task Functionality"
 erm_1001_desc:0 "Now which task should be performed differently?"
-erm_1001_cancel:0 "Nevermind"
 erm_1001_convert_religion:0 "Convert Faith in County"
 erm_1001_promote_culture:0 "Promote Culture"
 erm_1001_develop_county:0 "Develop County"
@@ -94,6 +106,9 @@ erm_1012_b_on:0 "I want you to focus the development."
 erm_1012_b_off:0 "I want you to spread out the development."
 erm_1012_c_on:0 "I want you to develop any county."
 erm_1012_c_off:0 "I want you to develop counties of my culture."
+erm_1012_d_on:0 "I want you to ignore current development."
+erm_1012_d_off:0 "I want you to consider current development."
+
 
 erm_1013_t:0 "Altering Promote Culture Task"
 erm_1013_a_on:0 "I want you to return to the court, when you are done."
@@ -102,3 +117,14 @@ erm_1013_a_off:0 "I want you to continue in other counties, when you are done."
 erm_1014_t:0 "Altering Increase Control Task"
 erm_1014_a_on:0 "I want you to return to the court, when you are done."
 erm_1014_a_off:0 "I want you to continue in other counties, when you are done."
+
+erm_1100_t:0 "Develop County Holdings"
+erm_1100_desc:0 "Should i construct new buildings in my realm or should i Upgrade existing ones?"
+erm_1100_a:0 "Build New Ones"
+erm_1100_b:0 "Upgrade Existing Ones"
+
+erm_construct_new_t:0 "Develop County Holdings - Construct New"
+erm_construct_new_desc:0 "Which new building should i construct?"
+
+erm_upgrade_existing_t:0 "Develop County Holdings - Upgrade Existing"
+erm_upgrade_existing_desc:0 "Which upgraded building should i construct?"
