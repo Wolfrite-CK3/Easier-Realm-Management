@@ -1,0 +1,50 @@
+l_german:
+erm_debug_0001:0 "Firing event: erm.0900"
+ 
+erm_debug_0002:0 "Firing event: erm.0001"
+erm_debug_0003:0 "Nach der Liste der heidnischen Grafschaften sind noch [GetPlayer.MakeScope.Var ('heathens_count'). GetValue] übrig"
+erm_debug_0004:0 "Alle folgenden Punkte wurden als zutreffend gewertet: \n - selected_county != null \n - councillor_court_chaplain.liege == root"
+erm_debug_0005:0 "Starten der automatischen Konvertierung der Religion in [GetPlayer.MakeScope.Var('saved_scope').Title.GetNameNoTooltip]"
+erm_debug_0006:0 "Mindestens eine der folgenden Optionen wurde als nicht zutreffend gewertet: \n - selected_county != null \n - councillor_court_chaplain.liege == root"
+ 
+erm_debug_0007:0 "Firing event: erm.0901"
+ 
+erm_debug_0008:0 "Firing event: erm.0002"
+erm_debug_0009:0 "Nach der Liste der ausländischen Grafschaften sind noch [GetPlayer.MakeScope.Var('foreigners_count').GetValue] übrig"
+erm_debug_0010:0 "Alle folgenden Punkte wurden als zutreffend gewertet: \n - selected_county != null \n - councillor_steward.liege == root"
+erm_debug_0011:0 "Starten der automatischen Förderung der Kultur in [GetPlayer.MakeScope.Var('saved_scope').Title.GetNameNoTooltip]"
+erm_debug_0012:0 "Mindestens eine der folgenden Punkte wurde als nicht zutreffend gewertet: \n - selected_county != null \n - councillor_steward.liege == root"
+ 
+erm_debug_0013:0 "Firing event: erm.0902"
+ 
+erm_debug_0014:0 "Firing event: erm.0003"
+erm_debug_0015:0 "Nach der Liste der ausländischen Grafschaften sind noch [GetPlayer.MakeScope.Var ('rebels_count'). GetValue] übrig"
+erm_debug_0016:0 "Alle folgenden Punkte wurden als zutreffend gewertet: \n - selected_county != null \n - councillor_marshal.liege == root"
+erm_debug_0017:0 "Starten der automatischen Erhöhung der Kontrolle in [GetPlayer.MakeScope.Var('saved_scope').Title.GetNameNoTooltip]"
+erm_debug_0018:0 "Mindestens einer der folgenden Punkte wurde als nicht zutreffend gewertet: \n - selected_county != null \n - councillor_marshal.liege == root"
+ 
+erm_debug_0019:0 "Firing event: erm.0950"
+ 
+erm_debug_0020:0 "Firing event: erm_letters.0001"
+erm_debug_0021:0 "Firing event: erm_letters.0002"
+erm_debug_0022:0 "Firing event: erm_letters.0003"
+ 
+erm_debug_0023:0 "Firing event: erm.0400"
+erm_debug_0024:0 "Firing event: erm.0401"
+erm_debug_0025:0 "Firing event: erm.0402"
+ 
+erm_debug_0026:0 "Firing event: erm.1000"
+ 
+erm_debug_0027:0 "Firing event: erm.0903"
+ 
+erm_debug_0028:0 "Firing event: erm.0004" 
+erm_debug_0029:0 "Nach der Liste der ländlichen Grafschaften sind noch [GetPlayer.MakeScope.Var ('ländlicher_Count'). GetValue]"
+erm_debug_0030:0 "Alle folgenden Punkte wurden als zutreffend gewertet: \n - selected_county != null \n - councillor_steward.liege == root"
+erm_debug_0031:0 "Starten der automatischen Entwicklung der Grafschaft in [GetPlayer.MakeScope.Var('saved_scope').Title.GetNameNoTooltip]"
+erm_debug_0032:0 "Mindestens eine der folgenden Punkte wurde als nicht zutreffend gewertet: \n - selected_county != null \n - councillor_steward.liege == root"
+ 
+erm_debug_0033:0 "Firing event: erm_letters.0004"
+ 
+erm_debug_0034:0 "Firing event: erm.0403"
+ 
+erm_debug_0035:0 "Firing event: erm.0600"

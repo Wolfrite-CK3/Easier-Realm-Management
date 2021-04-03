@@ -1,0 +1,127 @@
+l_german:
+erm_nevermind:0 "Schon gut"
+erm_more_options:0 "Zeigt mir mehr Optionen"
+erm_letters_0001_opening:0 "[councillor.Custom2 ('AppropriateGreeting', ROOT.Char)]"
+
+erm_letters_0001_county_complete:0 "Die Menschen von [county.GetName] sind endlich überzeugt, zum wahren Glauben zu konvertieren!\n\nIn ganz [county.GetNameNoTier] gibt es praktisch keine Ketzer mehr!"
+erm_letters_0001_a:0 "Brilliante Arbeit, [councillor.GetFirstNameNoTooltip]!"
+erm_letters_0001_b:0 "Äh, welcher Glaube ist das jetzt?"
+
+erm_letters_0002_opening:0 "[councillor.Custom2 ('AppropriateGreeting', ROOT.Char)]"
+erm_letters_0002_county_complete:0 "Mit der Verbreitung von [ROOT.Char.GetCulture.GetName] und der Einrichtung einer neuen Verwaltung haben die Einwohner von [county.GetNameNoTier] die [ROOT.Char.GetCulture.GetName] Traditionen voll und ganz angenommen."
+
+erm_letters_0002_a:0 "Großartige Arbeit, [councillor.GetFirstNameNoTooltip]!"
+erm_letters_0003_opening:0 "[councillor.Custom2('AppropriateGreeting', ROOT.Char)]"
+
+erm_letters_0003_county_complete:0 "Mit Hilfe von [councillor.GetFirstNameNoTooltip] haben wir die volle Kontrolle über [county.GetNameNoTier] übernommen."
+erm_letters_0003_a:0 "Großartige Arbeit, [councillor.GetFirstNameNoTooltip]!"
+
+erm_letters_0004_opening:0 "[councillor.Custom2('AppropriateGreeting', ROOT.Char)]"
+erm_letters_0004_county_complete:0 "Mit Hilfe von [councillor.GetFirstNameNoTooltip] haben wir die Entwicklung in [county.GetNameNoTier] erhöht."
+
+erm_letters_0004_a:0 "Großartige Arbeit, [councillor.GetFirstNameNoTooltip]!"
+erm_0001_mes1_t:0 "Konvertieren von Religion in [GetPlayer.MakeScope.Var('saved_scope').Title.GetNameNoTooltip]."
+erm_0001_mes1_description:0 "[GetPlayer.MakeScope.Var('heathens_count').GetValue] Grafschaften müssen noch konvertiert werden."
+erm_0002_mes1_t:0 "Kultur fördern in [GetPlayer.MakeScope.Var('saved_scope').Title.GetNameNoTooltip]."
+
+erm_0002_mes1_description:0 "[GetPlayer.MakeScope.Var('foreigners_count').GetValue] Grafschaften müssen noch konvertiert werden."
+erm_0003_mes1_t:0 "Erhöhen der Kontrolle in [GetPlayer.MakeScope.Var('saved_scope').Title.GetNameNoTooltip]."
+erm_0003_mes1_description:0 "[GetPlayer.MakeScope.Var('rebels_count').GetValue] Grafschaften müssen noch unter Kontrolle gebracht werden."
+erm_0004_mes1_t:0 "Entwicklung der Grafschaften in [GetPlayer.MakeScope.Var('saved_scope').Title.GetNameNoTooltip]."
+
+erm_0004_mes1_description:0 "[GetPlayer.MakeScope.Var('rural_count').GetValue]] Grafschaften müssen noch entwickelt werden."
+erm_0800_t:0 "Reich verwalten"
+erm_0800_desc:0 "Was möchtet Ihr verwalten?"
+erm_0900_t:0 "Die Heiden bekehren oder nicht"
+
+erm_0900_desc:0 "Sollen wir damit beginnen, jegliche Heiden zur Religion des mächtigen Führers dieses Reiches zu bekehren, oder sollen wir damit vielleicht noch ein wenig warten?"
+erm_0900_a:0 "Reist weit und breit und predigt unseren Glauben!"
+erm_0900_b:0 "Ich brauche Euch jetzt im Rat."
+erm_0901_t:0 "Die Kultur fördern oder nicht fördern"
+
+erm_0901_desc:0 "Sollen wir beginnen, unsere Kultur unter den Ausländern zu verbreiten, oder damit noch warten?"
+erm_0901_a:0 "Reist in die Ferne und lehrt sie unsere Wege!"
+erm_0901_b:0 "Ich brauche Euch jetzt im Rat."
+erm_0902_t:0 "Die Kontrolle ergreifen oder nicht"
+erm_0902_desc:0 "Sollen wir damit beginnen, die Kontrolle in unserem Bereich zu erhöhen, oder vielleicht noch ein wenig warten?"
+erm_0902_a:0 "Reist weit und breit und setzt meine Herrschaft durch!"
+erm_0902_b:0 "Ich brauche Euch jetzt im Rat."
+
+
+erm_0903_t:0 "Die Grafschaften entwickeln oder nicht"
+erm_0903_desc:0 "Sollen wir die Entwicklung der Grafschaften im Reich antreiben, oder damit noch etwas warten?"
+
+erm_0903_a:0 "Reist weit und breit und verbessert unser Land!"
+erm_0903_b:0 "Ich brauche Euch jetzt im Rat."
+erm_0950_t:0 "Die Briefe zurückhalten lassen"
+
+erm_0950_desc:0 "Ich bekomme zu viele Briefe von meinen Ratsmitgliedern, von denen ich weiß, dass sie einen guten Job machen, auch ohne dass sie es mir jedes Mal sagen. \n \nAber wessen Briefe möchte ich zum Schweigen bringen?"
+erm_0950_a:0 "Die meines [GetPlayer.MakeScope.Var('saved_court_chaplain').GetCharacter.GetCouncilTitle ]"
+erm_0950_c:0 "Die meines [GetPlayer.MakeScope.Var('saved_steward').GetCharacter.GetCouncilTitle ]"
+erm_0950_d:0 "Die meines [GetPlayer.MakeScope.Var('saved_marshal').GetCharacter.GetCouncilTitle ]"
+erm_0950_g:0 "Ich benötige keinen Ihrer Briefe"
+
+erm_mute_desc:0 "Ich würde mich gerne über die Verpflichtungen in Bezug auf Briefe unterhalten ..."
+erm_mute_complete:0 "Im Moment ist alles so, wie es sein sollte ..."
+erm_0951_t:0 "Briefe von [GetPlayer.MakeScope.Var('saved_court_chaplain').GetCharacter.GetCouncilTitle] zum Schweigen bringen."
+
+erm_0951_a_on:0 "Ich möchte Briefe, wenn Ihr mit einer Bekehrung des Glaubens fertig seid"
+erm_0951_a_off:0 "Ich möchte KEINE Briefe, wenn Ihr mit einer Bekehrung des Glaubens fertig seid"
+erm_0953_t:0 "Briefe von [GetPlayer.MakeScope.Var('saved_steward').GetCharacter.GetCouncilTitle] zum Schweigen bringen."
+erm_0953_a_on:0 "Ich möchte Briefe, wenn Ihr mit einer Kulturförderung fertig seid"
+erm_0953_a_off:0 "Ich möchte KEINE Briefe, wenn Ihr mit einer Kulturkonvertierung fertig seid"
+erm_0953_b_on:0 "Ich möchte Briefe, wenn Ihr mit der Entwicklung einer Grafschaft fertig seid"
+
+erm_0953_b_off:0 "Ich möchte KEINE Briefe, wenn Ihr mit der Entwicklung einer Grafschaft fertig seid"
+erm_0954_t:0 "Briefe von [GetPlayer.MakeScope.Var('saved_marshal').GetCharacter.GetCouncilTitle] zum Schweigen bringen"
+
+erm_0954_a_on:0 "Ich möchte Briefe, wenn Ihr mit der Erhöhung der Kontrolle fertig seid"
+erm_0954_a_off:0 "Ich möchte KEINE Briefe, wenn Ihr mit der Erhöhung der Kontrolle fertig seid"
+erm_1000_t:0 "Änderung der Funktionsweise von Ratsaufgaben"
+erm_1000_desc:0 "Vielleicht könnte ich meine Ratsmitglieder bitten, einige ihrer Aufgaben anders zu erfüllen. \n \nAber wessen wessen Aufgaben sollen anders verrichtet werden?"
+erm_1000_a:0 "Die meines [GetPlayer.MakeScope.Var('saved_court_chaplain').GetCharacter.GetCouncilTitle ]"
+erm_1000_c:0 "Die meines [GetPlayer.MakeScope.Var('saved_steward').GetCharacter.GetCouncilTitle ]"
+erm_1000_d:0 "Die meines [GetPlayer.MakeScope.Var('saved_marshal').GetCharacter.GetCouncilTitle ]"
+
+erm_mode_desc:0 "Ich würde mich gerne mit Euch darüber unterhalten, wie Ihr Eure Aufgabe erfüllt..."
+erm_mode_complete:0 "Im Moment ist alles so, wie es sein sollte ..."
+erm_1001_t:0 "Ändert die Art und Weise wie die Aufgabe verrichtet wird."
+
+erm_1001_desc:0 "Welche Aufgabe soll nun anders ausgeführt werden?"
+erm_1001_convert_religion:0 "Die Bekehrung zu unserem Glauben in den Grafschaften."
+erm_1001_promote_culture:0 "Die Förderung unserer Kultur in den Grafschaften"
+erm_1001_develop_county:0 "Die Entwickelung in unseren Grafschaften"
+erm_1001_increase_control:0 "Die Erhöhung der Kontrolle in unseren Grafschaften"
+erm_1011_t:0 "Ändert die Aufgabe "Religion konvertieren""
+erm_1011_a_on:0 "Ich möchte, dass Ihr zum Hof zurückkehrt, wenn Ihr fertig seid."
+
+erm_1011_a_off:0 "Ich möchte, dass Ihr in anderen Bezirken fortfahrt, wenn Ihr fertig seid."
+erm_1012_t:0 "Ändert die Aufgabe "Entwicklung der Grafschaften""
+erm_1012_a_on:0 "Ich möchte, dass Ihr zum Hof zurückkehrt, wenn Ihr fertig seid."
+
+erm_1012_a_off:0 "Ich möchte, dass Ihr in anderen Grafschaften fortfahrt, wenn Ihr fertig seid."
+erm_1012_b_on:0 "Ich möchte, dass Ihr Euch auf die Entwicklung konzentriert."
+erm_1012_b_off:0 "Ich möchte, dass Ihr die Entwicklung ausweitet."
+erm_1012_c_on:0 "Ich möchte, dass Ihr jede Grafschaft entwickelt."
+erm_1012_c_off:0 "Ich möchte, dass Ihr die Grafschaften entwickelt, die meiner Kultur angehören."
+erm_1012_d_on:0 "Ich möchte, dass Ihr die aktuelle Entwicklung ignoriert."
+erm_1012_d_off:0 "Ich möchte, dass Ihr die aktuelle Entwicklung berücksichtigt."
+erm_1013_t:0 "Ändern der Aufgabe "Kultur fördern""
+erm_1013_a_on:0 "Ich möchte, dass Ihr zum Hof zurückkehrt, wenn Ihr fertig seid."
+
+
+erm_1013_a_off:0 "Ich möchte, dass Ihr in anderen Grafschaften fortfahrt, wenn Ihr fertig seid."
+erm_1014_t:0 "Ändern der Aufgabe "Erhöhung der Kontrolle""
+erm_1014_a_on:0 "Ich möchte, dass Ihr zum Hof zurückkehrt, wenn Ihr fertig seid."
+
+erm_1014_a_off:0 "Ich möchte, dass Ihr in anderen Grafschaften weitermacht, wenn Ihr fertig seid."
+erm_1100_t:0 "Entwickelt die grafschaftlichen Besitztümer"
+erm_1100_desc:0 "Soll ich in meinem Reich neue Gebäude errichten oder bestehende aufwerten?"
+
+erm_1100_a:0 "Neue bauen"
+erm_1100_b:0 "Vorhandene Anlagen aufrüsten"
+erm_construct_new_t:0 "Entwickelt Grafschaftliche Besitztümer - Errichtet neue"
+erm_construct_new_desc:0 "Welches neue Gebäude soll ich bauen?"
+
+erm_upgrade_existing_t:0 "Grafschaftliche Besitztümer entwickeln - Bestehende aufwerten"
+erm_upgrade_existing_desc:0 "Welches aufgerüstete Gebäude soll ich errichten?"
