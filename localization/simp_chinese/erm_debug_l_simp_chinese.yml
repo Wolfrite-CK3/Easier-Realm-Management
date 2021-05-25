@@ -1,4 +1,4 @@
-l_simp_chinese:
+﻿l_simp_chinese:
  erm_debug_0001:0 "触发事件：erm.0900"
  erm_debug_0002:0 "触发事件： erm.0001"
  erm_debug_0003:0 "在异教徒列表中还剩下[GetPlayer.MakeScope.Var('heathens_count').GetValue]个省份。"
